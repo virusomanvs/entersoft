@@ -1,19 +1,34 @@
 <?php get_header(); ?>
-                <div class="project-page-screen fw-width-1-1 fw-color-white fw-text-center">
-                    <div class="container fw-text-left fw-mt-60">
-                        <div class="fw-text-uppercase fw-line-height-0-88 fw-mb-22">
-                            <span class="fw-fz-30 fw-font-bold">Цифромастер</span><br>
-                            <span class="fw-fz-33">DIGITAL AGENCY</span>
-                        </div>
-                        <ul class="ul-breadcrumbs fw-pl-15 fw-flex fw-list-style-none fw-fz-14 fw-mb-30">
-                            <li><a class="fw-color-white fw-text-underline-hover" href="/project">Проекты</a></li>
-                            <li class="fw-ml-25"><?php the_title();?></li>
-                        </ul>
-                        <div class="project-info fw-text-center">
-                            <div class="fw-mt-30 fw-fz-16 ">
-                                <?php echo get_post_meta($post->ID, 'description', true); ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<?php include "header_mini.php" ?>
+    <main class="page-content">
+    <section class="section-top-80 section-lg-top-115">
+    <div class="shell text-center text-md-left">
+    <h1><?php the_title();?></h1>
+        <?php
+        // Start the loop.
+        while ( have_posts() ) : the_post();
+
+            /* translators: %s: Name of current post */
+            the_content( sprintf(
+                __( 'Continue reading %s', 'twentyfifteen' ),
+                the_title( '<span class="screen-reader-text">', '</span>', false )
+            ) );
+
+            wp_link_pages( array(
+                'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfifteen' ) . '</span>',
+                'after'       => '</div>',
+                'link_before' => '<span>',
+                'link_after'  => '</span>',
+                'pagelink'    => '<span class="screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>%',
+                'separator'   => '<span class="screen-reader-text">, </span>',
+            ) );
+
+            // End the loop.
+        endwhile;
+        ?>
+
+    </div>
+    </section>
+    </main>
+<?php include "footer_adress.php" ?>
 <?php get_footer(); ?>

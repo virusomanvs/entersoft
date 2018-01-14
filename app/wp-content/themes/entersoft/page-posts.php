@@ -27,39 +27,39 @@ $perpage = 6; // Кол-во записей на странице
                             <div class="row row-no-gutter">
                                 <div data-filter="*" class="col-xs-12 col-sm-6 col-md-4 isotope-item offset-top-0"><a data-photo-swipe-item="" data-size="1200x852" href="<?php bloginfo('template_url'); ?>/images/gallery-01_original.jpg"><img src="<?php bloginfo('template_url'); ?>/images/gallery-01.jpg" width="390" height="554" alt=""><span class="thumb-overlay"></span>
                                         <div class="thumb-caption">
-                                            <h1>Remote support</h1>
+                                            <h1>Категория 1</h1>
                                         </div></a></div>
                                 <div data-filter="Category 3" class="col-xs-12 col-sm-6 col-md-4 isotope-item offset-top-0"><a data-photo-swipe-item="" data-size="1200x785" href="<?php bloginfo('template_url'); ?>/images/gallery-02_original.jpg"><img src="<?php bloginfo('template_url'); ?>/images/gallery-02.jpg" width="390" height="554" alt=""><span class="thumb-overlay"></span>
                                         <div class="thumb-caption">
-                                            <h1>Quality</h1>
+                                            <h1>Категория 1</h1>
                                         </div></a></div>
                                 <div data-filter="Category 3" class="col-xs-12 col-sm-6 col-md-4 isotope-item offset-top-0"><a data-photo-swipe-item="" data-size="1200x800" href="<?php bloginfo('template_url'); ?>/images/gallery-03_original.jpg"><img src="<?php bloginfo('template_url'); ?>/images/gallery-03.jpg" width="390" height="554" alt=""><span class="thumb-overlay"></span>
                                         <div class="thumb-caption">
-                                            <h1>Equity</h1>
+                                            <h1>Категория 1</h1>
                                         </div></a></div>
                                 <div data-filter="Category 3" class="col-xs-12 col-sm-6 col-md-4 isotope-item offset-top-0"><a data-photo-swipe-item="" data-size="1200x800" href="<?php bloginfo('template_url'); ?>/images/gallery-04_original.jpg"><img src="<?php bloginfo('template_url'); ?>/images/gallery-04.jpg" width="390" height="554" alt=""><span class="thumb-overlay"></span>
                                         <div class="thumb-caption">
-                                            <h1>Reliability</h1>
+                                            <h1>Категория 1</h1>
                                         </div></a></div>
                                 <div data-filter="Category 2" class="col-xs-12 col-sm-6 col-md-4 isotope-item offset-top-0"><a data-photo-swipe-item="" data-size="1200x797" href="<?php bloginfo('template_url'); ?>/images/gallery-05_original.jpg"><img src="<?php bloginfo('template_url'); ?>/images/gallery-05.jpg" width="390" height="554" alt=""><span class="thumb-overlay"></span>
                                         <div class="thumb-caption">
-                                            <h1>Service</h1>
+                                            <h1>Категория 1</h1>
                                         </div></a></div>
                                 <div data-filter="Category 2" class="col-xs-12 col-sm-6 col-md-4 isotope-item offset-top-0"><a data-photo-swipe-item="" data-size="1200x800" href="<?php bloginfo('template_url'); ?>/images/gallery-06_original.jpg"><img src="<?php bloginfo('template_url'); ?>/images/gallery-06.jpg" width="390" height="554" alt=""><span class="thumb-overlay"></span>
                                         <div class="thumb-caption">
-                                            <h1>Design</h1>
+                                            <h1>Категория 1</h1>
                                         </div></a></div>
                                 <div data-filter="Category 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item offset-top-0"><a data-photo-swipe-item="" data-size="1200x785" href="<?php bloginfo('template_url'); ?>/images/gallery-07_original.jpg"><img src="<?php bloginfo('template_url'); ?>/images/gallery-07.jpg" width="390" height="554" alt=""><span class="thumb-overlay"></span>
                                         <div class="thumb-caption">
-                                            <h1>Progress</h1>
+                                            <h1>Категория 1</h1>
                                         </div></a></div>
                                 <div data-filter="Category 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item offset-top-0"><a data-photo-swipe-item="" data-size="1200x811" href="<?php bloginfo('template_url'); ?>/images/gallery-08_original.jpg"><img src="<?php bloginfo('template_url'); ?>/images/gallery-08.jpg" width="390" height="554" alt=""><span class="thumb-overlay"></span>
                                         <div class="thumb-caption">
-                                            <h1>Skills</h1>
+                                            <h1>Категория 1</h1>
                                         </div></a></div>
                                 <div data-filter="Category 1" class="col-xs-12 col-sm-6 col-md-4 isotope-item offset-top-0"><a data-photo-swipe-item="" data-size="1200x900" href="<?php bloginfo('template_url'); ?>/images/gallery-09_original.jpg"><img src="<?php bloginfo('template_url'); ?>/images/gallery-09.jpg" width="390" height="554" alt=""><span class="thumb-overlay"></span>
                                         <div class="thumb-caption">
-                                            <h1>Confidence</h1>
+                                            <h1>Категория 1</h1>
                                         </div></a></div>
                             </div>
                         </div>
