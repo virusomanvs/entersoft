@@ -87,7 +87,7 @@
                             заботяться об уровне информационных технологий и
                             интеграции в современный бизнес. У нас огромный опыт работы в сфере ИТ.
                         </p>
-                        <div class="link-var-1 offset-top-25 link-default"><a href="#">подробнее</a></div>
+                        <div class="link-var-1 offset-top-25 link-default"><a href="/about">подробнее</a></div>
                     </div>
                 </div>
             </div>
@@ -98,30 +98,28 @@
                     <div class="cell-lg-6 section-md-top-110 section-bottom-99">
                         <ol class="list-alpha">
                             <li class="text-left">
-                                <h2 class="line-height">Data Processing</h2>
+                                <h2 class="line-height">Список</h2>
                                 <p>
-                                    Our high-end computing powers
-                                    are available at reasonable prices.
+                                    Описание описание описание описание описание.
                                 </p>
                             </li>
                             <li class="text-left">
-                                <h2 class="line-height">Technical	<br class="hidden visible-lg-block visible-md-block">Assistance
-                                </h2>
+                                <h2 class="line-height">Список</h2>
                                 <p>
-                                    We offer high-skilled help
-                                    and assistance 24/7.
+                                    Описание описание описание описание описание.
                                 </p>
                             </li>
                             <li class="text-left">
-                                <h2 class="line-height">Virus Protection</h2>
+                                <h2 class="line-height">Список</h2>
                                 <p>
-                                    Perfect local and Internet
-                                    security for your company.
+                                    Описание описание описание описание описание.
                                 </p>
                             </li>
                             <li class="text-left">
-                                <h2 class="line-height">Cloud Services</h2>
-                                <p>Upload, download and store your data online.</p>
+                                <h2 class="line-height">Список</h2>
+                                <p>
+                                    Описание описание описание описание описание.
+                                </p>
                             </li>
                         </ol>
                     </div>

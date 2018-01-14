@@ -11,15 +11,15 @@
                 </ul>
             </div>
             <div class="cell-md-4 cell-sm-6 text-center text-sm-left cell-sm-push-2">
-                <div class="contact-info">Семей,<br class="hidden visible-lg-block visible-md-block"> ул. Ч. Валиханова 124
+                <div class="contact-info">г. Семей<br class="hidden visible-lg-block visible-md-block"> ул. Ч. Валиханова 124
                 </div>
-                <div class="mail">E-mail:	<a href="mailto:#">mail@demolink.org</a>
+                <div class="mail">E-mail:	<a href="mailto:#">support@entersoft.kz</a>
                 </div>
-                <div class="phone offset-top-10"><a href="callto:87222523116"><span>8 (7222)</span>-52-31-16</a></div>
+                <div class="phone offset-top-10"><a href="callto:87222523116"><span>+7 (7222)</span> 52-31-16</a></div>
             </div>
             <div class="cell-md-3 cell-sm-6 text-center text-sm-left cell-sm-push-1">
-                <div class="brand-footer offset-top-40 offset-sm-top-8"><a href="index.html"><img src="images/brand-footer.png" alt=""></a></div>
-                <p>&#169;	<span id="copyright-year"></span>	|	<a href="privacy.html">Privacy Policy</a>
+                <div class="brand-footer offset-top-40 offset-sm-top-8"><a href="/"><img src="<?php bloginfo('template_url'); ?>/images/brand-footer.png" alt=""></a></div>
+                <p>&#169;	<span id="copyright-year"></span>	|	<a href="/">EnterSoft</a>
                 </p>
             </div>
         </div>

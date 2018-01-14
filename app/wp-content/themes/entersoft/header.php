@@ -2,7 +2,7 @@
 <html lang="ru" class="wide wow-animation">
 <head>
     <!-- Site Title-->
-    <title>EnterSoft - Сопровождение 1С в Семее</title>
+    <title><?php wp_title('«', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
