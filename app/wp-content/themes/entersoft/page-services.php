@@ -9,7 +9,7 @@ $perpage = 6; // Кол-во записей на странице
             <div class="shell text-center text-md-left">
                 <div class="range range-md-bottom range-md-reverse">
                     <div class="cell-md-5 cell-md-preffix-1">
-                        <h1>Services</h1>
+                        <h1>Продукты</h1>
                         <p class="text-bold text-mine offset-top-35"> Our specialists will build a specifically designed network for your company, no matter whether it is small or big.</p>
                         <p class="offset-top-30">With about 8 years of experience in building networks of any complexity, Comrax can assure you that your company will get a stable network access and its free support.</p>
                     </div>

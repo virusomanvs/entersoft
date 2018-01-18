@@ -408,7 +408,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 1.55556;
-  color: #a1a1a1;
+  color: #2e2e2e;
   background-color: #fff;
 }
 
@@ -7004,7 +7004,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7138,7 +7138,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -9918,7 +9918,7 @@ html.lt-ie-10 .range > [class*="cell-lg-preffix-"] {
 }
 
 .font-default {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -10301,7 +10301,7 @@ ol {
 }
 
 .list-number p {
-  font-family: "Merriweather Sans", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .list-alpha {
@@ -10339,7 +10339,7 @@ ol {
 
 .list-alpha li p {
   margin-top: 30px;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: #a1a1a1;
   font-weight: 400;
@@ -10383,7 +10383,7 @@ ol {
 }
 
 .list-style-none p {
-  font-family: "Merriweather Sans", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   margin-top: 25px !important;
 }
 
@@ -10392,7 +10392,7 @@ ol {
 }
 
 .list-style-none li h3 {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .list-style-none-var-1 li + li {
@@ -22362,7 +22362,7 @@ a:hover, a:focus {
   position: relative;
   font-size: 14px;
   line-height: 28px;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: .025em;
 }
@@ -36753,7 +36753,7 @@ ul ul, ul ol, ol ul, ol ol {
 }
 
 .slick-prev:before, .slick-next:before {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 1;
   color: white;
@@ -36850,7 +36850,7 @@ ul ul, ul ol, ol ul, ol ol {
   content: "•";
   width: 20px;
   height: 20px;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 6px;
   line-height: 20px;
   text-align: center;
@@ -38684,7 +38684,7 @@ a.pswp__share--download:hover {
   border: 1px solid #eaeaea;
   border-radius: 0;
   color: #555;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   outline: 0;
 }
@@ -38694,7 +38694,7 @@ a.pswp__share--download:hover {
   border: 1px solid #eaeaea;
   border-radius: 0;
   color: #555;
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
 }
 

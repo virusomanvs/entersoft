@@ -6,19 +6,24 @@
             <div class="shell text-center text-md-left">
                 <div class="range range-md-bottom">
                     <div class="cell-md-6">
-                        <h1>Our Values</h1>
-                        <p class="text-bold text-mine offset-top-35 inset-md-right-85">We mark out several principles that are fundamental when it goes to securing your data.</p>
-                        <p class="offset-top-30 inset-md-right-85">These principles are simplicity, professionalism and respect. From designing the personalized IT solution for your company to integrating it into your working environment, our specialists will make sure the services we provide work as your own advantage.</p>
+                        <h1>О компании</h1> 
+                        <p class="text-bold text-mine offset-top-35 inset-md-right-85">
+						Компания «EnterSoft» занимается автоматизацией управления и учета на базе программных продуктов «1С».
+						</p>
+                        <p class="offset-top-30 inset-md-right-85">
+						Наша компания также занимается разработкой собственных программных продуктов на платформе «1С: Предприятие 8».<br><br>
+						Наша компания опирается в своей работе на знание и повседневное применение стандартов качества, проектных методов в управлении, процессного подхода в организации нашей деятельности.<br><br>
+						</p>
                     </div>
                     <div class="cell-md-6 position-r">
                         <ul class="list list-var-1 offset-top-35 offset-md-top-0">
-                            <li><a href="#">Data processing</a></li>
-                            <li><a href="#">Cloud services</a></li>
-                            <li><a href="#">Virus protection</a></li>
-                            <li><a href="#">Technical assistance</a></li>
-                            <li><a href="#">Remote support</a></li>
-                            <li><a href="#">Device maintenance</a></li>
-                            <li><a href="#">24-Hour Technical Support</a></li>
+                            <li><a href="#">Консультации на этапе подбора программного продукта и его демонстрация</a></li>
+                            <li><a href="#">Поставка программного обеспечения</a></li>
+                            <li><a href="#">Внедрение программного обеспечения</a></li>
+                            <li><a href="#">сопровождение и обновление программного обеспечения</a></li>
+                            <li><a href="#">Информационно-технологическое сопровождение</a></li>
+                            <li><a href="#">Обучение пользователей и ИТ-специалистов</a></li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -94,19 +99,30 @@
             <div class="shell section-md-bottom-80">
                 <div class="range">
                     <div class="cell-lg-6 section-80 section-lg-top-110 section-lg-bottom-0 text-center text-lg-left">
-                        <h1>Why choose us</h1>
+                        <h1>Наши преимущества</h1>
                         <ol class="list-alpha list-style-none offset-top-30">
                             <li class="text-left">
                                 <h3 class="line-height text-bold text-mine">Great experience.</h3>
-                                <p>For 8 years of our company's development, we managed to gain real success in the sphere of IT support. Such recognition proves that our popularity is absolutely deserved.</p>
+                                <p>
+								Постоянное совершенствование методик работы, применение передовых технологий, 
+								отбор и обучение персонала, стремление находиться на пике технологического прогресса
+								позволяет нам внедрять нашим клиентам лучшие решения в сфере предлагаемых нами услуг.
+
+								</p>
                             </li>
                             <li class="text-left">
                                 <h3 class="line-height text-bold text-mine">Highly skilled staff.</h3>
-                                <p>We employ only true specialists that have enough experience to correspond to our level of services. We also pay a lot of attention to professional development of our employees.</p>
+                                <p>
+								Индивидуальный и комплексный подход в решении задач клиента.
+								Широкий спектр предлагаемых решений, основанный на возможностях программных продуктов.
+								</p>
                             </li>
                             <li class="text-left">
                                 <h3 class="line-height text-bold text-mine">Affordable pricing policy.</h3>
-                                <p>We offer our clients a unique possibility to receive a personalized range of services, available at affordable prices. We can offer solutions that you will benefit from.</p>
+                                <p>
+								Обеспечение всесторонней информационной, рекламной и технической поддержкой
+								 (тематические семинары, тренинги, курсы по обучению, выездные курсы по «1С»).
+								</p>
                             </li>
                         </ol>
                     </div>
