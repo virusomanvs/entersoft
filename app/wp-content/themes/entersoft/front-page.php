@@ -58,13 +58,13 @@
                     <div class="thumb-modern__caption">
                         <p class="thumb-modern__title" style="color:#fff">Обновления 1С</p>
                     </div></a></div>
-            <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-2-498x195.jpg" alt="" width="498" height="195"/>
+            <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-2-498x195.png" alt="" width="498" height="195"/>
                     <div class="thumb-modern__caption">
                         <p class="thumb-modern__title" style="color:#fff; text-align: left">Отраслевые решения</p>
                     </div></a></div>
-            <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-3-460x195.jpg" alt="" width="460" height="195"/>
+            <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-3-460x195.png" alt="" width="460" height="195"/>
                     <div class="thumb-modern__caption">
-                        <p class="thumb-modern__title">Программы 1С</p>
+                        <p class="thumb-modern__title" style="color:#fff">Программы 1С</p>
                     </div></a></div>
         </div>
     </section>
