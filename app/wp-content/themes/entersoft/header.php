@@ -54,14 +54,14 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li>
+                                <!--<li>
                                     <div class="unit unit-spacing-xxs unit-horizontal">
                                         <div class="unit__left"><span class="icon icon-sm icon-primary fl-bigmug-line-circular220"></span></div>
                                         <div class="unit__body">
                                             <p>Какая-нибудь заслуга</p>
                                         </div>
                                     </div>
-                                </li>
+                                </li>-->
                             </ul>
                         </div>
                         <div class="rd-navbar-aside__item">
@@ -72,6 +72,11 @@
                                         <div class="unit__body"><a href="callto:+7 (7222) 56-20-27">+7 (7222) 56-20-27</a>,&nbsp;</div>
                                         <div class="unit__body"><a href="callto:+7 (7222) 52-31-16">+7 (7222) 52-31-16</a></div>
                                     </div>
+                                    <!--<div class="unit unit-spacing-xxs unit-horizontal">
+                                        <div class="unit__left"><span class="text-primary">Адрес:</span></div>
+                                        <div class="unit__body"><a href="#">ул. Ч. Валиханова 124, 2 Этаж, 201 каб.</a></div>
+
+                                    </div>-->
                                 </li>
                             </ul>
                         </div>

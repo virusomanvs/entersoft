@@ -78,14 +78,14 @@
                         <p class="heading-8">E-mail</p>
                         <div class="unit unit-horizontal unit-spacing-xxs">
                             <div class="unit__left"><span class="icon icon-sm icon-primary mdi mdi-email-outline"></span></div>
-                            <div class="unit__body"><a href="mailto:#">info@entersoft.kz</a></div>
+                            <div class="unit__body"><a href="mailto:info@entersoft.kz">info@entersoft.kz</a></div>
                         </div>
                     </div>
                     <div class="layout-bordered__aside-item">
                         <p class="heading-8">Адрес</p>
                         <div class="unit unit-horizontal unit-spacing-xxs">
                             <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-location_on"></span></div>
-                            <div class="unit__body"><a href="#">ул. Ч. Валиханова 124, <br>2 Этаж, 201 каб.</a></div>
+                            <div class="unit__body"><a target="_blank" href="https://www.google.ru/maps/place/EnterSoft/@50.4172729,80.2483319,17z/data=!3m1!4b1!4m5!3m4!1s0x42f26548099d3db5:0xd20953b99571a183!8m2!3d50.4169895!4d80.2504373">ул. Ч. Валиханова 124, <br>2 Этаж, 201 каб.</a></div>
                         </div>
                     </div>
                 </div>

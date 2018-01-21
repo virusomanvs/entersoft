@@ -112,10 +112,10 @@
                             <!-- Timeline item-->
                             <article class="timeline__item">
                                 <div class="timeline__item-header">
-                                    <h5>Beginning,2006</h5>
+                                    <h5>Открытие, 2007</h5>
                                 </div>
                                 <div class="timeline__item-main"><img src="<?php bloginfo('template_url'); ?>/images/about-4-93x86.jpg" alt="" width="93" height="86"/>
-                                    <p>We started to offer American companies top-notch marketing services.</p>
+                                    <p>Рыбный текст и всякая фигня вот эта вот.</p>
                                 </div>
                             </article>
                         </div>
@@ -123,10 +123,10 @@
                             <!-- Timeline item-->
                             <article class="timeline__item timeline__item-reverse">
                                 <div class="timeline__item-header">
-                                    <h5>Customer service,2008</h5>
+                                    <h5>Инфа всякая, 2010</h5>
                                 </div>
                                 <div class="timeline__item-main"><img src="<?php bloginfo('template_url'); ?>/images/about-5-93x86.jpg" alt="" width="93" height="86"/>
-                                    <p>We improved the level of customer service at all offices of our agency.</p>
+                                    <p>Рыбный текст и всякая фигня вот эта вот.</p>
                                 </div>
                             </article>
                         </div>
@@ -134,10 +134,10 @@
                             <!-- Timeline item-->
                             <article class="timeline__item">
                                 <div class="timeline__item-header">
-                                    <h5>Industry Leader,2016</h5>
+                                    <h5>Мы топЧик, 2018</h5>
                                 </div>
                                 <div class="timeline__item-main"><img src="<?php bloginfo('template_url'); ?>/images/about-6-93x86.jpg" alt="" width="93" height="86"/>
-                                    <p>In 2016, we were recognized as the advertising industry leader.</p>
+                                    <p>Рыбный текст и всякая фигня вот эта вот.</p>
                                 </div>
                             </article>
                         </div>
@@ -153,8 +153,8 @@
         <div class="shell">
             <div class="range range-50 range-sm-center range-md-left range-lg-justify">
                 <div class="cell-sm-10 cell-md-6">
-                    <h4>Our Targets</h4>
-                    <p>We define oursleves as the company working for the good of our clients. Our main targets are international companies as well as small/medium businesses, and private entrepreneurs.</p>
+                    <h4>Наши цели</h4>
+                    <p>Здесь должно быть описание того что вы видите ниже...</p>
                     <div class="group-3-columns" data-lightgallery="group">
                         <div class="column-item"><a class="thumb-elegant" href="<?php bloginfo('template_url'); ?>/images/image-1-1200x800_original.jpg" data-lightgallery="group-item"><img src="<?php bloginfo('template_url'); ?>/images/image-1-166x139.jpg" alt="" width="166" height="139"/>
                                 <div class="thumb-elegant__overlay"></div></a></div>
@@ -165,8 +165,8 @@
                     </div>
                 </div>
                 <div class="cell-sm-10 cell-md-6 cell-lg-5">
-                    <h4>Our Certificates</h4>
-                    <p>Here are the certificates that acknowledge the high level of our advertising and marketing services.</p>
+                    <h4>Сертификаты</h4>
+                    <p>Здесь должно быть описание того что вы видите ниже...</p>
                     <div class="group-3-columns" style="max-width: 430px;" data-lightgallery="group">
                         <div class="column-item"><a class="thumb-light" href="<?php bloginfo('template_url'); ?>/images/certificate-1-847x1200.jpg" data-lightgallery="group-item"><img src="<?php bloginfo('template_url'); ?>/images/certificate-1-120x171.jpg" alt="" width="120" height="171"/>
                                 <div class="thumb-light__overlay"></div></a></div>
