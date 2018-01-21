@@ -9,10 +9,10 @@
                             <div class="shell">
                                 <div class="range">
                                     <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                                        <h1 data-caption-animate="fadeInUpSmall"><span class="custom-line">1С</span><span> Бухгалтерия 8</span>
+                                        <h1 style="color: #fff" data-caption-animate="fadeInUpSmall"><span class="custom-line">1С</span><span>:Бухгалтерия 8</span>
                                         </h1>
                                         <div class="object-decorated">
-                                            <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">Универсальное решение для автоматизации бухгалтерского и налогового учета.</h4>
+                                            <h4 style="color: #fff" data-caption-animate="fadeInRightSmall" data-caption-delay="550">Универсальное решение для автоматизации бухгалтерского и налогового учета.</h4>
                                         </div>
                                     </div>
                                 </div>
@@ -54,13 +54,13 @@
             </div>
         </div>
         <div class="section-layout-aside">
-            <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-1-538x200.jpg" alt="" width="538" height="200"/>
+            <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-1-538x200.png" alt="" width="538" height="200"/>
                     <div class="thumb-modern__caption">
-                        <p class="thumb-modern__title">Обновления 1С</p>
+                        <p class="thumb-modern__title" style="color:#fff">Обновления 1С</p>
                     </div></a></div>
             <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-2-498x195.jpg" alt="" width="498" height="195"/>
                     <div class="thumb-modern__caption">
-                        <p class="thumb-modern__title">Отраслевые решения</p>
+                        <p class="thumb-modern__title" style="color:#fff; text-align: left">Отраслевые решения</p>
                     </div></a></div>
             <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-3-460x195.jpg" alt="" width="460" height="195"/>
                     <div class="thumb-modern__caption">
@@ -91,7 +91,7 @@
                                         <p class="post-modern__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                                         <p class="post-modern__text"><?php echo the_field('news_desc') ?></p>
                                         <ul class="post-modern__meta">
-                                            <li><span class="icon icon-primary mdi mdi-clock"></span><a href="<?php the_permalink(); ?>"><?php echo the_date(); ?></a></li>
+                                            <li><span class="icon icon-primary mdi mdi-clock"></span><a href="<?php the_permalink(); ?>"><?php the_time('j F Y'); ?></a></li>
                                         </ul>
                                     </div>
                                 </article>

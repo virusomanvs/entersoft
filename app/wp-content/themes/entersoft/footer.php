@@ -65,8 +65,8 @@
                         while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                             <li>
                                 <article class="post-light">
-                                    <p class="post-light__title"><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?><?php echo the_date(); ?></a></p>
-                                    <div><?php echo the_date(); ?></div>
+                                    <p class="post-light__title"><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></p>
+                                    <div><?php the_time('j F Y'); ?></div>
                                 </article>
                             </li>
                         <?php endwhile; ?>
