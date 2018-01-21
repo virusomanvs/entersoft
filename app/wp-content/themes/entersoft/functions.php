@@ -22,6 +22,12 @@ function special_nav_class ($classes, $item) {
     return $classes;
 }
 
+function change_submenu_class($menu) {
+    $menu = preg_replace('/ class="sub-menu"/','/ class="rd-navbar-dropdown" /',$menu);
+    return $menu;
+}
+add_filter('wp_nav_menu','change_submenu_class');
+
 class mainMenuWalker extends Walker_Nav_Menu {
     function start_el(&$output, $item, $depth, $args) {
         // назначаем классы li-элементу и выводим его

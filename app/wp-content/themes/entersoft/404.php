@@ -1,29 +1,23 @@
-<?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
- */
+<?php get_header(); ?>
+<section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-1.jpg);">
+    <div class="shell">
+        <p class="heading-1 breadcrumbs-custom__title">404</p>
+    </div>
+</section>
 
-get_header(); ?>
-<div class="project-page-screen fw-width-1-1 fw-color-white fw-text-center">
-    <div class="container fw-text-left fw-mt-60">
-        <div class="fw-text-uppercase fw-line-height-0-88 fw-mb-22">
-            <span class="fw-fz-30 fw-font-bold">Цифромастер</span><br>
-            <span class="fw-fz-33">DIGITAL AGENCY</span>
-        </div>
-        <ul class="ul-breadcrumbs fw-pl-15 fw-flex fw-list-style-none fw-fz-14 fw-mb-30">
-            <li><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentyfifteen' ); ?></li>
-        </ul>
-        <div class="project-info fw-text-center fw-fz-16 fw-mt-30">
-            <div class="page-content">
-                <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentyfifteen' ); ?></p>
-
-                <?php get_search_form(); ?>
+<!-- 404-->
+<section class="section section-sm bg-white text-center">
+    <div class="shell">
+        <div class="range range-sm-center">
+            <div class="cell-lg-7">
+                <h2>Извините, <br class="veil reveal-md-block"> страница не найдена...</h2>
+                <p class="large">
+                    Возможно, вы неправильно указали адрес или страница переместилась.</p>
+                <div class="group-sm group-sm_mod-1"> <a class="button button-darker" href="/">Перейти на Главную</a>
+                    <p class="text-bold">или</p><a class="button button-primary" href="/contacts">Связаться с Нами</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+</section>
 <?php get_footer(); ?>

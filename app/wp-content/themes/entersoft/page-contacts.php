@@ -1,59 +1,106 @@
 <?php get_header(); ?>
-<?php include "header_mini.php" ?>
-    <main class="page-content">
-        <section class="section-80 section-lg-top-110 section-lg-bottom-110">
-            <div class="shell text-left">
-                <h1>Контактная информация</h1>
-                <div class="range offset-top-35">
-                    <div class="cell-md-4">
-                        <p class="font-montserat">Пишите нам с любыми вопросами или используйте наши контактные данные. Мы будем рады ответить на ваши вопросы.</p>
-                        <div class="contact-info">
-                            <address>ул. Ч. Валиханова 124<br class="hidden visible-lg-block visible-md-block">	2 Этаж, 201 Кабинет
-                            </address>
-                            <div class="contact-phone">
-                                <dl>
-                                    <dt>Телефон:</dt>
-                                    <dd><a href="callto:+7 (7222) 56-20-27">+7 (7222) 56-20-27</a></dd>
-                                </dl>
-                                <dl>
-                                    <dt> </dt>
-                                    <dd><a href="callto:+7 (7222) 52-31-16">+7 (7222) 52-31-16</a></dd>
-                                </dl>
-                            </div>
-                            <div class="mail">E-mail:	<a href="mailto:#">mail@demolink.org</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell-md-8">
+    <!-- Breadcrumbs-->
+    <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-6.jpg);">
+        <div class="shell">
+            <h2 class="breadcrumbs-custom__title">Контакты</h2>
+            <ul class="breadcrumbs-custom__path">
+                <li><a href="/">Главная</a></li>
+                <li class="active">Контакты</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Get in Touch-->
+    <section class="section section-lg bg-white">
+        <div class="shell">
+            <div class="layout-bordered">
+                <div class="layout-bordered__main text-center">
+                    <div class="layout-bordered__main-inner">
+                        <h3>Напишите нам</h3>
+                        <p>Мы доступны по электронной почте или по телефону. Вы также можете воспользоваться быстрой контактной формой, чтобы задать вопрос о наших услугах.</p>
                         <!-- RD Mailform-->
-                        <form data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" class="rd-mailform text-center text-md-right">
-                            <div class="form-group">
-                                <label for="contact-name" class="form-label">Ваше имя</label>
-                                <input id="contact-name" type="text" name="name" data-constraints="@Required" class="form-control">
+                        <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                            <div class="range range-sm-bottom range-20">
+                                <div class="cell-sm-6">
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="contact-first-name" type="text" name="first-name" data-constraints="@Required">
+                                        <label class="form-label" for="contact-first-name">Как Вас зовут?</label>
+                                    </div>
+                                </div>
+                                <div class="cell-sm-6">
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric @Required">
+                                        <label class="form-label" for="contact-phone">Телефон</label>
+                                    </div>
+                                </div>
+                                <div class="cell-xs-12">
+                                    <div class="form-wrap">
+                                        <label class="form-label" for="contact-message">Ваше сообщение</label>
+                                        <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
+                                    </div>
+                                </div>
+                                <div class="cell-sm-6">
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
+                                        <label class="form-label" for="contact-email">E-mail</label>
+                                    </div>
+                                </div>
+                                <div class="cell-sm-6">
+                                    <button class="button button-block button-primary" type="submit">Отправить сообщение</button>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="contact-email" class="form-label">Ваш E-mail</label>
-                                <input id="contact-email" type="email" name="email" data-constraints="@Required @Email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-message" class="form-label">Ваше сообщение</label>
-                                <textarea id="contact-message" name="message" data-constraints="@Required" class="form-control"></textarea>
-                            </div>
-                            <button type="submit" class="offset-top-30 link-var-1 link-default">отправить сообщение</button>
                         </form>
                     </div>
                 </div>
+                <div class="layout-bordered__aside">
+                    <div class="layout-bordered__aside-item">
+                        <p class="heading-8">Социальные сети </p>
+                        <ul class="list-inline-xs">
+                            <li><a class="icon icon-sm icon-default fa fa-facebook" href="#"></a></li>
+                            <li><a class="icon icon-sm icon-default fa fa-twitter" href="#"></a></li>
+                            <li><a class="icon icon-sm icon-default fa fa-google" href="#"></a></li>
+                            <li><a class="icon icon-sm icon-default fa fa-youtube" href="#"></a></li>
+                            <li><a class="icon icon-sm icon-default fa fa-vk" href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="layout-bordered__aside-item">
+                        <p class="heading-8">Телефон</p>
+                        <div class="unit unit-horizontal unit-spacing-xxs">
+                            <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-local_phone"></span></div>
+                            <div class="unit__body"><a href="callto:+7 (7222) 52-31-16">+7 (7222) 52-31-16</a></div>
+                        </div>
+                        <div class="unit unit-horizontal unit-spacing-xxs">
+                            <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-local_phone"></span></div>
+                            <div class="unit__body"><a href="callto:+7 (7222) 56-20-27">+7 (7222) 56-20-27</a></div>
+                        </div>
+                    </div>
+                    <div class="layout-bordered__aside-item">
+                        <p class="heading-8">E-mail</p>
+                        <div class="unit unit-horizontal unit-spacing-xxs">
+                            <div class="unit__left"><span class="icon icon-sm icon-primary mdi mdi-email-outline"></span></div>
+                            <div class="unit__body"><a href="mailto:#">info@entersoft.kz</a></div>
+                        </div>
+                    </div>
+                    <div class="layout-bordered__aside-item">
+                        <p class="heading-8">Адрес</p>
+                        <div class="unit unit-horizontal unit-spacing-xxs">
+                            <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-location_on"></span></div>
+                            <div class="unit__body"><a href="#">ул. Ч. Валиханова 124, <br>2 Этаж, 201 каб.</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section>
-            <div class="rd-google-map">
-                <div id="rd-google-map" data-zoom="18" data-x="80.250354" data-y="50.417215" class="rd-google-map"></div>
-                <ul class="map_locations">
-                    <li data-x="80.250354" data-y="50.417215">
-                        <p style="font-size: 18px;">Семей, ул. Ч. Валиханова 124</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <!-- RD Google Map-->
+    <section class="section">
+        <div class="rd-google-map rd-google-map__model" data-zoom="18" data-x="80.250354" data-y="50.417215" >
+            <ul class="map_locations">
+                <li data-x="80.250354" data-y="50.417215" >
+                    <p>ул. Ч. Валиханова 124, 2 Этаж, 201 каб.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
 <?php get_footer(); ?>
