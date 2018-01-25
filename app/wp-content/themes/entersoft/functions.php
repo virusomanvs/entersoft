@@ -31,9 +31,19 @@ add_filter('wp_nav_menu','change_submenu_class');
 class mainMenuWalker extends Walker_Nav_Menu {
     function start_el(&$output, $item, $depth, $args) {
         // назначаем классы li-элементу и выводим его
-        $class_names = join( ' ', $item->classes );
-        $class_names = ' class="' .esc_attr( $class_names ). '"';
-        $output.= '<li id="menu-item-' . $item->ID . '"' .$class_names. '>';
+		// проверяем, на какой странице мы находимся
+        $current_url = (is_ssl()?'https://':'http://').$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $item_url = esc_attr( $item->url );
+		
+		$class_names = join( ' ', $item->classes );
+        
+        if ( $item_url != $current_url ) {
+			$class_names = ' class="' .esc_attr( $class_names ). '"';
+		} else {
+			$class_names = ' class="' .esc_attr( $class_names ). ' active"';
+		}
+		
+		$output.= '<li id="menu-item-' . $item->ID . '"' .$class_names. '>';
 
         // назначаем атрибуты a-элементу
         $attributes.= !empty( $item->url ) ? ' href="' .esc_attr($item->url). '"' : '';
@@ -42,6 +52,7 @@ class mainMenuWalker extends Walker_Nav_Menu {
         // проверяем, на какой странице мы находимся
         $current_url = (is_ssl()?'https://':'http://').$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
         $item_url = esc_attr( $item->url );
+		
         if ( $item_url != $current_url ) $item_output.= '<a'. $attributes .'>'.$item->title.'</a>';
         else $item_output.= '<a'. $attributes .'>'.$item->title.'</a>';
 

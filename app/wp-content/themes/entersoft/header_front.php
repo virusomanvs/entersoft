@@ -30,6 +30,21 @@
                          <li><a href="about.html">О Нас</a>
 
                         </li>
+                        <li class="rd-navbar--has-dropdown rd-navbar-submenu"><a href="about.html">About us</a>
+                    <!-- RD Navbar Dropdown
+                <ul class="rd-navbar-dropdown">
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Who we are</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Our partners</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">News &amp; media center</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+                <span class="rd-navbar-submenu-toggle"></span></li>
                         <li><a href="services.html">Услуги</a></li>
                         <li><a href="gallery.html">Статьи</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
