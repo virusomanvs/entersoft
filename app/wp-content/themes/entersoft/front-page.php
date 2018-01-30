@@ -19,6 +19,7 @@
                             </div>
                         </div>
                     </div>
+					<!--
                     <div class="swiper-slide" data-slide-bg="<?php bloginfo('template_url'); ?>/images/slider-slide-2-1464x660.jpg">
                         <div class="swiper-slide-caption">
                             <div class="shell">
@@ -48,7 +49,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>-->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -103,7 +104,7 @@
             </div>
         </div>
     </section>
-    <!-- Experience since 1999-->
+    <!-- Experience since 1999
     <section class="section section-md bg-white">
         <div class="bg-gray-4">
             <div class="shell-fluid shell-condensed">
@@ -129,7 +130,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Counters-->
     <section class="section parallax-container bg-gray-dark">
@@ -144,7 +145,7 @@
                                     <div class="box-counter-modern__wrap">
                                         <div class="counter" data-zero="true">11</div>
                                     </div>
-                                    <p class="box-counter-modern__title">Years in the industry</p>
+                                    <p class="box-counter-modern__title">Лет работы</p>
                                 </article>
                             </div>
                         </li>
@@ -152,9 +153,9 @@
                             <div class="list-blocks__item-inner">
                                 <article class="box-counter-modern">
                                     <div class="box-counter-modern__wrap">
-                                        <div class="counter" data-zero="true">35</div>
+                                        <div class="counter" data-zero="true">60</div>
                                     </div>
-                                    <p class="box-counter-modern__title">Partners worldwide</p>
+                                    <p class="box-counter-modern__title">Цифры чего-нибудь</p>
                                 </article>
                             </div>
                         </li>
@@ -162,7 +163,7 @@
                             <div class="list-blocks__item-inner">
                                 <article class="box-counter-modern">
                                     <div class="box-counter-modern__wrap"><span>#</span><span class="big">01</span></div>
-                                    <p class="box-counter-modern__title">Advertising agency</p>
+                                    <p class="box-counter-modern__title">Первые в чём-то</p>
                                 </article>
                             </div>
                         </li>
@@ -170,9 +171,9 @@
                             <div class="list-blocks__item-inner">
                                 <article class="box-counter-modern">
                                     <div class="box-counter-modern__wrap">
-                                        <div class="counter" data-zero="true">264</div>
+                                        <div class="counter" data-zero="true">265</div>
                                     </div>
-                                    <p class="box-counter-modern__title">Successful projects</p>
+                                    <p class="box-counter-modern__title">Успешных проектов</p>
                                 </article>
                             </div>
                         </li>
@@ -190,7 +191,7 @@
                 <div class="cell-lg-11">
                     <!-- Section Header-->
                     <div class="section__header">
-                        <h2>Our Projects</h2>
+                        <h2>Наши проекты</h2>
                         <div class="section__header-element"><a class="link link-arrow" href="our-work.html"><span>See All Projects</span></a></div>
                     </div>
                 </div>
@@ -241,8 +242,16 @@
                 <div class="cell-lg-11">
                     <div class="range range-sm-center range-md-left range-md-middle range-50">
                         <div class="cell-sm-10 cell-md-5 cell-lg-5">
-                            <h2>Why Choose Us</h2>
-                            <p>We bring our diverse background of advertising, design, branding, public relations, research and strategic planning to work for your company. Not only will your materials look great – they will get results. We don’t create concepts in a vacuum – they fit into the standards of your industry. And once we have a total picture of your company, its target audience and goals, we’ll create a detailed plan including a commitment to stay on budget.</p><a class="button button-dark-outline" href="statistics.html">View statistics</a>
+                            <h2>Почему Мы?</h2>
+                            <p>
+							Мы привносим наш разнообразный опыт рекламы, дизайна, брендинга,
+							связей с общественностью, исследований и стратегического планирования для работы 
+							в вашей компании. Мало того, что ваши материалы выглядят великолепно - они получат результаты. 
+							Мы не создаем концепции в вакууме - они вписываются в стандарты вашей отрасли. И как только у 
+							нас будет общая картина вашей компании, 
+							ее целевой аудитории и целей, мы создадим подробный план, включающий обязательство оставаться в бюджете.
+							</p>
+							<a class="button button-dark-outline" href="statistics.html">Просмотреть статистику</a>
                         </div>
                         <div class="cell-sm-10 cell-md-7 cell-xl-6">
                             <div class="box-spacer-left box-spacer-left-lg">
@@ -255,7 +264,7 @@
         </div>
     </section>
 
-    <!-- Our Professionals-->
+    <!-- Our Professionals
     <section class="section parallax-container bg-gray-dark">
         <div class="material-parallax"><img src="<?php bloginfo('template_url'); ?>/images/bg-image-3.jpg" alt=""/></div>
         <div class="parallax-content">
@@ -263,14 +272,14 @@
                 <div class="shell shell-wide">
                     <div class="range range-md-center">
                         <div class="cell-lg-11">
-                            <!-- Section Header-->
+                            <!-- Section Header--
                             <div class="section__header section_header-noborder">
                                 <h2>Our Professionals</h2>
                                 <div class="section__header-element"><a class="link link-arrow" href="team.html"><span>View All Team</span></a></div>
                             </div>
                             <div class="range range-30 range-flex">
                                 <div class="cell-sm-6 cell-lg-3">
-                                    <!-- Card creative-->
+                                    <!-- Card creative--
                                     <article class="card-creative">
                                         <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-1-115x119.jpg" alt="" width="115" height="119"/>
                                         </div>
@@ -282,7 +291,7 @@
                                     </article>
                                 </div>
                                 <div class="cell-sm-6 cell-lg-3">
-                                    <!-- Card creative-->
+                                    <!-- Card creative--
                                     <article class="card-creative">
                                         <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-2-115x119.jpg" alt="" width="115" height="119"/>
                                         </div>
@@ -294,7 +303,7 @@
                                     </article>
                                 </div>
                                 <div class="cell-sm-6 cell-lg-3">
-                                    <!-- Card creative-->
+                                    <!-- Card creative--
                                     <article class="card-creative">
                                         <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-3-115x119.jpg" alt="" width="115" height="119"/>
                                         </div>
@@ -306,7 +315,7 @@
                                     </article>
                                 </div>
                                 <div class="cell-sm-6 cell-lg-3">
-                                    <!-- Card creative-->
+                                    <!-- Card creative--
                                     <article class="card-creative">
                                         <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-4-115x119.jpg" alt="" width="115" height="119"/>
                                         </div>
@@ -323,7 +332,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Clients-->
     <section class="section section-md bg-white text-center">
@@ -347,7 +356,7 @@
                             <div class="item">
                                 <!-- Quote light-->
                                 <article class="quote-light">
-                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/testimonials-1-88x88.jpg" alt="" width="88" height="88"/>
+                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/infec.png" alt="" width="88" height="88"/>
                                     </div>
                                     <div class="quote-light__main">
                                         <p class="q">Median was a great strategic partner and provided valuable insights to support our turnaround. Their understanding of our business and the marketplace resulted in recommendations to help fuel our success.</p>
@@ -390,7 +399,7 @@
                     </div>
                 </div>
                 <div class="cell-md-6">
-                    <div class="link-block-group"><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-2-155x34.png" alt="" width="216" height="102"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-2-155x34.png" alt="" width="155" height="34"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-3-122x33.png" alt="" width="122" height="33"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-4-100x76.png" alt="" width="100" height="76"/></a></div>
+                    <div class="link-block-group"><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/clients/infec.png" alt="" width="500" height="102"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-2-155x34.png" alt="" width="155" height="34"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-3-122x33.png" alt="" width="122" height="33"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-4-100x76.png" alt="" width="100" height="76"/></a></div>
                 </div>
             </div>
         </div>

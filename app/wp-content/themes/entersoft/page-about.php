@@ -180,20 +180,20 @@
         </div>
     </section>
 
-    <!-- Top Management-->
+    <!-- Top Management
     <section class="section parallax-container bg-gray-dark">
         <div class="material-parallax"><img src="<?php bloginfo('template_url'); ?>/images/parallax-4.jpg" alt=""/></div>
         <div class="parallax-content">
             <div class="section-md">
                 <div class="shell">
-                    <!-- Section Header-->
+                    <!-- Section Header--
                     <div class="section__header">
-                        <h4>Top Management</h4>
-                        <div class="section__header-element"><a class="link link-arrow" href="contacts.html"><span>Contact Us</span></a></div>
+                        <h4>Лучшие в своём деле</h4>
+                        <div class="section__header-element"><a class="link link-arrow" href="/contacts"><span>Контакты</span></a></div>
                     </div>
                     <div class="range range-30">
                         <div class="cell-sm-6 cell-md-4">
-                            <!-- Card creative-->
+                            <!-- Card creative--
                             <article class="card-creative">
                                 <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-1-115x119.jpg" alt="" width="115" height="119"/>
                                 </div>
@@ -205,19 +205,19 @@
                             </article>
                         </div>
                         <div class="cell-sm-6 cell-md-4">
-                            <!-- Card creative-->
+                            <!-- Card creative--
                             <article class="card-creative">
                                 <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-2-115x119.jpg" alt="" width="115" height="119"/>
                                 </div>
                                 <div class="card-creative__main" data-fixed-height="">
-                                    <p class="card-creative__title">Jeffrey Neddery</p>
-                                    <p class="card-creative__subtitle">Business Development Manager</p>
+                                    <p class="card-creative__title">Руфат</p>
+                                    <p class="card-creative__subtitle">Лучший айтишник всея Казахтана</p>
                                     <div class="card-creative__element"><a href="mailto:#">info@demolink.org</a></div>
                                 </div>
                             </article>
                         </div>
                         <div class="cell-sm-6 cell-md-4">
-                            <!-- Card creative-->
+                            <!-- Card creative--
                             <article class="card-creative">
                                 <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-3-115x119.jpg" alt="" width="115" height="119"/>
                                 </div>
@@ -232,6 +232,6 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
 <?php get_footer(); ?>
