@@ -1,11 +1,10 @@
 <?php get_header(); ?>
     <!-- Breadcrumbs-->
-    <section class="breadcrumbs-custom bg-image"
-             style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-9.jpg);">
+    <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-9.jpg);">
         <div class="shell">
             <h2 class="breadcrumbs-custom__title"><? echo the_title() ?></h2>
             <ul class="breadcrumbs-custom__path">
-                <li><a href="/">Главная</a></li>
+                <li><a href="index.html">Главная</a></li>
                 <li><a href="/news">Новости</a></li>
                 <li class="active"><? echo the_title() ?></li>
             </ul>
@@ -16,49 +15,49 @@
         <div class="shell blog">
             <div class="range range-90">
                 <div class="cell-md-8 cell-lg-9 blog__main">
-                    <article class="post-single">
+                    <article class="post-single"><img class="post-single__image" src="<?php bloginfo('template_url'); ?>/images/post-4-870x412.jpg" alt="" width="870" height="412"/>
                         <h4 class="post-single__title"><? echo the_title() ?></h4>
                         <ul class="post-single__meta">
                             <li>
                                 <dl>
-                                    <dt>Дата публикации</dt>
+                                    <dt>Date</dt>
                                     <dd>
-                                        <time><?php the_time('j F Y'); ?></time>
+                                        <time datetime=""><?php the_time('j F Y'); ?></time>
                                     </dd>
-                                </dl>
-                            </li>
-                            <!--<li>
-                                <dl>
-                                    <dt>Автор</dt>
-                                    <dd>Администратор</dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
-                                    <dt>Комментарии</dt>
+                                    <dt>Posted by</dt>
+                                    <dd>Amelia Condon</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt>Comments</dt>
                                     <dd>3</dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
-                                    <dt>Категория</dt>
-                                    <dd>Новости</dd>
+                                    <dt>Category</dt>
+                                    <dd>Digital</dd>
                                 </dl>
-                            </li>-->
+                            </li>
                         </ul>
                         <div class="post-single__main">
                             <?php echo the_field('news_desc') ?>
+                            <p>As Clover Letter Emails Got Bigger in size, Founders Say, Its Open Rate Collapsed… Email newsletters are just as effective when working with existing customers, as they were from the very start.  Also, the part of the problem may be the “offline reading” option, used by many people worldwide.</p>
+                            <p>But another newsletter flagged an unexpected challenge last week, one that caused its founders to re-evaluate their primary method of distribution and introduce an app to complement it. Liza Darwin and Casey Lewis, who started Clover Letter in February for teen girls, wrote that their strong start was running into a problem.</p>
+                            <!-- Quote minimal-->
+                            <article class="quote-minimal">
+                                <p class="q">Spam filters used by providers can prevent readers from getting their newsletters, which may influence their open rate.</p>
+                            </article>
+                            <p>As they got more comfortable with MailChimp, the service they used to manage and send Clover Letter, they said they began adding GIFs and Instagrams and other things that made the experience feel that much more exciting than your average promotional letter in the box. But that actually led to the problem of increased letter size, which certainlyserves as a huge disadvantage for many clients of Clover Letter. Their founders are now looking for various methods of solving this problem.</p>
                         </div>
                         <div class="post-single__footer">
                             <p class="heading-5">Поделиться:</p>
-                            <div class="group-sm">
-                                <a class="button button-xs button-facebook button-icon button-icon-left" href="#">
-                                    <span class="icon fa fa-facebook"></span>Нравиться</a>
-                                <a class="button button-xs button-twitter button-icon button-icon-left" href="#">
-                                    <span class="icon fa fa-twitter"></span>Твитнуть</a>
-                                <a class="button button-xs button-google button-icon button-icon-left" href="#">
-                                    <span class="icon fa fa-google-plus"></span>Поделиться</a>
-                            </div>
+                            <div class="group-sm"><a class="button button-xs button-facebook button-icon button-icon-left" href="#"><span class="icon fa fa-facebook"></span>Like</a><a class="button button-xs button-twitter button-icon button-icon-left" href="#"><span class="icon fa fa-twitter"></span>Tweet</a><a class="button button-xs button-google button-icon button-icon-left" href="#"><span class="icon fa fa-google-plus"></span>Share</a></div>
                         </div>
                     </article>
 
@@ -67,33 +66,43 @@
                     <div class="blog-aside__column">
                         <div class="blog__aside-item">
                             <!-- RD Search-->
-                            <?php get_search_form(); ?>
-
+                            <form class="rd-search rd-search_classic" action="search-results.html" method="GET">
+                                <div class="form-wrap">
+                                    <input class="form-input" id="page-aside-search" type="text" name="s" autocomplete="off">
+                                    <label class="form-label" for="page-aside-search">Search the blog...</label>
+                                </div>
+                                <button class="rd-search-submit" type="submit"></button>
+                            </form>
                         </div>
-                        <!--<div class="blog__aside-item">
+                        <div class="blog__aside-item">
                             <p class="heading-8 blog-title"></p>
                             <ul class="list-marked-bordered">
                                 <li><a href="#"><span>Digital/SMM</span><span class="count">(4)</span></a></li>
                                 <li><a href="#"><span>Brand Marketing</span><span class="count">(2)</span></a></li>
                                 <li><a href="#"><span>Media Buying</span><span class="count">(6)</span></a></li>
                             </ul>
-                        </div>-->
+                        </div>
                         <div class="blog__aside-item">
-                            <p class="heading-8 blog-title">Похожие записи</p>
+                            <p class="heading-8 blog-title">Popular posts</p>
                             <div class="post-inline-wrap">
                                 <!-- Post inline-->
-                                <?php query_posts('orderby=rand&showposts=2&cat=3'); ?>
-                                <?php if (have_posts()) : ?>
-                                    <?php while (have_posts()) : the_post(); ?>
-                                        <article class="post-inline">
-                                            <div class="post-inline__main">
-                                                <p class="post-inline__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-                                            </div>
-                                            <div class="post-inline__footer">
-                                                <p class="post-inline__time"><?php the_time('j F Y'); ?></p>
-                                            </div>
-                                        </article>
-                                    <?php endwhile; endif; ?>
+                                <article class="post-inline">
+                                    <div class="post-inline__main">
+                                        <p class="post-inline__title"><a href="single-post.html">How We Measure the Vlogs' Ad Potential</a></p>
+                                    </div>
+                                    <div class="post-inline__footer">
+                                        <p class="post-inline__time">13 April 2017</p>
+                                    </div>
+                                </article>
+                                <!-- Post inline-->
+                                <article class="post-inline">
+                                    <div class="post-inline__main">
+                                        <p class="post-inline__title"><a href="single-post.html">Digital Marketing Metrics That Really Matter Nowadays</a></p>
+                                    </div>
+                                    <div class="post-inline__footer">
+                                        <p class="post-inline__time">25 January 2017</p>
+                                    </div>
+                                </article>
                             </div>
                         </div>
                         <!--<div class="blog__aside-item">

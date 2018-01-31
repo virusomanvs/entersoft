@@ -124,3 +124,57 @@ function my_single_template( $single ) {
 
     return $single;
 }
+
+function kriesi_pagination($pages = '', $range = 2)
+{
+    $showitems = ($range * 2)+1;
+
+    global $paged;
+    if(empty($paged)) $paged = 1;
+
+    if($pages == '')
+    {
+        global $wp_query;
+        $pages = $wp_query->max_num_pages;
+        if(!$pages)
+        {
+            $pages = 1;
+        }
+    }
+
+    if(1 != $pages)
+    {
+
+        echo "<ul class='pagination-custom'>";
+        if($paged > 2 && $paged > $range+1 && $showitems < $pages) echo "<li><a href='".get_pagenum_link(1)."'>&laquo;</a></li>";
+        if($paged > 1 && $showitems < $pages) echo "<li><a href='".get_pagenum_link($paged - 1)."'>&lsaquo;</a></li>";
+
+        for ($i=1; $i <= $pages; $i++)
+        {
+            if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems ))
+            {
+                echo ($paged == $i)? "<li class='active'><a href='#'>".$i."</a></li>":"<li><a href='".get_pagenum_link($i)."'>".$i."</a></li>";
+            }
+        }
+
+        if ($paged < $pages && $showitems < $pages) echo "<li><a href='".get_pagenum_link($paged + 1)."'>&rsaquo;</a></li>";
+        if ($paged < $pages-1 &&  $paged+$range-1 < $pages && $showitems < $pages) echo "<li><a href='".get_pagenum_link($pages)."'>&raquo;</a></li>";
+        echo "</ul>\n";
+    }
+}
+
+add_filter( 'get_search_form', 'my_search_form' );
+function my_search_form( $form ) {
+
+    $form = '
+    <form class="rd-search rd-search_classic" action="' . home_url( '/' ) . '" method="GET">
+                                <div class="form-wrap">
+                                    <input value="' . get_search_query() . '" name="s" id="s" class="form-input" type="text" autocomplete="off">
+                                    <label class="form-label" for="s">Поиск по сайту...</label>
+                                </div>
+                                <button class="rd-search-submit" type="submit"></button>
+                            </form>
+     ';
+
+    return $form;
+}
