@@ -100,13 +100,7 @@
                     <p class="rights"><span>EnterSoft</span><span>&nbsp;&copy;&nbsp;</span><span id="copyright-year"></span>.&nbsp;<br class="veil-xs"><a class="link-underline" href="/sitemap">SiteMap</a>
                     </p>
                 </div>
-                <div class="cell-sm-4 cell-xl-4 footer-corporate__aside-column text-sm-right">
-                    <ul class="list-inline-xxs">
-                        <li><a class="icon icon-xs icon-style-modern fa fa-twitter" href="#"></a></li>
-                        <li><a class="icon icon-xs icon-style-modern fa fa-facebook" href="#"></a></li>
-                        <li><a class="icon icon-xs icon-style-modern fa fa-instagram" href="#"></a></li>
-                    </ul>
-                </div>
+
             </div>
         </div>
     </div>

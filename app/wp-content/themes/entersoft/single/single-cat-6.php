@@ -73,7 +73,7 @@
                     <article class="post-single">
                         <h4 class="post-single__title">Описание товара</h4>
                         <div class="post-single__main">
-                            <?php echo the_field('1c_buh_fulldesc') ?>
+                            <?php echo the_field('solutions_full_desc') ?>
                         </div>
                         <div class="post-single__footer">
                             <a class="button button-xs button-primary" href="#">Заказать данный товар</a>
