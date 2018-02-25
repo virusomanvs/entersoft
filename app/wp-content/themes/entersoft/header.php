@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css">
+	<link rel='stylesheet' href='<?php bloginfo('template_url'); ?>/css/sweetalert.css' type='text/css' media='all' />
 	<?php wp_head(); ?>
     <!--[if lt IE 10]>
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="../../windows.microsoft.com/en-US/internet-explorer/default.htm"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>

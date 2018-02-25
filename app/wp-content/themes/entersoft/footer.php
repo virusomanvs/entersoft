@@ -13,6 +13,7 @@
     <a href="#0" class="modal-close">Close</a>
 </div> <!-- cd-modal -->
 
+		
 <div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
 
 <!-- Page Footer-->
@@ -60,15 +61,32 @@
                     </ul>
                 </div>
                 <div class="cell-xs-10 cell-sm-6 cell-md-3 cell-lg-3 cell-xl-2 footer-corporate__column">
-                    <h4 class="heading-bordered">Подпишись сейчас</h4>
-                    <p>Узнай последние новости первым!</p>
-                    <!-- RD Mailform-->
-                    <form class="rd-mailform rd-mailform_sm rd-mailform_centered box-width-2" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                    <h4 class="heading-bordered">Проверка ИТС</h4>
+                    <p>Вы можете проверить наличие подписки на ИТС</p>
+                    <!-- RD Mailform
+						<form id="check" name="check" onsubmit="return false;">
+							<div style="padding-top:10px;">
+								<font style="color: #666666;"><i>Введите регистрационный номер Вашего программного продукта в форму ниже:</i></font>
+							</div>
+							<div style="padding-top:10px; padding-bottom:10px;">
+								<div style="width:auto; float:left; padding-top:1px;">
+									<input maxlength="15" name="rn" size="15" type="text">
+								</div>
+								<div style="width:auto; float:left; padding-left:3px;">
+									<button id="check-btn" onclick="doCheck()" type="button">проверить</button>
+								</div>
+							</div>
+							<div class="divider-block"></div>
+							<div id="check-mess" style="padding-top:10px;">
+							</div>
+						</form>-->
+                    <form class="rd-mailform rd-mailform_sm rd-mailform_centered box-width-2" id="check" name="check" onsubmit="return false;">
                         <div class="form-wrap">
-                            <input class="form-input" id="subscribe-email" type="email" name="email" data-constraints="@Email @Required">
-                            <label class="form-label" for="subscribe-email">Введите ваш e-mail</label>
+                            <input class="form-input" id="its-code" maxlength="15" name="rn" size="15" type="text" data-constraints="@Required">
+                            <label class="form-label" for="its-code">Регистрационный номер</label>
                         </div>
-                        <button class="button button-sm button-block button-secondary" type="submit">Подписаться</button>
+                        <button class="button button-sm button-block button-secondary" id="check-btn" onclick="doCheck()">Проверить</button>
+						<div id="check-mess" style="padding-top:10px;"></div>
                     </form>
                 </div>
                 <div class="cell-xs-6 cell-sm-6 cell-md-3 cell-lg-3 footer-corporate__column">
@@ -128,12 +146,16 @@
 <div class="snackbars" id="form-output-global"></div>
 <!-- Javascript-->
 <?php wp_footer(); ?>
+<!-- classie.js by @desandro: https://github.com/desandro/classie -->
 <script src="<?php bloginfo('template_url'); ?>/js/core.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/script.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/snap.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/js/its.check.js"></script>
+<script src='<?php bloginfo('template_url'); ?>/js/sweetalert.js'></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
+
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {

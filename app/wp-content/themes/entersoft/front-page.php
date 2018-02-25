@@ -1,5 +1,6 @@
 <?php get_header(); ?>
     <!-- Swiper-->
+	
     <section class="section section-layout-1">
         <div class="section-layout-main">
             <div class="swiper-container swiper-slider swiper-slider_style-2" data-loop="true" data-autoplay="8000" data-simulate-touch="false" data-slide-effect="fade">
