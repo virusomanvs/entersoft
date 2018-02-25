@@ -1,12 +1,11 @@
 <?php get_header(); ?>
  <!-- Breadcrumbs-->
-      <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-1.jpg);">
+      <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-15.jpg);">
         <div class="shell">
           <h2 class="breadcrumbs-custom__title"></h2>
           <ul class="breadcrumbs-custom__path">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Pages</a></li>
-            <li class="active">1C</li>
+            <li><a href="/">Главная</a></li>
+            <li class="active">1С:Бухгалтерия 8 для Казахстана</li>
           </ul>
         </div>
       </section>
