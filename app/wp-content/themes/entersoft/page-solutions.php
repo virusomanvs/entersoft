@@ -1,6 +1,6 @@
 <?php get_header(); ?>
  <!-- Breadcrumbs-->
-      <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-1.jpg);">
+      <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-13.jpg);">
         <div class="shell">
           <h2 class="breadcrumbs-custom__title">Отраслевые решения на базе 1С</h2>
           <ul class="breadcrumbs-custom__path">

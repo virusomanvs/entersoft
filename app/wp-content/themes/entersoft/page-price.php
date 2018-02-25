@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <!-- Breadcrumbs-->
     <section class="breadcrumbs-custom bg-image"
-             style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-9.jpg);">
+             style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-12.jpg);">
         <div class="shell">
             <h2 class="breadcrumbs-custom__title"><? echo the_title() ?></h2>
             <ul class="breadcrumbs-custom__path">
