@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <!-- Breadcrumbs-->
-    <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-6.jpg);">
+    <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/contact.png);">
         <div class="shell">
             <h2 class="breadcrumbs-custom__title">Контакты</h2>
             <ul class="breadcrumbs-custom__path">
@@ -19,37 +19,7 @@
                         <h3>Напишите нам</h3>
                         <p>Мы доступны по электронной почте или по телефону. Вы также можете воспользоваться быстрой контактной формой, чтобы задать вопрос о наших услугах.</p>
                         <!-- RD Mailform-->
-                        <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                            <div class="range range-sm-bottom range-20">
-                                <div class="cell-sm-6">
-                                    <div class="form-wrap">
-                                        <input class="form-input" id="contact-first-name" type="text" name="first-name" data-constraints="@Required">
-                                        <label class="form-label" for="contact-first-name">Как Вас зовут?</label>
-                                    </div>
-                                </div>
-                                <div class="cell-sm-6">
-                                    <div class="form-wrap">
-                                        <input class="form-input" id="contact-phone" type="text" name="phone" data-constraints="@Numeric @Required">
-                                        <label class="form-label" for="contact-phone">Телефон</label>
-                                    </div>
-                                </div>
-                                <div class="cell-xs-12">
-                                    <div class="form-wrap">
-                                        <label class="form-label" for="contact-message">Ваше сообщение</label>
-                                        <textarea class="form-input" id="contact-message" name="message" data-constraints="@Required"></textarea>
-                                    </div>
-                                </div>
-                                <div class="cell-sm-6">
-                                    <div class="form-wrap">
-                                        <input class="form-input" id="contact-email" type="email" name="email" data-constraints="@Email @Required">
-                                        <label class="form-label" for="contact-email">E-mail</label>
-                                    </div>
-                                </div>
-                                <div class="cell-sm-6">
-                                    <button class="button button-block button-primary" type="submit">Отправить сообщение</button>
-                                </div>
-                            </div>
-                        </form>
+                        <?php echo do_shortcode( '[contact-form-7 id="171" title="Связаться с нами"]' ); ?>
                     </div>
                 </div>
                 <div class="layout-bordered__aside">

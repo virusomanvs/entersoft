@@ -1,6 +1,6 @@
 <?php
 function enqueue_styles() {
-wp_enqueue_style( 'whitesquare-style', get_stylesheet_uri());
+//wp_enqueue_style( 'whitesquare-style', get_stylesheet_uri());
 wp_enqueue_style( 'font-style');
 }
 add_action('wp_enqueue_scripts', 'enqueue_styles');

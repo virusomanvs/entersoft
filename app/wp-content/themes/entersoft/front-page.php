@@ -201,7 +201,7 @@
             <div class="isotope" data-isotope-layout="masonry" data-isotope-group="projects">
                 <div class="row row-no-gutter">
                     <div class="col-xs-6 col-md-4 isotope-item">
-                        <!-- Thumb Zoe--><a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-1-639x524.jpg" alt="" width="639" height="524"/>
+                        <!-- Thumb Zoe <?php bloginfo('template_url'); ?>/images/project-1-639x524.jpg--><a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="http://via.placeholder.com/639x524" alt="" width="639" height="524"/>
                             <div class="thumb-zoe__caption">
                                 <p class="thumb-zoe__title">New Office Co.</p>
                             </div></a>
@@ -235,7 +235,7 @@
         </div>
     </section>
 
-    <!-- Stocks Rating-->
+    <!-- Stocks Rating
     <section class="section section-lg bg-white">
         <div class="shell shell-wide">
             <div class="range range-md-center">
@@ -262,7 +262,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Our Professionals
     <section class="section parallax-container bg-gray-dark">
