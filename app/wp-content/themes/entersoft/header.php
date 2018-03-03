@@ -71,7 +71,7 @@
                                 <li>
                                     <div class="unit unit-spacing-xxs unit-horizontal">
                                         <div class="unit__left"><span class="text-primary">Телефон:</span></div>
-                                        <div class="unit__body"><a href="callto:+7 (7222) 56-20-27">+7 (7222) 56-20-27</a>,&nbsp;</div>
+                                        <div class="unit__body"><a href="callto:+7 (7222) 56-33-70">+7 (7222) 56-33-70</a>,&nbsp;</div>
                                         <div class="unit__body"><a href="callto:+7 (7222) 52-31-16">+7 (7222) 52-31-16</a></div>
                                     </div>
                                     <!--<div class="unit unit-spacing-xxs unit-horizontal">

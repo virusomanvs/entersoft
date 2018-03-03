@@ -62,24 +62,7 @@
                 </div>
                 <div class="cell-xs-10 cell-sm-6 cell-md-3 cell-lg-3 cell-xl-2 footer-corporate__column">
                     <h4 class="heading-bordered">Проверка ИТС</h4>
-                    <p>Вы можете проверить наличие подписки на ИТС</p>
-                    <!-- RD Mailform
-						<form id="check" name="check" onsubmit="return false;">
-							<div style="padding-top:10px;">
-								<font style="color: #666666;"><i>Введите регистрационный номер Вашего программного продукта в форму ниже:</i></font>
-							</div>
-							<div style="padding-top:10px; padding-bottom:10px;">
-								<div style="width:auto; float:left; padding-top:1px;">
-									<input maxlength="15" name="rn" size="15" type="text">
-								</div>
-								<div style="width:auto; float:left; padding-left:3px;">
-									<button id="check-btn" onclick="doCheck()" type="button">проверить</button>
-								</div>
-							</div>
-							<div class="divider-block"></div>
-							<div id="check-mess" style="padding-top:10px;">
-							</div>
-						</form>-->
+                    <p>Вы можете проверить наличие договора на ИТС</p>
                     <form class="rd-mailform rd-mailform_sm rd-mailform_centered box-width-2" id="check" name="check" onsubmit="return false;">
                         <div class="form-wrap">
                             <input class="form-input" id="its-code" maxlength="15" name="rn" size="15" type="text" data-constraints="@Required">

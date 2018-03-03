@@ -25,7 +25,8 @@
                 </div>
                 <div class="cell-sm-10 cell-md-6">
                     <div class="row grid-2">
-                        <div class="col-xs-6"><img src="<?php bloginfo('template_url'); ?>/images/about-1-273x214.jpg" alt="" width="273" height="214"/><img src="<?php bloginfo('template_url'); ?>/images/about-2-273x214.jpg" alt="" width="273" height="214"/>
+                        <div class="col-xs-6"><img src="<?php bloginfo('template_url'); ?>/images/about/1c_about.jpg" alt="" width="273" height="214"/>
+						<img src="<?php bloginfo('template_url'); ?>/images/about/service.jpg" alt="" width="273" height="214"/>
                         </div>
                         <div class="col-xs-6"><img src="<?php bloginfo('template_url'); ?>/images/about-3-273x451.jpg" alt="" width="273" height="451"/>
                         </div>
