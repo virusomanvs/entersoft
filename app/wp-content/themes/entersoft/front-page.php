@@ -105,33 +105,6 @@
             </div>
         </div>
     </section>
-    <!-- Experience since 1999
-    <section class="section section-md bg-white">
-        <div class="bg-gray-4">
-            <div class="shell-fluid shell-condensed">
-                <div class="range range-30 range-md-reverse">
-                    <div class="cell-sm-12 cell-md-6">
-                        <div class="section-md shell-fluid-cell">
-                            <div class="box-centered box-width-1 box-custom">
-                                <h2><span>Experience</span><span class="object-decorated object-decorated_inline" style="max-width: 125px;"><span class="heading-5">since 2006</span></span></h2>
-                                <p>Our company has been the leading provider of advertising services to American companies since 2006. We pay attention to every aspect of our work.</p>
-                                <div class="group-md group-middle button-group"><a class="button button-darker" href="contacts.html">get a quote</a>
-                                    <p>or</p><a class="button button-primary" href="#">get a brochure</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cell-sm-12 cell-md-6 reveal-flex">
-                        <div class="thumb-video"><img class="thumb-video__image" src="<?php bloginfo('template_url'); ?>/images/video-preview-962x465.jpg" alt="" width="962" height="465"/>
-                            <div class="thumb-video__caption"><a class="thumb-video__button" href="../../https@vimeo.com/108425305" data-lightgallery="item" data-src="//vimeo.com/108425305"></a>
-                                <h4 class="thumb-video__title">Video Presentation</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
 
     <!-- Counters-->
     <section class="section parallax-container bg-gray-dark">
@@ -202,7 +175,7 @@
             <div class="isotope" data-isotope-layout="masonry" data-isotope-group="projects">
                 <div class="row row-no-gutter">
                     <div class="col-xs-6 col-md-4 isotope-item">
-                        <!-- Thumb Zoe <?php bloginfo('template_url'); ?>/images/project-1-639x524.jpg--><a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="http://via.placeholder.com/639x524" alt="" width="639" height="524"/>
+                        <!-- Thumb Zoe <?php bloginfo('template_url'); ?>/images/project-1-639x524.jpg--><a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="https://via.placeholder.com/639x524" alt="" width="639" height="524"/>
                             <div class="thumb-zoe__caption">
                                 <p class="thumb-zoe__title">New Office Co.</p>
                             </div></a>
@@ -236,105 +209,6 @@
         </div>
     </section>
 
-    <!-- Stocks Rating
-    <section class="section section-lg bg-white">
-        <div class="shell shell-wide">
-            <div class="range range-md-center">
-                <div class="cell-lg-11">
-                    <div class="range range-sm-center range-md-left range-md-middle range-50">
-                        <div class="cell-sm-10 cell-md-5 cell-lg-5">
-                            <h2>Почему Мы?</h2>
-                            <p>
-							Мы привносим наш разнообразный опыт рекламы, дизайна, брендинга,
-							связей с общественностью, исследований и стратегического планирования для работы 
-							в вашей компании. Мало того, что ваши материалы выглядят великолепно - они получат результаты. 
-							Мы не создаем концепции в вакууме - они вписываются в стандарты вашей отрасли. И как только у 
-							нас будет общая картина вашей компании, 
-							ее целевой аудитории и целей, мы создадим подробный план, включающий обязательство оставаться в бюджете.
-							</p>
-							<a class="button button-dark-outline" href="statistics.html">Просмотреть статистику</a>
-                        </div>
-                        <div class="cell-sm-10 cell-md-7 cell-xl-6">
-                            <div class="box-spacer-left box-spacer-left-lg">
-                                <div class="d3-chart" id="line-chart" style="width:100%;height: 370px; margin: 0 auto;"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    <!-- Our Professionals
-    <section class="section parallax-container bg-gray-dark">
-        <div class="material-parallax"><img src="<?php bloginfo('template_url'); ?>/images/bg-image-3.jpg" alt=""/></div>
-        <div class="parallax-content">
-            <div class="section-sm text-center">
-                <div class="shell shell-wide">
-                    <div class="range range-md-center">
-                        <div class="cell-lg-11">
-                            <!-- Section Header--
-                            <div class="section__header section_header-noborder">
-                                <h2>Our Professionals</h2>
-                                <div class="section__header-element"><a class="link link-arrow" href="team.html"><span>View All Team</span></a></div>
-                            </div>
-                            <div class="range range-30 range-flex">
-                                <div class="cell-sm-6 cell-lg-3">
-                                    <!-- Card creative--
-                                    <article class="card-creative">
-                                        <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-1-115x119.jpg" alt="" width="115" height="119"/>
-                                        </div>
-                                        <div class="card-creative__main" data-fixed-height="">
-                                            <p class="card-creative__title">Sam Wilson</p>
-                                            <p class="card-creative__subtitle">Founder, CEO</p>
-                                            <div class="card-creative__element"><a href="mailto:#">info@demolink.org</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="cell-sm-6 cell-lg-3">
-                                    <!-- Card creative--
-                                    <article class="card-creative">
-                                        <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-2-115x119.jpg" alt="" width="115" height="119"/>
-                                        </div>
-                                        <div class="card-creative__main" data-fixed-height="">
-                                            <p class="card-creative__title">Jeffrey Neddery</p>
-                                            <p class="card-creative__subtitle">Business Development Manager</p>
-                                            <div class="card-creative__element"><a href="mailto:#">info@demolink.org</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="cell-sm-6 cell-lg-3">
-                                    <!-- Card creative--
-                                    <article class="card-creative">
-                                        <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-3-115x119.jpg" alt="" width="115" height="119"/>
-                                        </div>
-                                        <div class="card-creative__main" data-fixed-height="">
-                                            <p class="card-creative__title">Peter Wilson</p>
-                                            <p class="card-creative__subtitle">Project Manager</p>
-                                            <div class="card-creative__element"><a href="mailto:#">info@demolink.org</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-                                <div class="cell-sm-6 cell-lg-3">
-                                    <!-- Card creative--
-                                    <article class="card-creative">
-                                        <div class="card-creative__header"><img src="<?php bloginfo('template_url'); ?>/images/team-4-115x119.jpg" alt="" width="115" height="119"/>
-                                        </div>
-                                        <div class="card-creative__main" data-fixed-height="">
-                                            <p class="card-creative__title">Mary Johnson</p>
-                                            <p class="card-creative__subtitle">Senior Copywriter</p>
-                                            <div class="card-creative__element"><a href="mailto:#">info@demolink.org</a></div>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
     <!-- Clients-->
     <section class="section section-md bg-white text-center">
         <div class="shell shell-wide">
@@ -342,7 +216,7 @@
                 <div class="cell-lg-11">
                     <!-- Section Header-->
                     <div class="section__header">
-                        <h2>Наши Клиенты</h2>
+                        <h2>Нам доверяют</h2>
                         <div class="section__header-element"><a class="link link-arrow" href="/contacts"><span>Оставить отзыв</span></a></div>
                     </div>
                 </div>

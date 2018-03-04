@@ -10,7 +10,124 @@
             </ul>
         </div>
     </section>
-    <!-- Single post-->
+
+    <section class="section section-lg bg-gray-1 text-center">
+        <div class="shell">
+            <div class="range range-md-center">
+                <div class="cell-md-12 cell-lg-12">
+                    <h4>ПРОГРАММНЫЕ ПРОДУКТЫ 1С-РЕЙТИНГ</h4>
+                    <!-- Bootstrap collapse-->
+                    <div class="panel-group panel-group-custom panel-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
+                        <?
+                        $id_news = 8; // ID категории
+                        $perpage = 3; // Кол-во записей на странице
+                        $temp = $wp_query; $wp_query= null;
+                        $wp_query = new WP_Query(); $wp_query->query('cat='.$id_news);
+                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+                            <!-- Bootstrap panel-->
+                            <div class="panel panel-custom panel-corporate">
+                                <div class="panel-heading" id="<?php echo the_field('uniq_price') ?>_heading" role="tab">
+                                    <div class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#<?php echo the_field('uniq_price') ?>" href="#<?php echo the_field('uniq_price') ?>_coll" aria-controls="<?php echo the_field('uniq_price') ?>_coll">
+                                            <?php the_title(); ?>
+                                            <div class="panel-arrow"></div></a>
+                                    </div>
+                                </div>
+                                <div class="panel-collapse collapse" id="<?php echo the_field('uniq_price') ?>_coll" role="tabpanel" aria-labelledby="<?php echo the_field('uniq_price') ?>_heading">
+                                    <div class="panel-body">
+                                        <p><?php echo the_field('tech_price') ?></p>
+                                        <?php the_content(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    </div>
+                    <h4>1С:ПРЕДПРИЯТИЕ 8</h4>
+                    <!-- Bootstrap collapse-->
+                    <div class="panel-group panel-group-custom panel-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
+                        <?
+                        $id_news = 9; // ID категории новостей
+                        $perpage = 3; // Кол-во записей на странице
+                        $temp = $wp_query; $wp_query= null;
+                        $wp_query = new WP_Query(); $wp_query->query('cat='.$id_news);
+                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+                            <!-- Bootstrap panel-->
+                            <div class="panel panel-custom panel-corporate">
+                                <div class="panel-heading" id="<?php echo the_field('uniq_price') ?>_heading" role="tab">
+                                    <div class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#<?php echo the_field('uniq_price') ?>" href="#<?php echo the_field('uniq_price') ?>_coll" aria-controls="<?php echo the_field('uniq_price') ?>_coll">
+                                            <?php the_title(); ?>
+                                            <div class="panel-arrow"></div></a>
+                                    </div>
+                                </div>
+                                <div class="panel-collapse collapse" id="<?php echo the_field('uniq_price') ?>_coll" role="tabpanel" aria-labelledby="<?php echo the_field('uniq_price') ?>_heading">
+                                    <div class="panel-body">
+                                        <p><?php echo the_field('tech_price') ?></p>
+                                        <?php the_content(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    </div>
+                    <h4>ДОПОЛНИТЕЛЬНЫЕ ПРОГРАММНО-МЕТОДИЧЕСКИЕ МОДУЛИ</h4>
+                    <!-- Bootstrap collapse-->
+                    <div class="panel-group panel-group-custom panel-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
+                        <?
+                        $id_news = 10; // ID категории новостей
+                        $perpage = 3; // Кол-во записей на странице
+                        $temp = $wp_query; $wp_query= null;
+                        $wp_query = new WP_Query(); $wp_query->query('cat='.$id_news);
+                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+                            <!-- Bootstrap panel-->
+                            <div class="panel panel-custom panel-corporate">
+                                <div class="panel-heading" id="<?php echo the_field('uniq_price') ?>_heading" role="tab">
+                                    <div class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#<?php echo the_field('uniq_price') ?>" href="#<?php echo the_field('uniq_price') ?>_coll" aria-controls="<?php echo the_field('uniq_price') ?>_coll">
+                                            <?php the_title(); ?>
+                                            <div class="panel-arrow"></div></a>
+                                    </div>
+                                </div>
+                                <div class="panel-collapse collapse" id="<?php echo the_field('uniq_price') ?>_coll" role="tabpanel" aria-labelledby="<?php echo the_field('uniq_price') ?>_heading">
+                                    <div class="panel-body">
+                                        <p><?php echo the_field('tech_price') ?></p>
+                                        <?php the_content(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    </div>
+                    <h4>ОТРАСЛЕВЫЕ РЕШЕНИЯ ПАРТНЕРОВ 1С</h4>
+                    <!-- Bootstrap collapse-->
+                    <div class="panel-group panel-group-custom panel-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
+                        <?
+                        $id_news = 12; // ID категории новостей
+                        $perpage = 3; // Кол-во записей на странице
+                        $temp = $wp_query; $wp_query= null;
+                        $wp_query = new WP_Query(); $wp_query->query('cat='.$id_news);
+                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+                            <!-- Bootstrap panel-->
+                            <div class="panel panel-custom panel-corporate">
+                                <div class="panel-heading" id="<?php echo the_field('uniq_price') ?>_heading" role="tab">
+                                    <div class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#<?php echo the_field('uniq_price') ?>" href="#<?php echo the_field('uniq_price') ?>_coll" aria-controls="<?php echo the_field('uniq_price') ?>_coll">
+                                            <?php the_title(); ?>
+                                            <div class="panel-arrow"></div></a>
+                                    </div>
+                                </div>
+                                <div class="panel-collapse collapse" id="<?php echo the_field('uniq_price') ?>_coll" role="tabpanel" aria-labelledby="<?php echo the_field('uniq_price') ?>_heading">
+                                    <div class="panel-body">
+                                        <p><?php echo the_field('tech_price') ?></p>
+                                        <?php the_content(); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Single post--
     <section class="section section-md bg-white">
         <div class="shell blog">
             <div class="range range-90">
@@ -18,6 +135,8 @@
                     <article class="post-single">
                         <h3 class="post-single__title"><? echo the_title() ?></h3>
                         <div class="post-single__main">
+                            <!-- Accordion--
+
 												<?php
 							// Start the loop.
 							while ( have_posts() ) : the_post();
@@ -28,6 +147,7 @@
 								// End the loop.
 							endwhile;
 							?>
+
                         </div>
                     </article>
 
@@ -41,11 +161,11 @@
                                 <li><a href="#"><span>Brand Marketing</span><span class="count">(2)</span></a></li>
                                 <li><a href="#"><span>Media Buying</span><span class="count">(6)</span></a></li>
                             </ul>
-                        </div>-->
+                        </div>--
                         <div class="blog__aside-item">
                             <p class="heading-8 blog-title">Последние новости</p>
                             <div class="post-inline-wrap">
-                                <!-- Post inline-->
+                                <!-- Post inline--
                                 <?php query_posts('orderby=rand&showposts=2&cat=3'); ?>
                                 <?php if (have_posts()) : ?>
                                     <?php while (have_posts()) : the_post(); ?>
@@ -68,10 +188,10 @@
                                 <div class="box-promo__content">
                                     <h5>Recommendations to Manage Your Campaign</h5>
                                 </div></a>
-                        </div>-->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 <?php get_footer(); ?>
