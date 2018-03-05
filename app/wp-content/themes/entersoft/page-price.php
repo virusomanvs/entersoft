@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
     <!-- Breadcrumbs-->
     <section class="breadcrumbs-custom bg-image"
              style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-12.jpg);">
@@ -10,188 +11,1846 @@
             </ul>
         </div>
     </section>
-
-    <section class="section section-lg bg-gray-1 text-center">
+	
+    <!-- Page title -->
+      <section class="section section-md bg-white text-center">
         <div class="shell">
-            <div class="range range-md-center">
-                <div class="cell-md-12 cell-lg-12">
-                    <h4>ПРОГРАММНЫЕ ПРОДУКТЫ 1С-РЕЙТИНГ</h4>
-                    <!-- Bootstrap collapse-->
-                    <div class="panel-group panel-group-custom panel-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
-                        <?
-                        $id_news = 8; // ID категории
-                        $perpage = 3; // Кол-во записей на странице
-                        $temp = $wp_query; $wp_query= null;
-                        $wp_query = new WP_Query(); $wp_query->query('cat='.$id_news);
-                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-                            <!-- Bootstrap panel-->
-                            <div class="panel panel-custom panel-corporate">
-                                <div class="panel-heading" id="<?php echo the_field('uniq_price') ?>_heading" role="tab">
-                                    <div class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#<?php echo the_field('uniq_price') ?>" href="#<?php echo the_field('uniq_price') ?>_coll" aria-controls="<?php echo the_field('uniq_price') ?>_coll">
-                                            <?php the_title(); ?>
-                                            <div class="panel-arrow"></div></a>
-                                    </div>
-                                </div>
-                                <div class="panel-collapse collapse" id="<?php echo the_field('uniq_price') ?>_coll" role="tabpanel" aria-labelledby="<?php echo the_field('uniq_price') ?>_heading">
-                                    <div class="panel-body">
-                                        <p><?php echo the_field('tech_price') ?></p>
-                                        <?php the_content(); ?>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endwhile; ?>
-                        <?php wp_reset_postdata(); ?>
-                    </div>
-                    <h4>1С:ПРЕДПРИЯТИЕ 8</h4>
-                    <!-- Bootstrap collapse-->
-                    <div class="panel-group panel-group-custom panel-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
-                        <?
-                        $id_news = 9; // ID категории новостей
-                        $perpage = 3; // Кол-во записей на странице
-                        $temp = $wp_query; $wp_query= null;
-                        $wp_query = new WP_Query(); $wp_query->query('cat='.$id_news);
-                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-                            <!-- Bootstrap panel-->
-                            <div class="panel panel-custom panel-corporate">
-                                <div class="panel-heading" id="<?php echo the_field('uniq_price') ?>_heading" role="tab">
-                                    <div class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#<?php echo the_field('uniq_price') ?>" href="#<?php echo the_field('uniq_price') ?>_coll" aria-controls="<?php echo the_field('uniq_price') ?>_coll">
-                                            <?php the_title(); ?>
-                                            <div class="panel-arrow"></div></a>
-                                    </div>
-                                </div>
-                                <div class="panel-collapse collapse" id="<?php echo the_field('uniq_price') ?>_coll" role="tabpanel" aria-labelledby="<?php echo the_field('uniq_price') ?>_heading">
-                                    <div class="panel-body">
-                                        <p><?php echo the_field('tech_price') ?></p>
-                                        <?php the_content(); ?>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endwhile; ?>
-                        <?php wp_reset_postdata(); ?>
-                    </div>
-                    <h4>ДОПОЛНИТЕЛЬНЫЕ ПРОГРАММНО-МЕТОДИЧЕСКИЕ МОДУЛИ</h4>
-                    <!-- Bootstrap collapse-->
-                    <div class="panel-group panel-group-custom panel-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
-                        <?
-                        $id_news = 10; // ID категории новостей
-                        $perpage = 3; // Кол-во записей на странице
-                        $temp = $wp_query; $wp_query= null;
-                        $wp_query = new WP_Query(); $wp_query->query('cat='.$id_news);
-                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-                            <!-- Bootstrap panel-->
-                            <div class="panel panel-custom panel-corporate">
-                                <div class="panel-heading" id="<?php echo the_field('uniq_price') ?>_heading" role="tab">
-                                    <div class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#<?php echo the_field('uniq_price') ?>" href="#<?php echo the_field('uniq_price') ?>_coll" aria-controls="<?php echo the_field('uniq_price') ?>_coll">
-                                            <?php the_title(); ?>
-                                            <div class="panel-arrow"></div></a>
-                                    </div>
-                                </div>
-                                <div class="panel-collapse collapse" id="<?php echo the_field('uniq_price') ?>_coll" role="tabpanel" aria-labelledby="<?php echo the_field('uniq_price') ?>_heading">
-                                    <div class="panel-body">
-                                        <p><?php echo the_field('tech_price') ?></p>
-                                        <?php the_content(); ?>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endwhile; ?>
-                        <?php wp_reset_postdata(); ?>
-                    </div>
-                    <h4>ОТРАСЛЕВЫЕ РЕШЕНИЯ ПАРТНЕРОВ 1С</h4>
-                    <!-- Bootstrap collapse-->
-                    <div class="panel-group panel-group-custom panel-group-corporate" id="accordion1" role="tablist" aria-multiselectable="false">
-                        <?
-                        $id_news = 12; // ID категории новостей
-                        $perpage = 3; // Кол-во записей на странице
-                        $temp = $wp_query; $wp_query= null;
-                        $wp_query = new WP_Query(); $wp_query->query('cat='.$id_news);
-                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-                            <!-- Bootstrap panel-->
-                            <div class="panel panel-custom panel-corporate">
-                                <div class="panel-heading" id="<?php echo the_field('uniq_price') ?>_heading" role="tab">
-                                    <div class="panel-title"><a class="collapsed" role="button" data-toggle="collapse" data-parent="#<?php echo the_field('uniq_price') ?>" href="#<?php echo the_field('uniq_price') ?>_coll" aria-controls="<?php echo the_field('uniq_price') ?>_coll">
-                                            <?php the_title(); ?>
-                                            <div class="panel-arrow"></div></a>
-                                    </div>
-                                </div>
-                                <div class="panel-collapse collapse" id="<?php echo the_field('uniq_price') ?>_coll" role="tabpanel" aria-labelledby="<?php echo the_field('uniq_price') ?>_heading">
-                                    <div class="panel-body">
-                                        <p><?php echo the_field('tech_price') ?></p>
-                                        <?php the_content(); ?>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php endwhile; ?>
-                        <?php wp_reset_postdata(); ?>
-                    </div>
+          <div class="range range-lg-center">
+            <div class="cell-lg-12"> 
+			
+              <!-- Bootstrap tabs -->
+              <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tab_1c_pred" data-toggle="tab">Программы «1C:Предприятие»</a></li>
+                  <li><a href="#tab_sol" data-toggle="tab">Отраслевые решения «1С-Рейтинг»</a></li>
+                </ul>
+						<div class="shell fw-mt-15">
+						  <!-- RD Search-->
+						  <div class="rd-search rd-search_md rd-search_classic">
+							<div class="form-wrap">
+							  <input class="form-input" id="search" type="text" name="search" autocomplete="off" placeholder="Поиск по названию">
+							</div>
+						  </div>
+						</div>
+                <!-- Tab panes-->
+                <div class="tab-content">
+
+                  <div class="tab-pane fade in active" id="tab_1c_pred">
+				  <div class="table-custom-responsive">
+					<table class="table-custom table-custom-bordered" cellspacing="0" id="mytable">
+					<tbody>
+					<tr>
+					<th>Наименование программного продукта</th>
+					<th width="150">Цена, тенге</th>
+					</tr>
+					<tr id="bx_1914200112_169006">
+					<td>1С:Бухгалтерия 8 для Казахстана</td>
+					<td align="right">54 000</td>
+					</tr>
+					<tr id="bx_1914200112_214045">
+					<td>1С:Бухгалтерия 8 для Казахстана (USB)</td>
+					<td align="right">63 600</td>
+					</tr>
+					<tr id="bx_1914200112_169009">
+					<td>1С:Бухгалтерия 8 для Казахстана. Комплект на 5 пользователей</td>
+					<td align="right">126 000</td>
+					</tr>
+					<tr id="bx_1914200112_214049">
+					<td>1С:Бухгалтерия 8 для Казахстана. Комплект на 5 пользователей.(USB)</td>
+					<td align="right">135 600</td>
+					</tr>
+					<tr id="bx_1914200112_169015">
+					<td>1С:Предприятие 8. Зарплата и Управление персоналом для Казахстана</td>
+					<td align="right">75 600</td>
+					</tr>
+					<tr id="bx_1914200112_214053">
+					<td>1С:Предприятие 8. Зарплата и Управление Персоналом для Казахстана (USB)</td>
+					<td align="right">85 200</td>
+					</tr>
+					<tr id="bx_1914200112_214055">
+					<td>1С:Предприятие 8. Зарплата и Управление Персоналом КОРП для Казахстана</td>
+					<td align="right">420 000</td>
+					</tr>
+					<tr id="bx_1914200112_169021">
+					<td>1С:Предприятие 8. Управление нашей фирмой для Казахстана</td>
+					<td align="right">75 600</td>
+					</tr>
+					<tr id="bx_1914200112_169011">
+					<td>1С:Предприятие 8. Бухгалтерский учет для государственных учреждений Казахстана</td>
+					<td align="right">64 800</td>
+					</tr>
+					<tr id="bx_1914200112_214057">
+					<td>1С:Предприятие 8. Бухгалтерский учет для государственных учреждений Казахстана (USB)</td>
+					<td align="right">74 400</td>
+					</tr>
+					<tr id="bx_1914200112_169010">
+					<td>1С:Предприятие 8. Бухгалтерский учет для государственных предприятий Казахстана</td>
+					<td align="right">54 000</td>
+					</tr>
+					<tr id="bx_1914200112_214060">
+					<td>1С:Предприятие 8. Бухгалтерский учет для государственных предприятий Казахстана (USB)</td>
+					<td align="right">63 600</td>
+					</tr>
+					<tr id="bx_1914200112_169016">
+					<td>1С:Предприятие 8. Зарплата и кадры для государственных организаций Казахстана</td>
+					<td align="right">75 600</td>
+					</tr>
+					<tr id="bx_1914200112_214061">
+					<td>1С:Предприятие 8. Зарплата и кадры для государственных организаций Казахстана (USB)</td>
+					<td align="right">85 200</td>
+					</tr>
+					<tr id="bx_1914200112_169019">
+					<td>1С:Предприятие 8. Комплект прикладных решений на 5 пользователей для Казахстана</td>
+					<td align="right">198 000</td>
+					</tr>
+					<tr id="bx_1914200112_214065">
+					<td>1С:Предприятие 8. Комплект прикладных решений на 5 пользователей для Казахстана (USB)</td>
+					<td align="right">207 600</td>
+					</tr>
+					<tr id="bx_1914200112_169022">
+					<td>1С:Предприятие 8. Управление производственным предприятием для Казахстана</td>
+					<td align="right">792 000</td>
+					</tr>
+					<tr id="bx_1914200112_214067">
+					<td>1С:Предприятие 8. Управление производственным предприятием для Казахстана (USB)</td>
+					<td align="right">810 000</td>
+					</tr>
+					<tr id="bx_1914200112_169023">
+					<td>1С:Предприятие 8. Управление производственным предприятием для Казахстана для 10 пользователей + клиент-сервер</td>
+					<td align="right">1 080 000</td>
+					</tr>
+					<tr id="bx_1914200112_214070">
+					<td>1С:Предприятие 8. Управление производственным предприятием для Казахстана для 10 польз + клиент-сервер (USB)</td>
+					<td align="right">1 098 000</td>
+					</tr>
+					<tr id="bx_1914200112_169014">
+					<td>1С:Предприятие 8. Розница для Казахстана</td>
+					<td align="right">54 000</td>
+					</tr>
+					<tr id="bx_1914200112_214072">
+					<td>1C:Предприятие 8. Розница для Казахстана. (USB)</td>
+					<td align="right">63 600</td>
+					</tr>
+					<tr id="bx_1914200112_169013">
+					<td>1С:Предприятие 8. Управление торговлей для Казахстана</td>
+					<td align="right">75 600</td>
+					</tr>
+					<tr id="bx_1914200112_214073">
+					<td>1С:Предприятие 8. Управление торговлей для Казахстана (USB)</td>
+					<td align="right">85 200</td>
+					</tr>
+					<tr id="bx_1914200112_214074">
+					<td>1С:Предприятие 8. Свод отчетов для Казахстана</td>
+					<td align="right">540 000</td>
+					</tr>
+					<tr id="bx_1914200112_214075">
+					<td>1С:Предприятие 8. Свод отчетов для Казахстана (USB)</td>
+					<td align="right">549 600</td>
+					</tr>
+					<tr id="bx_1914200112_221650">
+					<td>1С:Предприятие 8. Клиентская лицензия на 500 рабочих мест (программная защита)</td>
+					<td align="right">8 100 000</td>
+					</tr>
+					<tr id="bx_1914200112_169051">
+					<td>1С:Предприятие 8. Клиентская лицензия на 500 рабочих мест (USB)</td>
+					<td align="right">9 720 000</td>
+					</tr>
+					<tr id="bx_1914200112_221649">
+					<td>1С:Предприятие 8. Клиентская лицензия на 300 рабочих мест (программная защита)</td>
+					<td align="right">4 860 000</td>
+					</tr>
+					<tr id="bx_1914200112_169050">
+					<td>1С:Предприятие 8. Клиентская лицензия на 300 рабочих мест (USB)</td>
+					<td align="right">5 832 000</td>
+					</tr>
+					<tr id="bx_1914200112_221648">
+					<td>1С:Предприятие 8. Клиентская лицензия на 100 рабочих мест (программная защита)</td>
+					<td align="right">1 620 000</td>
+					</tr>
+					<tr id="bx_1914200112_169049">
+					<td>1С:Предприятие 8 Клиентская лицензия на 100 рабочих мест (USB)</td>
+					<td align="right">1 944 000</td>
+					</tr>
+					<tr id="bx_1914200112_221647">
+					<td>1С:Предприятие 8. Клиентская лицензия на 50 рабочих мест (программная защита)</td>
+					<td align="right">828 000</td>
+					</tr>
+					<tr id="bx_1914200112_169048">
+					<td>1С:Предприятие 8 Клиентская лицензия на 50 рабочих мест (USB)</td>
+					<td align="right">993 600</td>
+					</tr>
+					<tr id="bx_1914200112_221646">
+					<td>1С:Предприятие 8. Клиентская лицензия на 20 рабочих мест (программная защита)</td>
+					<td align="right">342 000</td>
+					</tr>
+					<tr id="bx_1914200112_169047">
+					<td>1С:Предприятие 8. Клиентская лицензия на 20 рабочих мест (USB)</td>
+					<td align="right">428 400</td>
+					</tr>
+					<tr id="bx_1914200112_221645">
+					<td>1С:Предприятие 8. Клиентская лицензия на 10 рабочих мест (программная защита)</td>
+					<td align="right">180 000</td>
+					</tr>
+					<tr id="bx_1914200112_169046">
+					<td>1С:Предприятие 8. Клиентская лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">225 600</td>
+					</tr>
+					<tr id="bx_1914200112_221644">
+					<td>1С:Предприятие 8. Клиентская лицензия на 5 рабочих мест (программная защита)</td>
+					<td align="right">93 600</td>
+					</tr>
+					<tr id="bx_1914200112_169043">
+					<td>1С:Предприятие 8. Клиентская лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">122 400</td>
+					</tr>
+					<tr id="bx_1914200112_221643">
+					<td>1С:Предприятие 8. Клиентская лицензия на 1 рабочее место (программная защита)</td>
+					<td align="right">27 000</td>
+					</tr>
+					<tr id="bx_1914200112_169042">
+					<td>1С:Предприятие 8. Клиентская лицензия на 1 рабочее место (USB)</td>
+					<td align="right">36 000</td>
+					</tr>
+					<tr id="bx_1914200112_303800">
+					<td>1С:Бухгалтерия строительной организации для Казахстана</td>
+					<td align="right">126 000</td>
+					</tr>
+					<tr id="bx_1914200112_303802">
+					<td>1С:Предприятие 8. Бухгалтерия строительной организации для Казахстана. Поставка на 5 пользователей</td>
+					<td align="right">254 000</td>
+					</tr>
+					<tr id="bx_1914200112_303803">
+					<td>1С:Бухгалтерия строительной организации для Казахстана. Клиентская лицензия на 1 рабочее место</td>
+					<td align="right">25 410</td>
+					</tr>
+					<tr id="bx_1914200112_303804">
+					<td>1С:Бухгалтерия строительной организации для Казахстана. Клиентская лицензия на 5 рабочих мест</td>
+					<td align="right">118 800</td>
+					</tr>
+					<tr id="bx_1914200112_303805">
+					<td>1С:Бухгалтерия строительной организации для Казахстана. Клиентская лицензия на 10 рабочих мест</td>
+					<td align="right">224 400</td>
+					</tr>
+					<tr id="bx_1914200112_303806">
+					<td>1С:Бухгалтерия строительной организации для Казахстана. Клиентская лицензия на 20 рабочих мест</td>
+					<td align="right">430 860</td>
+					</tr>
+					<tr id="bx_1914200112_375018">
+					<td>1С:Предприятие 8.3. Версия для обучения программированию</td>
+					<td align="right">4 890</td>
+					</tr>
+					<tr id="bx_1914200112_375017">
+					<td>1С:Предприятие 8. Розница для Казахстана. Базовая версия</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_375016">
+					<td>1С:Предприятие 8. Управление нашей фирмой для Казахстана. Базовая версия</td>
+					<td align="right">25 200</td>
+					</tr>
+					<tr id="bx_1914200112_371199">
+					<td>1С:Предприятие 8. Конфигурация «Модуль «Бюджетирование» для 1С:КА 8 для Казахстана»</td>
+					<td align="right">350 000</td>
+					</tr>
+					<tr id="bx_1914200112_368214">
+					<td>1С:Предприятие 8.3 КОРП Лицензия на сервер(x86-64) (USB)</td>
+					<td align="right">1 080 000</td>
+					</tr>
+					<tr id="bx_1914200112_368213">
+					<td>1С:Предприятие 8.3 КОРП Лицензия на сервер(x86-64)</td>
+					<td align="right">900 000</td>
+					</tr>
+					<tr id="bx_1914200112_368212">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 500 рабочих мест(USB)</td>
+					<td align="right">17 760 000</td>
+					</tr>
+					<tr id="bx_1914200112_368211">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 500 рабочих мест</td>
+					<td align="right">14 805 000</td>
+					</tr>
+					<tr id="bx_1914200112_368210">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 300 рабочих мест(USB)</td>
+					<td align="right">10 680 000</td>
+					</tr>
+					<tr id="bx_1914200112_368209">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 300 рабочих мест</td>
+					<td align="right">8 910 000</td>
+					</tr>
+					<tr id="bx_1914200112_368208">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 100 рабочих мест(USB)</td>
+					<td align="right">3 600 000</td>
+					</tr>
+					<tr id="bx_1914200112_368206">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 100 рабочих мест</td>
+					<td align="right">3 000 000</td>
+					</tr>
+					<tr id="bx_1914200112_368205">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 50 рабочих мест(USB)</td>
+					<td align="right">1 872 000</td>
+					</tr>
+					<tr id="bx_1914200112_368204">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 50 рабочих мест</td>
+					<td align="right">1 560 000</td>
+					</tr>
+					<tr id="bx_1914200112_368203">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 20 рабочих мест(USB)</td>
+					<td align="right">810 000</td>
+					</tr>
+					<tr id="bx_1914200112_368202">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 20 рабочих мест</td>
+					<td align="right">645 000</td>
+					</tr>
+					<tr id="bx_1914200112_368201">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 10 рабочих мест(USB)</td>
+					<td align="right">432 000</td>
+					</tr>
+					<tr id="bx_1914200112_368200">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 10 рабочих мест</td>
+					<td align="right">345 000</td>
+					</tr>
+					<tr id="bx_1914200112_368199">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 5 рабочих мест(USB)</td>
+					<td align="right">234 000</td>
+					</tr>
+					<tr id="bx_1914200112_368198">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на 5 рабочих мест</td>
+					<td align="right">180 000</td>
+					</tr>
+					<tr id="bx_1914200112_368197">
+					<td>1С:Предприятие 8 КОРП Клиентская лицензия на одно рабочее место(USB)</td>
+					<td align="right">67 500</td>
+					</tr>
+					<tr id="bx_1914200112_368196">
+					<td>1С:Предприятие 8 КОРП. Клиентская лицензия на на одно рабочее место</td>
+					<td align="right">51 000</td>
+					</tr>
+					<tr id="bx_1914200112_368195">
+					<td>1С:Предприятие 8.3 Лицензия на сервер(x86-64)</td>
+					<td align="right">360 000</td>
+					</tr>
+					<tr id="bx_1914200112_368194">
+					<td>1С:Предприятие 8.3 Лицензия на сервер</td>
+					<td align="right">210 000</td>
+					</tr>
+					<tr id="bx_1914200112_368193">
+					<td>1С:Предприятие 8.3. Сервер МИНИ на 5 подключений</td>
+					<td align="right">72 000</td>
+					</tr>
+					<tr id="bx_1914200112_368192">
+					<td>1С:Комплексная автоматизация 8 для Казахстана на 10 пользователей + клиент-сервер. Редакция 2 (USB)</td>
+					<td align="right">900 000</td>
+					</tr>
+					<tr id="bx_1914200112_368191">
+					<td>1С:Комплексная автоматизация 8 для Казахстана. Редакция 2 (USB)</td>
+					<td align="right">504 000</td>
+					</tr>
+					<tr id="bx_1914200112_368190">
+					<td>1С:Комплексная автоматизация 8 для Казахстана на 10 пользователей + клиент-сервер. Редакция 2</td>
+					<td align="right">750 000</td>
+					</tr>
+					<tr id="bx_1914200112_368189">
+					<td>1С:Комплексная автоматизация 8 для Казахстана. Редакция 2</td>
+					<td align="right">420 000</td>
+					</tr>
+					<tr id="bx_1914200112_368188">
+					<td>1С:Предприятие 8. Управление холдингом для Казахстана. Лицензия для дочерних обществ и филиалов</td>
+					<td align="right">750 000</td>
+					</tr>
+					<tr id="bx_1914200112_368187">
+					<td>1С:Предприятие 8. Управление холдингом для Казахстана</td>
+					<td align="right">4 950 000</td>
+					</tr>
+					<tr id="bx_1914200112_368186">
+					<td>1С:Предприятие 8. ERP Управление предприятием 2 для Казахстана</td>
+					<td align="right">2 500 000</td>
+					</tr>
+					<tr id="bx_1914200112_261709">
+					<td>1С:Предприятие 8. CRM СТАНДАРТ для Казахстана. Комплект на 5 пользователей</td>
+					<td align="right">120 600</td>
+					</tr>
+					<tr id="bx_1914200112_223016">
+					<td>1С:Предприятие 8. Бухгалтерский учет для государственных учреждений Казахстана. Комплект на 5 пользователей</td>
+					<td align="right">138 000</td>
+					</tr>
+					<tr id="bx_1914200112_169080">
+					<td>1С:Бухгалтерия сельскохозяйственного предприятия для Казахстана, клиентская лицензия на 10 рабочих мест</td>
+					<td align="right">184 800</td>
+					</tr>
+					<tr id="bx_1914200112_169079">
+					<td>1С:Бухгалтерия сельскохозяйственного предприятия для Казахстана, клиентская лицензия на 5 рабочих мест</td>
+					<td align="right">96 000</td>
+					</tr>
+					<tr id="bx_1914200112_169078">
+					<td>1С:Бухгалтерия сельскохозяйственного предприятия для Казахстана, клиентская лицензия на 1 рабочее место</td>
+					<td align="right">23 400</td>
+					</tr>
+					<tr id="bx_1914200112_169072">
+					<td>1С:Предприятие 8. CRM ПРОФ для Казахстана. Многопользовательская лицензия на 50 рабочих мест</td>
+					<td align="right">1 080 000</td>
+					</tr>
+					<tr id="bx_1914200112_169071">
+					<td>1С:Предприятие 8. CRM ПРОФ для Казахстана. Многопользовательская лицензия на 20 рабочих мест</td>
+					<td align="right">450 000</td>
+					</tr>
+					<tr id="bx_1914200112_169070">
+					<td>1С:Предприятие 8. CRM ПРОФ для Казахстана. Многопользовательская лицензия на 10 рабочих мест</td>
+					<td align="right">234 000</td>
+					</tr>
+					<tr id="bx_1914200112_169069">
+					<td>1С:Предприятие 8. CRM ПРОФ для Казахстана. Многопользовательская лицензия на 5 рабочих мест</td>
+					<td align="right">126 000</td>
+					</tr>
+					<tr id="bx_1914200112_169068">
+					<td>1С:Предприятие 8. CRM ПРОФ для Казахстана. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">27 000</td>
+					</tr>
+					<tr id="bx_1914200112_169067">
+					<td>1С:Консолидация 8 ПРОФ. Лицензия для удаленного офиса (только по индивидуальному заказу для пользователей основной поставки 1С:Консолидация 8 ПРОФ)</td>
+					<td align="right">180 000</td>
+					</tr>
+					<tr id="bx_1914200112_169066">
+					<td>1С:Консолидация 8 ПРОФ. Лицензия для ноутбука (только по индивидуальному заказу для пользователей основной поставки 1С:Консолидация 8 ПРОФ)</td>
+					<td align="right">35 000</td>
+					</tr>
+					<tr id="bx_1914200112_169065">
+					<td>1С:Консолидация 8. Дополнительные лицензии для ноутбука (только по индивидуальному заказу для пользователей основной поставки 1С:Консолидация 8)</td>
+					<td align="right">17 500</td>
+					</tr>
+					<tr id="bx_1914200112_169064">
+					<td>1С:Предприятие 8. Расширение для карманных компьютеров. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">7 000</td>
+					</tr>
+					<tr id="bx_1914200112_169060">
+					<td>1С:Предприятие 8. Управление производственным предприятием для Казахстана. Лицензия для удаленного офиса (только по индивидуальному заказу для пользователей основных поставок УПП)</td>
+					<td align="right">180 000</td>
+					</tr>
+					<tr id="bx_1914200112_169059">
+					<td>1С:Предприятие 8. Управление производственным предприятием для Казахстана. Лицензия для ноутбука (только по индивидуальному заказу для пользователей основных поставок УПП)</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_169058">
+					<td>1С:Предприятие 8.2. Лицензия на сервер (x86-64)</td>
+					<td align="right">360 000</td>
+					</tr>
+					<tr id="bx_1914200112_169054">
+					<td>1С:Предприятие 8.2. Лицензия на сервер</td>
+					<td align="right">210 000</td>
+					</tr>
+					<tr id="bx_1914200112_169053">
+					<td>1С:Предприятие 8.2. Лицензия на сервер(х86-64)(USB)</td>
+					<td align="right">432 000</td>
+					</tr>
+					<tr id="bx_1914200112_169052">
+					<td>1С:Предприятие 8.2. Лицензия на сервер (USB)</td>
+					<td align="right">252 000</td>
+					</tr>
+					<tr id="bx_1914200112_169040">
+					<td>1С:Предприятие 8. Бухгалтерия сельскохозяйственного предприятия для Казахстана для 5 пользователей</td>
+					<td align="right">237 600</td>
+					</tr>
+					<tr id="bx_1914200112_169039">
+					<td>1С:Предприятие 8. Бухгалтерия сельскохозяйственного предприятия для Казахстана. Основная поставка</td>
+					<td align="right">158 400</td>
+					</tr>
+					<tr id="bx_1914200112_169038">
+					<td>1С:Предприятие 8.2 Технологическая поставка</td>
+					<td align="right">68 200</td>
+					</tr>
+					<tr id="bx_1914200112_169037">
+					<td>1С:Предприятие 8.2. Обновление платформы (по одному комплекту на зарегистрированную основную поставку «1С:Предприятия» версий 8.0 или 8.1(не базовых версий) при наличии действующей подписки на ИТС)</td>
+					<td align="right">8 280</td>
+					</tr>
+					<tr id="bx_1914200112_169035">
+					<td>1С:Предприятие 8. Управление Проектным Офисом. Основная поставка</td>
+					<td align="right">170 775</td>
+					</tr>
+					<tr id="bx_1914200112_169033">
+					<td>1С:Предприятие 8. Расширение для карманных компьютеров (включает лицензию на 5 КПК)</td>
+					<td align="right">112 750</td>
+					</tr>
+					<tr id="bx_1914200112_169031">
+					<td>1С:Предприятие 8. Комплект специалиста по разработке и внедрению для Казахстана (продажа только для слушателей ЦСО и 1С-УЦ по предварительным заявкам)</td>
+					<td align="right">17 820</td>
+					</tr>
+					<tr id="bx_1914200112_169027">
+					<td>1С:Документооборот 8 ПРОФ (USB)</td>
+					<td align="right">165 000</td>
+					</tr>
+					<tr id="bx_1914200112_169026">
+					<td>1С:Документооборот 8 КОРП</td>
+					<td align="right">800 000</td>
+					</tr>
+					<tr id="bx_1914200112_169025">
+					<td>1С:Консолидация 8. ПРОФ (USB)</td>
+					<td align="right">2 160 000</td>
+					</tr>
+					<tr id="bx_1914200112_169020">
+					<td>1С:Предприятие 8. CRM ПРОФ для Казахстана. Основная поставка</td>
+					<td align="right">54 000</td>
+					</tr>
+					<tr id="bx_1914200112_169012">
+					<td>1C:Предприятие 8. Управление торговлей для Казахстана. Базовая версия</td>
+					<td align="right">25 200</td>
+					</tr>
+					<tr id="bx_1914200112_169005">
+					<td>1С:Бухгалтерия 8 для Казахстана. Базовая версия</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_169004">
+					<td>1С:Бухгалтерия 8 для Казахстана. Учебная версия. 2-е издание</td>
+					<td align="right">1 800</td>
+					</tr>
+					<tr id="bx_1914200112_275278">
+					<td>Лицензия на сервер MS SQL Server 2014 Standard Runtime для пользователей 1С:Предприятие 8</td>
+					<td align="right">141 938</td>
+					</tr>
+					<tr id="bx_1914200112_275279">
+					<td>Клиентский доступ на 1 рабочее место к MS SQL Server 2014 Runtime для 1С:Предприятие 8</td>
+					<td align="right">63 874</td>
+					</tr>
+					<tr id="bx_1914200112_275280">
+					<td>Клиентский доступ на 5 рабочих мест к MS SQL Server 2014 Runtime для 1С:Предприятие 8</td>
+					<td align="right">319 357</td>
+					</tr>
+					<tr id="bx_1914200112_275281">
+					<td>Клиентский доступ на 10 рабочих мест к MS SQL Server 2014 Runtime для 1С:Предприятие 8</td>
+					<td align="right">638 714</td>
+					</tr>
+					<tr id="bx_1914200112_275282">
+					<td>Клиентский доступ на 20 рабочих мест к MS SQL Server 2014 Runtime для 1С:Предприятие 8</td>
+					<td align="right">1 277 433</td>
+					</tr>
+					<tr id="bx_1914200112_275283">
+					<td>Клиентский доступ на 50 рабочих мест к MS SQL Server 2014 Runtime для 1С:Предприятие 8</td>
+					<td align="right">3 193 579</td>
+					</tr>
+					<tr id="bx_1914200112_275284">
+					<td>Клиентский доступ на 100 рабочих мест к MS SQL Server 2014 Runtime для 1С:Предприятие 8</td>
+					<td align="right">6 387 158</td>
+					</tr>
+					<tr id="bx_1914200112_275285">
+					<td>Лицензия на сервер MS SQL Server 2014 Standard Full-use для пользователей 1С:Предприятие 8</td>
+					<td align="right">330 322</td>
+					</tr>
+					<tr id="bx_1914200112_275286">
+					<td>Клиентский доступ на 1 рабочее место к MS SQL Server 2014 Full-use для 1С:Предприятие 8</td>
+					<td align="right">76 854</td>
+					</tr>
+					<tr id="bx_1914200112_275287">
+					<td>Клиентский доступ на 5 рабочих мест к MS SQL Server 2014 Full-use для 1С:Предприятие 8</td>
+					<td align="right">384 266</td>
+					</tr>
+					<tr id="bx_1914200112_275288">
+					<td>Клиентский доступ на 10 рабочих мест к MS SQL Server 2014 Full-use для 1С:Предприятие 8</td>
+					<td align="right">768 538</td>
+					</tr>
+					<tr id="bx_1914200112_275289">
+					<td>Клиентский доступ на 20 рабочих мест к MS SQL Server 2014 Full-use для 1С:Предприятие 8</td>
+					<td align="right">1 537 071</td>
+					</tr>
+					<tr id="bx_1914200112_275290">
+					<td>Клиентский доступ на 50 рабочих мест к MS SQL Server 2014 Full-use для 1С:Предприятие 8</td>
+					<td align="right">3 842 681</td>
+					</tr>
+					<tr id="bx_1914200112_275291">
+					<td>Клиентский доступ на 100 рабочих мест к MS SQL Server 2014 Full-use для 1С:Предприятие 8</td>
+					<td align="right">7 685 362</td>
+					</tr>
+					<tr id="bx_1914200112_275293">
+					<td>Лицензия «на ядро» MS SQL Server Std Full-use Core 2014 (до 4 ядер) для пользователей 1С:Предприятие 8</td>
+					<td align="right">2 006 346</td>
+					</tr>
+					<tr id="bx_1914200112_275294">
+					<td>Доп. лицензия «на ядро» MS SQL Server Std Full-use Core 2014 (на 2 ядра) для пользователей 1С:Предприятие 8</td>
+					<td align="right">1 003 173</td>
+					</tr>
+					<tr id="bx_1914200112_275295">
+					<td>Лицензия «на ядро» MS SQL Server Ent Full-use Core 2014 (до 4 ядер) для пользователей 1С:Предприятие 8</td>
+					<td align="right">7 693 459</td>
+					</tr>
+					<tr id="bx_1914200112_275296">
+					<td>Доп. лицензия «на ядро» MS SQL Server Ent Full-use Core 2014 (на 2 ядра) для пользователей 1С:Предприятие 8</td>
+					<td align="right">3 846 730</td>
+					</tr>
+					<tr id="bx_1914200112_192744">
+					<td>Лицензия на сервер MS SQL Server Standard 2016 Runtime для пользователей 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">113 789</td>
+					</tr>
+					<tr id="bx_1914200112_192743">
+					<td>Клиентский доступ на 1 рабочее место к MS SQL Server 2016 Runtime для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">57 596</td>
+					</tr>
+					<tr id="bx_1914200112_192742">
+					<td>Клиентский доступ на 5 рабочих мест к MS SQL Server 2016 Runtime для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">287 993</td>
+					</tr>
+					<tr id="bx_1914200112_192741">
+					<td>Клиентский доступ на 10 рабочих мест к MS SQL Server 2016 Runtime для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">575 980</td>
+					</tr>
+					<tr id="bx_1914200112_192740">
+					<td>Клиентский доступ на 20 рабочих мест к MS SQL Server 2016 Runtime для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">1 151 967</td>
+					</tr>
+					<tr id="bx_1914200112_192739">
+					<td>Клиентский доступ на 50 рабочих мест к MS SQL Server 2016 Runtime для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">2 879 914</td>
+					</tr>
+					<tr id="bx_1914200112_192738">
+					<td>Клиентский доступ на 100 рабочих мест к MS SQL Server 2016 Runtime для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">5 759 827</td>
+					</tr>
+					<tr id="bx_1914200112_192737">
+					<td>Лицензия на сервер MS SQL Server Standard 2016 Full-use для пользователей 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">308 257</td>
+					</tr>
+					<tr id="bx_1914200112_192734">
+					<td>Клиентский доступ на 1 рабочее место к MS SQL Server 2016 Full-use для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">71 718</td>
+					</tr>
+					<tr id="bx_1914200112_192733">
+					<td>Клиентский доступ на 5 рабочих мест к MS SQL Server 2016 Full-use для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">358 601</td>
+					</tr>
+					<tr id="bx_1914200112_192732">
+					<td>Клиентский доступ на 10 рабочих мест к MS SQL Server 2016 Full-use для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">717 201</td>
+					</tr>
+					<tr id="bx_1914200112_192731">
+					<td>Клиентский доступ на 20 рабочих мест к MS SQL Server 2016 Full-use для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">1 434 403</td>
+					</tr>
+					<tr id="bx_1914200112_192730">
+					<td>Клиентский доступ на 50 рабочих мест к MS SQL Server 2016 Full-use для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">3 586 007</td>
+					</tr>
+					<tr id="bx_1914200112_192729">
+					<td>Клиентский доступ на 100 рабочих мест к MS SQL Server 2016 Full-use для 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">7 172 020</td>
+					</tr>
+					<tr id="bx_1914200112_192728">
+					<td>Лицензия «на ядро» MS SQL Svr Std Full-use Core 2016 (4 ядра) для пользователей 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">2 093 605</td>
+					</tr>
+					<tr id="bx_1914200112_192727">
+					<td>Доп. лицензия «на ядро» MS SQL Svr Std Full-use Core 2016 (2 ядра) для пользователей 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">1 046 803</td>
+					</tr>
+					<tr id="bx_1914200112_192726">
+					<td>Лицензия «на ядро» MS SQL Svr Ent Full-use Core 2016 (4 ядра) для пользователей 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">8 028 064</td>
+					</tr>
+					<tr id="bx_1914200112_192725">
+					<td>Доп. лицензия «на ядро» MS SQL Svr Ent Full-use Core 2016 (2 ядра) для пользователей 1С:Предприятие 8 для Казахстана</td>
+					<td align="right">4 014 032</td>
+					</tr>
+					<tr id="bx_1914200112_169041">
+					<td>1С:Аптека для Казахстана</td>
+					<td align="right">90 000</td>
+					</tr>
+					<tr id="bx_1914200112_329103">
+					<td>1С:Аптека для Казахстана (USB)</td>
+					<td align="right">108 000</td>
+					</tr>
+					<tr id="bx_1914200112_169081">
+					<td>1С:Аптека для Казахстана, клиентская лицензия на 1 рабочее место</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_329104">
+					<td>1С:Аптека для Казахстана, клиентская лицензия на 1 рабочее место (USB)</td>
+					<td align="right">23 400</td>
+					</tr>
+					<tr id="bx_1914200112_169082">
+					<td>1С:Аптека для Казахстана, клиентская лицензия на 5 рабочих мест</td>
+					<td align="right">67 500</td>
+					</tr>
+					<tr id="bx_1914200112_329105">
+					<td>1С:Аптека для Казахстана, клиентская лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">87 800</td>
+					</tr>
+					<tr id="bx_1914200112_255901">
+					<td>1С:Консолидация 8 ПРОФ</td>
+					<td align="right">1 980 000</td>
+					</tr>
+					</tbody>
+					</table>
+                  </div>
+                  </div>
+                  <div class="tab-pane fade" id="tab_sol">
+				  <div class="table-custom-responsive">
+					<table class="table-custom table-custom-bordered" id="mytable">
+					<tbody>
+					<tr>
+					<th>Наименование программного продукта</th>
+					<th width="150">Цена, тенге</th>
+					</tr>
+					<tr>
+					<th id="retail_apteka" colspan="2">Решения для розничных аптек</th>
+					</tr>
+					<tr id="bx_1914200112_317729">
+					<td>1С:Аптека для Казахстана</td>
+					<td align="right">90 000</td>
+					</tr>
+					<tr id="bx_1914200112_198058">
+					<td>1С:Аптека для Казахстана (USB)</td>
+					<td align="right">108 000</td>
+					</tr>
+					<tr id="bx_1914200112_317730">
+					<td>1С:Аптека для Казахстана. Клиентская лицензия на 1 рабочее место</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_198059">
+					<td>1С:Аптека для Казахстана, клиентская лицензия на 1 рабочее место (USB)</td>
+					<td align="right">23 400</td>
+					</tr>
+					<tr id="bx_1914200112_317731">
+					<td>1С:Аптека для Казахстана. Клиентская лицензия на 5 рабочих мест</td>
+					<td align="right">67 500</td>
+					</tr>
+					<tr id="bx_1914200112_198060">
+					<td>1С:Аптека для Казахстана, клиентская лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">87 800</td>
+					</tr>
+					<tr>
+					<th id="" colspan="2">Решения для строительных организаций</th>
+					</tr>
+					<tr id="bx_1914200112_266695">
+					<td>1С:Бухгалтерия строительной организации для Казахстана</td>
+					<td align="right">126 000</td>
+					</tr>
+					<tr id="bx_1914200112_266696">
+					<td>1С:Бухгалтерия строительной организации для Казахстана. Комплект на 5 пользователей</td>
+					<td align="right">254 000</td>
+					</tr>
+					<tr id="bx_1914200112_266697">
+					<td>1С:Бухгалтерия строительной организации для Казахстана. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">25 410</td>
+					</tr>
+					<tr id="bx_1914200112_266698">
+					<td>1С:Бухгалтерия строительной организации для Казахстана. Дополнительная лицензия на 5 рабочих мест</td>
+					<td align="right">118 800</td>
+					</tr>
+					<tr id="bx_1914200112_266699">
+					<td>1С:Бухгалтерия строительной организации для Казахстана. Дополнительная лицензия на 10 рабочих мест</td>
+					<td align="right">224 400</td>
+					</tr>
+					<tr id="bx_1914200112_300707">
+					<td>1С:Бухгалтерия строительной организации для Казахстана. Дополнительная лицензия на 20 рабочих мест</td>
+					<td align="right">430 860</td>
+					</tr>
+					<tr id="bx_1914200112_281685">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана</td>
+					<td align="right">501 000</td>
+					</tr>
+					<tr id="bx_1914200112_281686">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана (USB)</td>
+					<td align="right">516 000</td>
+					</tr>
+					<tr id="bx_1914200112_281687">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Филиальная лицензия</td>
+					<td align="right">136 500</td>
+					</tr>
+					<tr id="bx_1914200112_281688">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Филиальная лицензия (USB)</td>
+					<td align="right">151 500</td>
+					</tr>
+					<tr id="bx_1914200112_281689">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">37 900</td>
+					</tr>
+					<tr id="bx_1914200112_281690">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">49 900</td>
+					</tr>
+					<tr id="bx_1914200112_281691">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная многопользовательская лицензия на 5 рабочих мест</td>
+					<td align="right">145 200</td>
+					</tr>
+					<tr id="bx_1914200112_281692">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная многопользовательская лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">193 200</td>
+					</tr>
+					<tr id="bx_1914200112_281693">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная многопользовательская лицензия на 10 рабочих мест</td>
+					<td align="right">269 200</td>
+					</tr>
+					<tr id="bx_1914200112_281694">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная многопользовательская лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">359 200</td>
+					</tr>
+					<tr id="bx_1914200112_281696">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная многопользовательская лицензия на 20 рабочих мест</td>
+					<td align="right">495 200</td>
+					</tr>
+					<tr id="bx_1914200112_281697">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная многопользовательская лицензия на 20 рабочих мест (USB)</td>
+					<td align="right">663 200</td>
+					</tr>
+					<tr id="bx_1914200112_335307">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">48 000</td>
+					</tr>
+					<tr id="bx_1914200112_335334">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">70 000</td>
+					</tr>
+					<tr id="bx_1914200112_335308">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">90 000</td>
+					</tr>
+					<tr id="bx_1914200112_395659">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная многопользовательская лицензия на 20 рабочих мест. (Электронная поставка)</td>
+					<td align="right">462 000</td>
+					</tr>
+					<tr id="bx_1914200112_395658">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная многопользовательская лицензия на 10 рабочих мест. (Электронная поставка)</td>
+					<td align="right">247 500</td>
+					</tr>
+					<tr id="bx_1914200112_395657">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная многопользовательская лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">132 000</td>
+					</tr>
+					<tr id="bx_1914200112_395656">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">33 000</td>
+					</tr>
+					<tr id="bx_1914200112_395655">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. Филиальная лицензия. (Электронная поставка)</td>
+					<td align="right">121 500</td>
+					</tr>
+					<tr id="bx_1914200112_395654">
+					<td>1С-Рейтинг: Управление финансами строительной организации для Казахстана. (Электронная поставка)</td>
+					<td align="right">486 000</td>
+					</tr>
+					<tr>
+					<th id="comhoz" colspan="2">Решение для жилищно-коммунального хозяйства</th>
+					</tr>
+					<tr id="bx_1914200112_169218">
+					<td>1С-Рейтинг: Абонентская служба</td>
+					<td align="right">103 500</td>
+					</tr>
+					<tr id="bx_1914200112_213058">
+					<td>1С-Рейтинг: Абонентская служба (USB)</td>
+					<td align="right">118 500</td>
+					</tr>
+					<tr id="bx_1914200112_169222">
+					<td>1С-Рейтинг: Абонентская служба. Комплект на 5 пользователей</td>
+					<td align="right">149 000</td>
+					</tr>
+					<tr id="bx_1914200112_213059">
+					<td>1С-Рейтинг: Абонентская служба. Комплект на 5 пользователей (USB)</td>
+					<td align="right">197 000</td>
+					</tr>
+					<tr id="bx_1914200112_169223">
+					<td>1С-Рейтинг: Абонентская служба. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">18 400</td>
+					</tr>
+					<tr id="bx_1914200112_213060">
+					<td>1С-Рейтинг: Абонентская служба. Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">30 400</td>
+					</tr>
+					<tr id="bx_1914200112_169224">
+					<td>1С-Рейтинг: Абонентская служба. Дополнительная лицензия на 5 рабочих мест</td>
+					<td align="right">59 400</td>
+					</tr>
+					<tr id="bx_1914200112_213061">
+					<td>1С-Рейтинг: Абонентская служба. Дополнительная лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">104 400</td>
+					</tr>
+					<tr id="bx_1914200112_169225">
+					<td>1С-Рейтинг: Абонентская служба. Дополнительная лицензия на 10 рабочих мест</td>
+					<td align="right">110 800</td>
+					</tr>
+					<tr id="bx_1914200112_213062">
+					<td>1С-Рейтинг: Абонентская служба. Дополнительная лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">194 800</td>
+					</tr>
+					<tr id="bx_1914200112_335327">
+					<td>1С-Рейтинг: Абонентская служба. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">12 000</td>
+					</tr>
+					<tr id="bx_1914200112_335328">
+					<td>1С-Рейтинг: Абонентская служба. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_335329">
+					<td>1С-Рейтинг: Абонентская служба. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">23 000</td>
+					</tr>
+					<tr id="bx_1914200112_395647">
+					<td>1С-Рейтинг: Абонентская служба. Дополнительная многопользовательская лицензия на 10 рабочих мест. (Электронная поставка)</td>
+					<td align="right">100 800</td>
+					</tr>
+					<tr id="bx_1914200112_395646">
+					<td>1С-Рейтинг: Абонентская служба. Дополнительная многопользовательская лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">54 000</td>
+					</tr>
+					<tr id="bx_1914200112_395645">
+					<td>1С-Рейтинг: Абонентская служба. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">14 400</td>
+					</tr>
+					<tr id="bx_1914200112_395644">
+					<td>1С-Рейтинг: Абонентская служба. Комплект на 5 пользователей. (Электронная поставка)</td>
+					<td align="right">129 600</td>
+					</tr>
+					<tr id="bx_1914200112_395643">
+					<td>1С-Рейтинг: Абонентская служба. (Электронная поставка)</td>
+					<td align="right">90 000</td>
+					</tr>
+					<tr>
+					<th id="apteka" colspan="2">Решения для больничных аптек</th>
+					</tr>
+					<tr id="bx_1914200112_169204">
+					<td>1С-Рейтинг: Больничная аптека</td>
+					<td align="right">109 000</td>
+					</tr>
+					<tr id="bx_1914200112_213079">
+					<td>1С-Рейтинг: Больничная аптека (USB)</td>
+					<td align="right">124 000</td>
+					</tr>
+					<tr id="bx_1914200112_335301">
+					<td>1С-Рейтинг: Больничная аптека. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">12 000</td>
+					</tr>
+					<tr id="bx_1914200112_335302">
+					<td>1С-Рейтинг: Больничная аптека. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_335303">
+					<td>1С-Рейтинг: Больничная аптека. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">23 000</td>
+					</tr>
+					<tr id="bx_1914200112_395640">
+					<td>1С-Рейтинг: Больничная аптека. (Электронная поставка)</td>
+					<td align="right">95 000</td>
+					</tr>
+					<tr>
+					<th id="avto" colspan="2">Решения для автоматизации управления затратами на автотранспорт</th>
+					</tr>
+					<tr id="bx_1914200112_169198">
+					<td>1С-Рейтинг: Управление затратами на автотранспорт. Путевые листы</td>
+					<td align="right">70 000</td>
+					</tr>
+					<tr id="bx_1914200112_213085">
+					<td>1С-Рейтинг: Управление затратами на автотранспорт. Путевые листы (USB)</td>
+					<td align="right">85 000</td>
+					</tr>
+					<tr id="bx_1914200112_335295">
+					<td>1С-Рейтинг: Управление затратами на автотранспорт. Путевые листы. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">12 000</td>
+					</tr>
+					<tr id="bx_1914200112_335299">
+					<td>1С-Рейтинг: Управление затратами на автотранспорт. Путевые листы. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_335300">
+					<td>1С-Рейтинг: Управление затратами на автотранспорт. Путевые листы. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">23 000</td>
+					</tr>
+					<tr id="bx_1914200112_395639">
+					<td>1С-Рейтинг: Управление затратами на автотранспорт. Путевые листы. (Электронная поставка)</td>
+					<td align="right">60 000</td>
+					</tr>
+					<tr>
+					<th id="gospred" colspan="2">Решения для государственных предприятий</th>
+					</tr>
+					<tr id="bx_1914200112_169183">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия</td>
+					<td align="right">86 300</td>
+					</tr>
+					<tr id="bx_1914200112_213100">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия (USB)</td>
+					<td align="right">101 300</td>
+					</tr>
+					<tr id="bx_1914200112_169184">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Комплект на 5 пользователей</td>
+					<td align="right">133 700</td>
+					</tr>
+					<tr id="bx_1914200112_213101">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Комплект на 5 пользователей (USB)</td>
+					<td align="right">181 700</td>
+					</tr>
+					<tr id="bx_1914200112_169185">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">19 000</td>
+					</tr>
+					<tr id="bx_1914200112_213102">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">31 000</td>
+					</tr>
+					<tr id="bx_1914200112_169186">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Дополнительная лицензия на 5 рабочих мест</td>
+					<td align="right">61 900</td>
+					</tr>
+					<tr id="bx_1914200112_213111">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Дополнительная лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">106 900</td>
+					</tr>
+					<tr id="bx_1914200112_169187">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Дополнительная лицензия на 10 рабочих мест</td>
+					<td align="right">115 500</td>
+					</tr>
+					<tr id="bx_1914200112_213104">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Дополнительная лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">199 500</td>
+					</tr>
+					<tr id="bx_1914200112_335292">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">24 000</td>
+					</tr>
+					<tr id="bx_1914200112_335293">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">35 000</td>
+					</tr>
+					<tr id="bx_1914200112_335294">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">45 000</td>
+					</tr>
+					<tr id="bx_1914200112_169188">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана.</td>
+					<td align="right">150 000</td>
+					</tr>
+					<tr id="bx_1914200112_213093">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. (USB)</td>
+					<td align="right">165 000</td>
+					</tr>
+					<tr id="bx_1914200112_169189">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Комплект на 5 пользователей</td>
+					<td align="right">202 700</td>
+					</tr>
+					<tr id="bx_1914200112_213095">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Учебное заведение Комплект на 5 пользователей (USB)</td>
+					<td align="right">250 700</td>
+					</tr>
+					<tr id="bx_1914200112_169190">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">19 000</td>
+					</tr>
+					<tr id="bx_1914200112_213096">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">31 000</td>
+					</tr>
+					<tr id="bx_1914200112_169191">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Дополнительная лицензия на 5 рабочих мест</td>
+					<td align="right">61 900</td>
+					</tr>
+					<tr id="bx_1914200112_213097">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Дополнительная лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">106 900</td>
+					</tr>
+					<tr id="bx_1914200112_169192">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Дополнительная лицензия на 10 рабочих мест</td>
+					<td align="right">115 500</td>
+					</tr>
+					<tr id="bx_1914200112_213098">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Дополнительная лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">199 500</td>
+					</tr>
+					<tr id="bx_1914200112_335312">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">24 000</td>
+					</tr>
+					<tr id="bx_1914200112_335313">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">35 000</td>
+					</tr>
+					<tr id="bx_1914200112_335314">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">45 000</td>
+					</tr>
+					<tr id="bx_1914200112_395637">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Дополнительная многопользовательская лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">56 300</td>
+					</tr>
+					<tr id="bx_1914200112_395636">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">15 000</td>
+					</tr>
+					<tr id="bx_1914200112_395635">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Комплект на 5 пользователей. (Электронная поставка)</td>
+					<td align="right">176 300</td>
+					</tr>
+					<tr id="bx_1914200112_395634">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. (Электронная поставка)</td>
+					<td align="right">135 000</td>
+					</tr>
+					<tr id="bx_1914200112_395633">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Дополнительная лицензия на 10 рабочих мест. (Электронная поставка)</td>
+					<td align="right">105 000</td>
+					</tr>
+					<tr id="bx_1914200112_395632">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Дополнительная лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">56 300</td>
+					</tr>
+					<tr id="bx_1914200112_395631">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">15 000</td>
+					</tr>
+					<tr id="bx_1914200112_395630">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. Учебное заведение Комплект на 5 пользователей. (Электронная поставка)</td>
+					<td align="right">176 300</td>
+					</tr>
+					<tr id="bx_1914200112_395629">
+					<td>1C-Рейтинг: Бухгалтерия учебного заведения для Казахстана. (Электронная поставка)</td>
+					<td align="right">135 000</td>
+					</tr>
+					<tr id="bx_1914200112_395628">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Дополнительная лицензия на 10 рабочих мест. (Электронная поставка)</td>
+					<td align="right">105 000</td>
+					</tr>
+					<tr id="bx_1914200112_395627">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Дополнительная лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">56 300</td>
+					</tr>
+					<tr id="bx_1914200112_395626">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">15 000</td>
+					</tr>
+					<tr id="bx_1914200112_395625">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. Комплект на 5 пользователей. (Электронная поставка)</td>
+					<td align="right">116 300</td>
+					</tr>
+					<tr id="bx_1914200112_395624">
+					<td>1С-Рейтинг: Бухгалтерия государственного предприятия. (Электронная поставка)</td>
+					<td align="right">75 000</td>
+					</tr>
+					<tr id="bx_1914200112_169193">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана.</td>
+					<td align="right">150 000</td>
+					</tr>
+					<tr id="bx_1914200112_213087">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана (USB)</td>
+					<td align="right">165 000</td>
+					</tr>
+					<tr id="bx_1914200112_169194">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Комплект на 5 пользователей</td>
+					<td align="right">202 700</td>
+					</tr>
+					<tr id="bx_1914200112_213088">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Комплект на 5 пользователей (USB)</td>
+					<td align="right">250 700</td>
+					</tr>
+					<tr id="bx_1914200112_169195">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">19 000</td>
+					</tr>
+					<tr id="bx_1914200112_213089">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">31 000</td>
+					</tr>
+					<tr id="bx_1914200112_169196">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Организация здравоохранения. Дополнительная лицензия на 5 рабочих мест</td>
+					<td align="right">61 900</td>
+					</tr>
+					<tr id="bx_1914200112_213090">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Дополнительная лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">106 900</td>
+					</tr>
+					<tr id="bx_1914200112_169197">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Дополнительная лицензия на 10 рабочих мест</td>
+					<td align="right">115 500</td>
+					</tr>
+					<tr id="bx_1914200112_213091">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Дополнительная лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">199 500</td>
+					</tr>
+					<tr id="bx_1914200112_335315">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">24 000</td>
+					</tr>
+					<tr id="bx_1914200112_335316">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">35 000</td>
+					</tr>
+					<tr id="bx_1914200112_335317">
+					<td>1С-Рейтинг: Бухгалтерия организации здравоохранения для Казахстана. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">45 000</td>
+					</tr>
+					<tr>
+					<th id="gosuch" colspan="2">Решения для государственных учреждений</th>
+					</tr>
+					<tr id="bx_1914200112_169176">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана</td>
+					<td align="right">55 000</td>
+					</tr>
+					<tr id="bx_1914200112_213114">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана (USB)</td>
+					<td align="right">70 000</td>
+					</tr>
+					<tr id="bx_1914200112_169177">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Комплект на 5 пользователей</td>
+					<td align="right">99 300</td>
+					</tr>
+					<tr id="bx_1914200112_213115">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Комплект на 5 пользователей (USB)</td>
+					<td align="right">147 300</td>
+					</tr>
+					<tr id="bx_1914200112_169178">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">20 000</td>
+					</tr>
+					<tr id="bx_1914200112_213116">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">32 000</td>
+					</tr>
+					<tr id="bx_1914200112_169179">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Дополнительная лицензия на 5 рабочих мест</td>
+					<td align="right">61 900</td>
+					</tr>
+					<tr id="bx_1914200112_213117">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Дополнительная лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">106 900</td>
+					</tr>
+					<tr id="bx_1914200112_169180">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Дополнительная лицензия на 10 рабочих мест</td>
+					<td align="right">115 500</td>
+					</tr>
+					<tr id="bx_1914200112_213118">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Дополнительная лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">199 500</td>
+					</tr>
+					<tr id="bx_1914200112_335289">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">24 000</td>
+					</tr>
+					<tr id="bx_1914200112_335290">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">35 000</td>
+					</tr>
+					<tr id="bx_1914200112_335291">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">45 000</td>
+					</tr>
+					<tr id="bx_1914200112_395616">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Дополнительная многопользовательская лицензия на 10 рабочих мест. (Электронная поставка)</td>
+					<td align="right">105 000</td>
+					</tr>
+					<tr id="bx_1914200112_395615">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Дополнительная многопользовательская лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">56 300</td>
+					</tr>
+					<tr id="bx_1914200112_395614">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">15 000</td>
+					</tr>
+					<tr id="bx_1914200112_395613">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. Комплект на 5 пользователей. (Электронная поставка)</td>
+					<td align="right">86 300</td>
+					</tr>
+					<tr id="bx_1914200112_395612">
+					<td>Госсектор: Бухгалтерия государственного учреждения для Казахстана. (Электронная поставка)</td>
+					<td align="right">45 000</td>
+					</tr>
+					<tr>
+					<th id="deti" colspan="2">Решения для автоматизации учета в детских учреждениях</th>
+					</tr>
+					<tr id="bx_1914200112_169174">
+					<td>1С-Рейтинг: Учет родительской оплаты и питания в детских учреждениях</td>
+					<td align="right">34 500</td>
+					</tr>
+					<tr id="bx_1914200112_335286">
+					<td>1С-Рейтинг: Учет родительской оплаты и питания в детских учреждениях. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">12 000</td>
+					</tr>
+					<tr id="bx_1914200112_335287">
+					<td>1С-Рейтинг: Учет родительской оплаты и питания в детских учреждениях. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_335288">
+					<td>1С-Рейтинг: Учет родительской оплаты и питания в детских учреждениях. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">23 000</td>
+					</tr>
+					<tr id="bx_1914200112_395611">
+					<td>1С-Рейтинг: Учет родительской оплаты и питания в детских учреждениях. (Электронная поставка)</td>
+					<td align="right">30 000</td>
+					</tr>
+					<tr>
+					<th id="inventar" colspan="2">Решения для автоматизации учета спецодежды и инвентаря</th>
+					</tr>
+					<tr id="bx_1914200112_169173">
+					<td>1С-Рейтинг: Учет спецодежды и инвентаря</td>
+					<td align="right">70 000</td>
+					</tr>
+					<tr id="bx_1914200112_213120">
+					<td>1С-Рейтинг: Учет спецодежды и инвентаря (USB)</td>
+					<td align="right">85 000</td>
+					</tr>
+					<tr id="bx_1914200112_335283">
+					<td>1С-Рейтинг: Учет спецодежды и инвентаря. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">12 000</td>
+					</tr>
+					<tr id="bx_1914200112_335284">
+					<td>1С-Рейтинг: Учет спецодежды и инвентаря. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_335285">
+					<td>1С-Рейтинг: Учет спецодежды и инвентаря. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">23 000</td>
+					</tr>
+					<tr id="bx_1914200112_395610">
+					<td>1С-Рейтинг: Учет спецодежды и инвентаря. (Электронная поставка)</td>
+					<td align="right">60 000</td>
+					</tr>
+					<tr>
+					<th id="nalog" colspan="2">Решения для автоматизации налоговой отчетности предприятий, подлежащих электронному мониторингу</th>
+					</tr>
+					<tr id="bx_1914200112_169151">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП)</td>
+					<td align="right">80 600</td>
+					</tr>
+					<tr id="bx_1914200112_213128">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП) (USB)</td>
+					<td align="right">95 600</td>
+					</tr>
+					<tr id="bx_1914200112_213127">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП) Комплект на 5 пользователей</td>
+					<td align="right">155 300</td>
+					</tr>
+					<tr id="bx_1914200112_213129">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП) Комплект на 5 пользователей (USB)</td>
+					<td align="right">200 300</td>
+					</tr>
+					<tr id="bx_1914200112_169152">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП) Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">31 000</td>
+					</tr>
+					<tr id="bx_1914200112_213130">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП) Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">43 000</td>
+					</tr>
+					<tr id="bx_1914200112_169153">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП) Дополнительная лицензия на 5 рабочих мест</td>
+					<td align="right">103 900</td>
+					</tr>
+					<tr id="bx_1914200112_213131">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП) Дополнительная лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">145 900</td>
+					</tr>
+					<tr id="bx_1914200112_335274">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП). Технологическая поддержка на 6 месяцев</td>
+					<td align="right">24 000</td>
+					</tr>
+					<tr id="bx_1914200112_335275">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП). Технологическая поддержка на 9 месяцев</td>
+					<td align="right">35 000</td>
+					</tr>
+					<tr id="bx_1914200112_335276">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП). Технологическая поддержка на 12 месяцев</td>
+					<td align="right">45 000</td>
+					</tr>
+					<tr id="bx_1914200112_372103">
+					<td>1С-Рейтинг:Налоговый мониторинг (МОП) для 1С:ERP и 1С:KA для Казахстана</td>
+					<td align="right">346 500</td>
+					</tr>
+					<tr id="bx_1914200112_372104">
+					<td>1С-Рейтинг:Налоговый мониторинг (МОП) для 1С:ERP и 1С:KA для Казахстана.Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">173 300</td>
+					</tr>
+					<tr id="bx_1914200112_372105">
+					<td>1С-Рейтинг:Налоговый мониторинг (МОП) для 1С:ERP и 1С:KA для Казахстана.Дополнительная лицензия на 5 рабочих мест</td>
+					<td align="right">606 400</td>
+					</tr>
+					<tr id="bx_1914200112_372106">
+					<td>1С-Рейтинг:Налоговый мониторинг (МОП) для 1С:ERP и 1С:KA для Казахстана (USB)</td>
+					<td align="right">379 500</td>
+					</tr>
+					<tr id="bx_1914200112_372107">
+					<td>1С-Рейтинг:Налоговый мониторинг (МОП) для 1С:ERP и 1С:KA для Казахстана.Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">199 700</td>
+					</tr>
+					<tr id="bx_1914200112_372108">
+					<td>1С-Рейтинг:Налоговый мониторинг (МОП) для 1С:ERP и 1С:KA для Казахстана.Дополнительная лицензия на 5 рабочих мест(USB)</td>
+					<td align="right">698 800</td>
+					</tr>
+					<tr id="bx_1914200112_395609">
+					<td>Дополнительная многопользовательская лицензия на 5 рабочих мест 1С-Рейтинг: Налоговый мониторинг (МОП). (Электронная поставка)</td>
+					<td align="right">94 500</td>
+					</tr>
+					<tr id="bx_1914200112_395608">
+					<td>Дополнительная лицензия на 1 рабочее место 1С-Рейтинг: Налоговый мониторинг (МОП). (Электронная поставка)</td>
+					<td align="right">27 000</td>
+					</tr>
+					<tr id="bx_1914200112_395607">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП). Комплект на 5 пользователей. (Электронная поставка)</td>
+					<td align="right">135 000</td>
+					</tr>
+					<tr id="bx_1914200112_395606">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП). (Электронная поставка)</td>
+					<td align="right">67 500</td>
+					</tr>
+					<tr id="bx_1914200112_395604">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП) для 1С:ERP и 1С:KA для Казахстана. Дополнительная лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">577 500</td>
+					</tr>
+					<tr id="bx_1914200112_395603">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП) для 1С:ERP и 1С:KA для Казахстана. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">165 000</td>
+					</tr>
+					<tr id="bx_1914200112_395602">
+					<td>1С-Рейтинг: Налоговый мониторинг (МОП) для 1С:ERP и 1С:KA для Казахстана. (Электронная поставка)</td>
+					<td align="right">330 000</td>
+					</tr>
+					<tr>
+					<th id="franchise" colspan="2">Решения для автоматизации фирм-франчайзи</th>
+					</tr>
+					<tr id="bx_1914200112_169148">
+					<td>1С-Рейтинг: ИТС для 1С:Предприятие 8</td>
+					<td align="right">22 500</td>
+					</tr>
+					<tr id="bx_1914200112_213132">
+					<td>1С-Рейтинг: ИТС для 1С:Предприятие 8 (USB)</td>
+					<td align="right">37 500</td>
+					</tr>
+					<tr>
+					<th id="nafta" colspan="2">Решения для нефтяной промышленности и учета реализации нефтепродуктов</th>
+					</tr>
+					<tr id="bx_1914200112_169140">
+					<td>1С-Рейтинг: Нефтебаза</td>
+					<td align="right">150 000</td>
+					</tr>
+					<tr id="bx_1914200112_213134">
+					<td>1С-Рейтинг: Нефтебаза (USB)</td>
+					<td align="right">165 000</td>
+					</tr>
+					<tr id="bx_1914200112_169141">
+					<td>1С-Рейтинг: Нефтебаза. Комплект на 5 пользователей</td>
+					<td align="right">237 700</td>
+					</tr>
+					<tr id="bx_1914200112_213135">
+					<td>1С-Рейтинг: Нефтебаза. Комплект на 5 пользователей (USB)</td>
+					<td align="right">285 700</td>
+					</tr>
+					<tr id="bx_1914200112_169143">
+					<td>1С-Рейтинг: Нефтебаза. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">31 000</td>
+					</tr>
+					<tr id="bx_1914200112_213137">
+					<td>1С-Рейтинг: Нефтебаза. Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">43 000</td>
+					</tr>
+					<tr id="bx_1914200112_169144">
+					<td>1С-Рейтинг: Нефтебаза. Дополнительная лицензия на 5 рабочих мест</td>
+					<td align="right">111 400</td>
+					</tr>
+					<tr id="bx_1914200112_213138">
+					<td>1С-Рейтинг: Нефтебаза. Дополнительная лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">156 400</td>
+					</tr>
+					<tr id="bx_1914200112_169145">
+					<td>1С-Рейтинг: Нефтебаза. Дополнительная лицензия на 10 рабочих мест</td>
+					<td align="right">207 900</td>
+					</tr>
+					<tr id="bx_1914200112_213139">
+					<td>1С-Рейтинг: Нефтебаза. Дополнительная лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">291 900</td>
+					</tr>
+					<tr id="bx_1914200112_335280">
+					<td>1С-Рейтинг: Нефтебаза. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">24 000</td>
+					</tr>
+					<tr id="bx_1914200112_335282">
+					<td>1С-Рейтинг: Нефтебаза. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">35 000</td>
+					</tr>
+					<tr id="bx_1914200112_335281">
+					<td>1С-Рейтинг: Нефтебаза. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">45 000</td>
+					</tr>
+					<tr id="bx_1914200112_395601">
+					<td>Дополнительная многопользовательская лицензия на 10 рабочих мест 1С-Рейтинг: Нефтебаза. (Электронная поставка)</td>
+					<td align="right">189 000</td>
+					</tr>
+					<tr id="bx_1914200112_395600">
+					<td>Дополнительная многопользовательская лицензия на 5 рабочих мест 1С-Рейтинг: Нефтебаза. (Электронная поставка)</td>
+					<td align="right">101 300</td>
+					</tr>
+					<tr id="bx_1914200112_395599">
+					<td>Дополнительная лицензия на 1 рабочее место 1С-Рейтинг: Нефтебаза. (Электронная поставка)</td>
+					<td align="right">27 000</td>
+					</tr>
+					<tr id="bx_1914200112_395598">
+					<td>1С-Рейтинг: Нефтебаза. Комплект на 5 пользователей. (Электронная поставка)</td>
+					<td align="right">209 300</td>
+					</tr>
+					<tr id="bx_1914200112_395597">
+					<td>1С-Рейтинг: Нефтебаза. (Электронная поставка)</td>
+					<td align="right">135 000</td>
+					</tr>
+					<tr>
+					<th id="zerno" colspan="2">Решения для зерноперерабатывающей отрасли</th>
+					</tr>
+					<tr id="bx_1914200112_169135">
+					<td>1С-Рейтинг: Элеватор</td>
+					<td align="right">103 500</td>
+					</tr>
+					<tr id="bx_1914200112_213140">
+					<td>1С-Рейтинг: Элеватор (USB)</td>
+					<td align="right">118 500</td>
+					</tr>
+					<tr id="bx_1914200112_169136">
+					<td>1С-Рейтинг: Элеватор. Комплект на 5 пользователей</td>
+					<td align="right">195 200</td>
+					</tr>
+					<tr id="bx_1914200112_213141">
+					<td>1С-Рейтинг: Элеватор. Комплект на 5 пользователей (USB)</td>
+					<td align="right">243 200</td>
+					</tr>
+					<tr id="bx_1914200112_169137">
+					<td>Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">25 500</td>
+					</tr>
+					<tr id="bx_1914200112_213142">
+					<td>Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">37 500</td>
+					</tr>
+					<tr id="bx_1914200112_169138">
+					<td>Дополнительная многопользовательская лицензия на 5 рабочих мест</td>
+					<td align="right">111 400</td>
+					</tr>
+					<tr id="bx_1914200112_213143">
+					<td>Дополнительная многопользовательская лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">156 400</td>
+					</tr>
+					<tr id="bx_1914200112_169139">
+					<td>Дополнительная многопользовательская лицензия на 10 рабочих мест</td>
+					<td align="right">207 900</td>
+					</tr>
+					<tr id="bx_1914200112_213144">
+					<td>Дополнительная многопользовательская лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">291 900</td>
+					</tr>
+					<tr id="bx_1914200112_335271">
+					<td>1С-Рейтинг: Элеватор. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">24 000</td>
+					</tr>
+					<tr id="bx_1914200112_335272">
+					<td>1С-Рейтинг: Элеватор. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">35 000</td>
+					</tr>
+					<tr id="bx_1914200112_335273">
+					<td>1С-Рейтинг: Элеватор. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">45 000</td>
+					</tr>
+					<tr id="bx_1914200112_395594">
+					<td>1С-Рейтинг: Элеватор. Дополнительная многопользовательская лицензия на 10 рабочих мест. (Электронная поставка)</td>
+					<td align="right">189 000</td>
+					</tr>
+					<tr id="bx_1914200112_395593">
+					<td>1С-Рейтинг: Элеватор. Дополнительная многопользовательская лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">101 300</td>
+					</tr>
+					<tr id="bx_1914200112_395592">
+					<td>1С-Рейтинг: Элеватор. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">21 600</td>
+					</tr>
+					<tr id="bx_1914200112_395591">
+					<td>1С-Рейтинг: Элеватор для 1С:Предприятие 8. Комплект на 5 пользователей. (Электронная поставка)</td>
+					<td align="right">169 700</td>
+					</tr>
+					<tr id="bx_1914200112_395590">
+					<td>1С-Рейтинг: Элеватор. (Электронная поставка)</td>
+					<td align="right">90 000</td>
+					</tr>
+					<tr>
+					<th id="budget" colspan="2">Решения для автоматизации управления финансами и бюджетирования</th>
+					</tr>
+					<tr id="bx_1914200112_169209">
+					<td>1С-Рейтинг: Комплексное управление финансами и бюджетирование для Казахстана</td>
+					<td align="right">375 000</td>
+					</tr>
+					<tr id="bx_1914200112_213074">
+					<td>1С-Рейтинг: Комплексное управление финансами и бюджетирование для Казахстана (USB)</td>
+					<td align="right">390 000</td>
+					</tr>
+					<tr id="bx_1914200112_169210">
+					<td>1С-Рейтинг: Комплексное управление финансами и бюджетирование для Казахстана. Филиальная лицензия</td>
+					<td align="right">189 000</td>
+					</tr>
+					<tr id="bx_1914200112_213073">
+					<td>1С-Рейтинг: Комплексное управление финансами и бюджетирование для Казахстана. Филиальная лицензия (USB)</td>
+					<td align="right">204 000</td>
+					</tr>
+					<tr id="bx_1914200112_335304">
+					<td>1С-Рейтинг: Комплексное управление финансами и бюджетирование для Казахстана. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">48 000</td>
+					</tr>
+					<tr id="bx_1914200112_335305">
+					<td>1С-Рейтинг: Комплексное управление финансами и бюджетирование для Казахстана. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">70 000</td>
+					</tr>
+					<tr id="bx_1914200112_335306">
+					<td>1С-Рейтинг: Комплексное управление финансами и бюджетирование для Казахстана. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">90 000</td>
+					</tr>
+					<tr id="bx_1914200112_214313">
+					<td>1С-Рейтинг: Бюджетирование предприятия (USB)</td>
+					<td align="right">270 000</td>
+					</tr>
+					<tr id="bx_1914200112_214312">
+					<td>1С-Рейтинг: Бюджетирование предприятия</td>
+					<td align="right">255 000</td>
+					</tr>
+					<tr id="bx_1914200112_335318">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">48 000</td>
+					</tr>
+					<tr id="bx_1914200112_335319">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">70 000</td>
+					</tr>
+					<tr id="bx_1914200112_335320">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">90 000</td>
+					</tr>
+					<tr id="bx_1914200112_410434">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Дополнительная лицензия на 10 рабочих мест. (Электронная поставка)</td>
+					<td align="right">488 000</td>
+					</tr>
+					<tr id="bx_1914200112_410433">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Дополнительная лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">258 000</td>
+					</tr>
+					<tr id="bx_1914200112_410432">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">67 000</td>
+					</tr>
+					<tr id="bx_1914200112_410431">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Дополнительная лицензия на 10 рабочих мест. (USB)</td>
+					<td align="right">567 000</td>
+					</tr>
+					<tr id="bx_1914200112_410430">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Дополнительная лицензия на 5 рабочих мест. (USB)</td>
+					<td align="right">303 750</td>
+					</tr>
+					<tr id="bx_1914200112_410429">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Дополнительная лицензия на 1 рабочее место. (USB)</td>
+					<td align="right">81 000</td>
+					</tr>
+					<tr id="bx_1914200112_410428">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Дополнительная лицензия на 10 рабочих мест</td>
+					<td align="right">504 000</td>
+					</tr>
+					<tr id="bx_1914200112_410427">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Дополнительная лицензия на 5 рабочих мест</td>
+					<td align="right">270 000</td>
+					</tr>
+					<tr id="bx_1914200112_410426">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">72 000</td>
+					</tr>
+					<tr id="bx_1914200112_410425">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Комплект на 5 пользователей. (Электронная поставка)</td>
+					<td align="right">413 000</td>
+					</tr>
+					<tr id="bx_1914200112_410424">
+					<td>1С-Рейтинг: Бюджетирование предприятия. Комплект на 5 пользователей</td>
+					<td align="right">438 000</td>
+					</tr>
+					<tr id="bx_1914200112_410423">
+					<td>1С-Рейтинг: Бюджетирование предприятия (USB). Комплект на 5 пользователей</td>
+					<td align="right">492 700</td>
+					</tr>
+					<tr id="bx_1914200112_395653">
+					<td>1С-Рейтинг: Бюджетирование предприятия. (Электронная поставка)</td>
+					<td align="right">240 000</td>
+					</tr>
+					<tr id="bx_1914200112_395642">
+					<td>1С-Рейтинг: Комплексное управление финансами и бюджетирование для Казахстана. Филиальная лицензия. (Электронная поставка)</td>
+					<td align="right">180 000</td>
+					</tr>
+					<tr id="bx_1914200112_395641">
+					<td>1С-Рейтинг: Комплексное управление финансами и бюджетирование для Казахстана. (Электронная поставка)</td>
+					<td align="right">360 000</td>
+					</tr>
+					<tr>
+					<th id="obschepit" colspan="2">Решения для автоматизации учета общественного питания</th>
+					</tr>
+					<tr id="bx_1914200112_192770">
+					<td>1С-Рейтинг: Общепит для Казахстана. Базовая версия</td>
+					<td align="right">54 000</td>
+					</tr>
+					<tr id="bx_1914200112_220480">
+					<td>1С-Рейтинг: Общепит для Казахстана.</td>
+					<td align="right">90 000</td>
+					</tr>
+					<tr id="bx_1914200112_192771">
+					<td>1С-Рейтинг: Общепит для Казахстана. Включает платформу 1С:Предприятие 8 (USB)</td>
+					<td align="right">126 000</td>
+					</tr>
+					<tr id="bx_1914200112_192772">
+					<td>1С-Рейтинг: Общепит для Казахстана. Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_192773">
+					<td>1С-Рейтинг: Общепит для Казахстана. Дополнительная многопользовательская лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">67 800</td>
+					</tr>
+					<tr id="bx_1914200112_192774">
+					<td>1С-Рейтинг: Общепит для Казахстана. Дополнительная многопользовательская лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">126 000</td>
+					</tr>
+					<tr id="bx_1914200112_192766">
+					<td>1С-Рейтинг: Ресторан</td>
+					<td align="right">86 200</td>
+					</tr>
+					<tr id="bx_1914200112_213157">
+					<td>1С-Рейтинг: Ресторан (USB)</td>
+					<td align="right">101 200</td>
+					</tr>
+					<tr id="bx_1914200112_192767">
+					<td>1С-Рейтинг: Ресторан. Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">43 100</td>
+					</tr>
+					<tr id="bx_1914200112_213158">
+					<td>1С-Рейтинг: Ресторан. Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">55 100</td>
+					</tr>
+					<tr id="bx_1914200112_395652">
+					<td>1С-Рейтинг: Ресторан. Дополнительная многопользовательская лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">150 000</td>
+					</tr>
+					<tr id="bx_1914200112_395651">
+					<td>1С-Рейтинг: Ресторан. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">37 500</td>
+					</tr>
+					<tr id="bx_1914200112_395650">
+					<td>1С-Рейтинг: Ресторан. (Электронная поставка)</td>
+					<td align="right">75 000</td>
+					</tr>
+					<tr id="bx_1914200112_192768">
+					<td>1С-Рейтинг: Ресторан. Дополнительная многопользовательская лицензия на 5 рабочих мест</td>
+					<td align="right">165 000</td>
+					</tr>
+					<tr id="bx_1914200112_213160">
+					<td>1С-Рейтинг: Ресторан. Дополнительная многопользовательская лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">213 000</td>
+					</tr>
+					<tr id="bx_1914200112_335339">
+					<td>1С-Рейтинг: Ресторан. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">12 000</td>
+					</tr>
+					<tr id="bx_1914200112_335340">
+					<td>1С-Рейтинг: Ресторан. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">18 000</td>
+					</tr>
+					<tr id="bx_1914200112_335341">
+					<td>1С-Рейтинг: Ресторан. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">23 000</td>
+					</tr>
+					<tr id="bx_1914200112_314851">
+					<td>1С-Рейтинг: Мобильный официант. Лицензия на 1 устройство</td>
+					<td align="right">30 000</td>
+					</tr>
+					<tr id="bx_1914200112_314852">
+					<td>1С-Рейтинг: Мобильный официант. Лицензия на 5 устройств</td>
+					<td align="right">135 000</td>
+					</tr>
+					<tr id="bx_1914200112_314853">
+					<td>1С-Рейтинг: Мобильный официант. Лицензия на 10 устройств</td>
+					<td align="right">255 000</td>
+					</tr>
+					<tr id="bx_1914200112_314854">
+					<td>1С-Рейтинг: Мобильный официант. Лицензия на 20 устройств</td>
+					<td align="right">480 000</td>
+					</tr>
+					<tr>
+					<th id="alco" colspan="2">Решения для автоматизации производства и реализации алкогольной продукции</th>
+					</tr>
+					<tr id="bx_1914200112_169129">
+					<td>1С-Рейтинг: Алкомониторинг</td>
+					<td align="right">80 600</td>
+					</tr>
+					<tr id="bx_1914200112_213146">
+					<td>1С-Рейтинг: Алкомониторинг (USB)</td>
+					<td align="right">95 600</td>
+					</tr>
+					<tr id="bx_1914200112_169130">
+					<td>1С-Рейтинг: Алкомониторинг. Комплект на 5 пользователей</td>
+					<td align="right">155 200</td>
+					</tr>
+					<tr id="bx_1914200112_213147">
+					<td>1С-Рейтинг: Алкомониторинг. Комплект на 5 пользователей (USB)</td>
+					<td align="right">200 200</td>
+					</tr>
+					<tr id="bx_1914200112_169131">
+					<td>Дополнительная лицензия на 1 рабочее место</td>
+					<td align="right">31 000</td>
+					</tr>
+					<tr id="bx_1914200112_213148">
+					<td>Дополнительная лицензия на 1 рабочее место (USB)</td>
+					<td align="right">43 000</td>
+					</tr>
+					<tr id="bx_1914200112_169132">
+					<td>Дополнительная многопользовательская лицензия на 5 рабочих мест</td>
+					<td align="right">103 900</td>
+					</tr>
+					<tr id="bx_1914200112_213149">
+					<td>Дополнительная многопользовательская лицензия на 5 рабочих мест (USB)</td>
+					<td align="right">145 900</td>
+					</tr>
+					<tr id="bx_1914200112_169133">
+					<td>Дополнительная многопользовательская лицензия на 10 рабочих мест</td>
+					<td align="right">193 000</td>
+					</tr>
+					<tr id="bx_1914200112_213150">
+					<td>Дополнительная многопользовательская лицензия на 10 рабочих мест (USB)</td>
+					<td align="right">271 000</td>
+					</tr>
+					<tr id="bx_1914200112_335268">
+					<td>1С-Рейтинг: Алкомониторинг. Технологическая поддержка на 6 месяцев</td>
+					<td align="right">24 000</td>
+					</tr>
+					<tr id="bx_1914200112_335269">
+					<td>1С-Рейтинг: Алкомониторинг. Технологическая поддержка на 9 месяцев</td>
+					<td align="right">35 000</td>
+					</tr>
+					<tr id="bx_1914200112_335270">
+					<td>1С-Рейтинг: Алкомониторинг. Технологическая поддержка на 12 месяцев</td>
+					<td align="right">45 000</td>
+					</tr>
+					<tr id="bx_1914200112_395584">
+					<td>1С-Рейтинг: Алкомониторинг (Электронная поставка)</td>
+					<td align="right">67 500</td>
+					</tr>
+					<tr id="bx_1914200112_395589">
+					<td>1С-Рейтинг: Алкомониторинг. Дополнительная многопользовательская лицензия на 10 рабочих мест. (Электронная поставка)</td>
+					<td align="right">175 500</td>
+					</tr>
+					<tr id="bx_1914200112_395588">
+					<td>1С-Рейтинг: Алкомониторинг. Дополнительная многопользовательская лицензия на 5 рабочих мест. (Электронная поставка)</td>
+					<td align="right">94 500</td>
+					</tr>
+					<tr id="bx_1914200112_395587">
+					<td>1С-Рейтинг: Алкомониторинг. Дополнительная лицензия на 1 рабочее место. (Электронная поставка)</td>
+					<td align="right">27 000</td>
+					</tr>
+					<tr id="bx_1914200112_395586">
+					<td>1С-Рейтинг: Алкомониторинг. Комплект на 5 пользователей. (Электронная поставка)</td>
+					<td align="right">135 000</td>
+					</tr>
+					</tbody>
+					</table>
+                  </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    <!-- Single post--
-    <section class="section section-md bg-white">
-        <div class="shell blog">
-            <div class="range range-90">
-                <div class="cell-md-8 cell-lg-9 blog__main">
-                    <article class="post-single">
-                        <h3 class="post-single__title"><? echo the_title() ?></h3>
-                        <div class="post-single__main">
-                            <!-- Accordion--
+      </section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-												<?php
-							// Start the loop.
-							while ( have_posts() ) : the_post();
-
-								/* translators: %s: Name of current post */
-								the_content();
-
-								// End the loop.
-							endwhile;
-							?>
-
-                        </div>
-                    </article>
-
-                </div>
-                <div class="cell-md-4 cell-lg-3 blog__aside">
-                    <div class="blog-aside__column">
-                        <!--<div class="blog__aside-item">
-                            <p class="heading-8 blog-title"></p>
-                            <ul class="list-marked-bordered">
-                                <li><a href="#"><span>Digital/SMM</span><span class="count">(4)</span></a></li>
-                                <li><a href="#"><span>Brand Marketing</span><span class="count">(2)</span></a></li>
-                                <li><a href="#"><span>Media Buying</span><span class="count">(6)</span></a></li>
-                            </ul>
-                        </div>--
-                        <div class="blog__aside-item">
-                            <p class="heading-8 blog-title">Последние новости</p>
-                            <div class="post-inline-wrap">
-                                <!-- Post inline--
-                                <?php query_posts('orderby=rand&showposts=2&cat=3'); ?>
-                                <?php if (have_posts()) : ?>
-                                    <?php while (have_posts()) : the_post(); ?>
-                                        <article class="post-inline">
-                                            <div class="post-inline__main">
-                                                <p class="post-inline__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-                                            </div>
-                                            <div class="post-inline__footer">
-                                                <p class="post-inline__time"><?php the_time('j F Y'); ?></p>
-                                            </div>
-                                        </article>
-                                    <?php endwhile; endif; ?>
-                            </div>
-                        </div>
-                        <!--<div class="blog__aside-item">
-                            <p class="heading-8 blog-title"><span>Promo </span><span class="tag-inline">
-                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="51px" height="23px" viewbox="0 0 51 23.011" preserveAspectRatio="none">
-                        <polygon points="7,0.006 7,0 0,11.505 7,23.011 7,23.006 51,23.006 51,0.006 "></polygon>
-                      </svg><span>New</span></span></p><a class="box-promo" href="#"><img src="<?php bloginfo('template_url'); ?>/images/promo-1-236x321.jpg" alt="" width="236" height="321"/>
-                                <div class="box-promo__content">
-                                    <h5>Recommendations to Manage Your Campaign</h5>
-                                </div></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
+    <script>
+        $(document).ready(function(){
+            $("#search").keyup(function(){
+                _this = this;
+                $.each($("#mytable tbody tr"), function() {
+                    if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+                       $(this).hide();
+                    else
+                       $(this).show();                
+                });
+            });
+        });
+    </script>
 <?php get_footer(); ?>

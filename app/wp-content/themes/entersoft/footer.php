@@ -39,6 +39,12 @@
                                         <dd>Выходные</dd>
                                     </dl>
                                 </li>
+                                <li>
+                                    <dl class="list-terms-inline">
+                                        <dt>Обед</dt>
+                                        <dd>13:00-14:00</dd>
+                                    </dl>
+                                </li>
                             </ul>
                         </li>
                         <li>
@@ -53,9 +59,10 @@
                         </li>
                         <li>
                             <dl class="list-terms-inline">
-                                <dt>Телефон</dt>
-                                <dd><a href="callto:+7 (7222) 56-20-27">+7 (7222) 56-20-27</a>, </dd>
-                                <dd><a href="callto:+7 (7222) 52-31-16">+7 (7222) 52-31-16</a></dd>
+                                <dt>Телефон #1</dt>
+                                <dd><a href="callto:+7(7222)56-33-70">+7 (7222) 56-33-70</a></dd><br>
+								<dt>Телефон #2</dt>
+                                <dd><a href="callto:+7(7222)52-31-16">+7 (7222) 52-31-16</a></dd>
                             </dl>
                         </li>
                     </ul>
@@ -94,17 +101,11 @@
                 <div class="cell-xs-4 cell-sm-6 cell-md-2 cell-lg-2 cell-xl-1 footer-corporate__column">
                     <h4 class="heading-bordered">Полезное</h4>
                     <ul class="list-xxs list_darker">
-                        <li><a href="index.html">Главная</a></li>
-                        <li><a href="about-us.html">О нас</a>
-                        </li>
-                        <li><a href="services.html">Продукты</a>
-                        </li>
-                        <li><a href="our-works.html">Еще что-то</a>
-                        </li>
-                        <li><a href="news.html">Новости</a>
-                        </li>
-                        <li><a href="contacts.html">Контакты</a>
-                        </li>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about">О нас</a></li>
+                        <li><a href="/products">Продукты</a></li>
+                        <li><a href="/news">Новости</a></li>
+                        <li><a href="/contacts">Контакты</a></li>
                     </ul>
                 </div>
             </div>

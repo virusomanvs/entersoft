@@ -20,37 +20,7 @@
                             </div>
                         </div>
                     </div>
-					<!--
-                    <div class="swiper-slide" data-slide-bg="<?php bloginfo('template_url'); ?>/images/slider-slide-2-1464x660.jpg">
-                        <div class="swiper-slide-caption">
-                            <div class="shell">
-                                <div class="range">
-                                    <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                                        <h1 data-caption-animate="fadeInUpSmall"><span>Обслуживание</span> <span class="custom-line">1С</span>
-                                        </h1>
-                                        <div class="object-decorated">
-                                            <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">Our team is ready to use all its experience to help you promote your products and services online to gain more potential customers than ever.</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" data-slide-bg="<?php bloginfo('template_url'); ?>/images/slider-slide-3-1464x660.jpg">
-                        <div class="swiper-slide-caption">
-                            <div class="shell">
-                                <div class="range">
-                                    <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                                        <h1 data-caption-animate="fadeInUpSmall"><span>Full Cycle</span> <span class="custom-line">Production</span>
-                                        </h1>
-                                        <div class="object-decorated">
-                                            <h4 data-caption-animate="fadeInRightSmall" data-caption-delay="550">Whatever type of an advertising or promotional campaign you're about to launch, be sure that thanks to our in-depth expertise and the skills that our advertising pros have, it will all be done at one place!</h4>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>-->
+					
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -60,7 +30,7 @@
                     <div class="thumb-modern__caption">
                         <p class="thumb-modern__title" style="color:#fff">Обновления 1С</p>
                     </div></a></div>
-            <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-2-498x195.png" alt="" width="498" height="195"/>
+            <div class="section-layout-aside__item"><a class="thumb-modern" href="/solutions"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-2-498x195.png" alt="" width="498" height="195"/>
                     <div class="thumb-modern__caption">
                         <p class="thumb-modern__title" style="color:#fff; text-align: left">Отраслевые решения</p>
                     </div></a></div>
@@ -105,6 +75,68 @@
             </div>
         </div>
     </section>
+   
+    <!-- Clients-->
+    <section class="section section-md bg-white text-center">
+        <div class="shell shell-wide">
+            <div class="range range-md-center">
+                <div class="cell-lg-11">
+                    <!-- Section Header-->
+                    <div class="section__header">
+                        <h2>Наши партнеры</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shell-fluid">
+            <!-- Owl Carousel-->
+                        <div class="owl-carousel owl-carousel_style-3" data-autoplay="true" data-items="4" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
+                            <div class="item">
+                                <!-- Quote light-->
+                                <article class="quote-light">
+                                    <div class="quote-light">
+										<img src="<?php bloginfo('template_url'); ?>/images/partners/1c.png"/>
+                                    </div>
+                                </article>
+                            </div>
+							<div class="item">
+                                <!-- Quote light-->
+                                <article class="quote-light">
+                                    <div class="quote-light">
+										<img src="<?php bloginfo('template_url'); ?>/images/partners/web.png"/>
+                                    </div>
+                                </article>
+                            </div>
+							<div class="item">
+                                <!-- Quote light-->
+                                <article class="quote-light">
+                                    <div class="quote-light">
+										<img src="<?php bloginfo('template_url'); ?>/images/partners/1crating.jpg"/>
+                                    </div>
+                                </article>
+                            </div>
+							<div class="item">
+                                <!-- Quote light-->
+                                <article class="quote-light">
+                                    <div class="quote-light">
+										<img src="<?php bloginfo('template_url'); ?>/images/partners/eset.png"/>
+                                    </div>
+                                </article>
+                            </div>
+                            
+                            <div class="item">
+                                <!-- Quote light-->
+                                <article class="quote-light">
+                                    <div class="quote-light">
+										<img src="<?php bloginfo('template_url'); ?>/images/partners/kasp.png"/>
+                                    </div>
+                                </article>
+                            </div>
+
+                        </div>
+        </div>
+    </section>
+
 
     <!-- Counters-->
     <section class="section parallax-container bg-gray-dark">
@@ -126,18 +158,20 @@
                         <li class="list-blocks__item">
                             <div class="list-blocks__item-inner">
                                 <article class="box-counter-modern">
-                                    <div class="box-counter-modern__wrap">
-                                        <div class="counter" data-zero="true">60</div>
-                                    </div>
-                                    <p class="box-counter-modern__title">Цифры чего-нибудь</p>
+                                    <div class="box-counter-modern__wrap"><span class="big">№1</span></div>
+                                    <p class="box-counter-modern__title">в городе Семей</p>
                                 </article>
                             </div>
                         </li>
                         <li class="list-blocks__item">
                             <div class="list-blocks__item-inner">
                                 <article class="box-counter-modern">
-                                    <div class="box-counter-modern__wrap"><span>#</span><span class="big">01</span></div>
-                                    <p class="box-counter-modern__title">Первые в чём-то</p>
+									<div class="box-counter-modern__wrap">
+                                        <div class="counter" data-zero="true">100</div>
+										<span>+</span>
+                                    </div>
+                                    
+                                    <p class="box-counter-modern__title">Завершенных проектов</p>
                                 </article>
                             </div>
                         </li>
@@ -158,12 +192,12 @@
     </section>
 
 
-    <!-- Our Projects-->
+    <!-- Our Projects
     <section class="section section-md bg-white">
         <div class="shell shell-wide">
             <div class="range range-md-center">
                 <div class="cell-lg-11">
-                    <!-- Section Header-->
+                    <!-- Section Header--
                     <div class="section__header">
                         <h2>Наши проекты</h2>
                         <div class="section__header-element"><a class="link link-arrow" href="our-work.html"><span>See All Projects</span></a></div>
@@ -175,31 +209,31 @@
             <div class="isotope" data-isotope-layout="masonry" data-isotope-group="projects">
                 <div class="row row-no-gutter">
                     <div class="col-xs-6 col-md-4 isotope-item">
-                        <!-- Thumb Zoe <?php bloginfo('template_url'); ?>/images/project-1-639x524.jpg--><a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="https://via.placeholder.com/639x524" alt="" width="639" height="524"/>
+                        <!-- Thumb Zoe <?php bloginfo('template_url'); ?>/images/project-1-639x524.jpg--<a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="http://via.placeholder.com/639x524" alt="" width="639" height="524"/>
                             <div class="thumb-zoe__caption">
                                 <p class="thumb-zoe__title">New Office Co.</p>
                             </div></a>
                     </div>
                     <div class="col-xs-6 col-md-2 isotope-item">
-                        <!-- Thumb Zoe--><a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-2-320x262.jpg" alt="" width="320" height="262"/>
+                        <!-- Thumb Zoe--<a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-2-320x262.jpg" alt="" width="320" height="262"/>
                             <div class="thumb-zoe__caption">
                                 <p class="thumb-zoe__title">2K Stationery</p>
                             </div></a>
                     </div>
                     <div class="col-xs-6 col-md-2 isotope-item">
-                        <!-- Thumb Zoe--><a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-4-320x524.jpg" alt="" width="320" height="524"/>
+                        <!-- Thumb Zoe--<a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-4-320x524.jpg" alt="" width="320" height="524"/>
                             <div class="thumb-zoe__caption">
                                 <p class="thumb-zoe__title">iStep</p>
                             </div></a>
                     </div>
                     <div class="col-xs-6 col-md-4 isotope-item">
-                        <!-- Thumb Zoe--><a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-3-640x524.jpg" alt="" width="640" height="524"/>
+                        <!-- Thumb Zoe--<a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-3-640x524.jpg" alt="" width="640" height="524"/>
                             <div class="thumb-zoe__caption">
                                 <p class="thumb-zoe__title">PaperWorks Ltd.</p>
                             </div></a>
                     </div>
                     <div class="col-xs-6 col-md-2 isotope-item">
-                        <!-- Thumb Zoe--><a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-5-320x262.jpg" alt="" width="320" height="262"/>
+                        <!-- Thumb Zoe--<a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-5-320x262.jpg" alt="" width="320" height="262"/>
                             <div class="thumb-zoe__caption">
                                 <p class="thumb-zoe__title">BTS Corp.</p>
                             </div></a>
@@ -207,7 +241,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+
+    
 
     <!-- Clients-->
     <section class="section section-md bg-white text-center">
@@ -231,13 +267,13 @@
                             <div class="item">
                                 <!-- Quote light-->
                                 <article class="quote-light">
-                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/infec.png" alt="" width="88" height="88"/>
+                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
                                     </div>
                                     <div class="quote-light__main">
                                         <p class="q">Median was a great strategic partner and provided valuable insights to support our turnaround. Their understanding of our business and the marketplace resulted in recommendations to help fuel our success.</p>
                                         <ul class="quote-light__meta">
                                             <li><span class="cite">Samuel Johnson</span></li>
-                                            <li><span class="small">CEO “BTC Ltd.”</span></li>
+                                            <li><span class="small">«ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ»</span></li>
                                         </ul>
                                     </div>
                                 </article>
@@ -274,11 +310,11 @@
                     </div>
                 </div>
                 <div class="cell-md-6">
-                    <div class="link-block-group"><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/clients/infec.png" alt="" width="500" height="102"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-2-155x34.png" alt="" width="155" height="34"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-3-122x33.png" alt="" width="122" height="33"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-4-100x76.png" alt="" width="100" height="76"/></a></div>
+                    <div class="link-block-group"><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/clients/infec.png" alt="" width="500" height="102"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="КГП НА ПХВ «ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ» УЗ ВКО" title="КГП НА ПХВ «ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ» УЗ ВКО"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-3-122x33.png" alt="" width="122" height="33"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-4-100x76.png" alt="" width="100" height="76"/></a></div>
                 </div>
             </div>
         </div>
     </section>
-
+	
 
 <?php get_footer(); ?>

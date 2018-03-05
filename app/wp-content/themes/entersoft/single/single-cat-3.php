@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <!-- Breadcrumbs-->
     <section class="breadcrumbs-custom bg-image"
-             style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-9.jpg);">
+             style="background-image: url(<?php echo the_field('news_image') ?>">
         <div class="shell">
             <h2 class="breadcrumbs-custom__title"><? echo the_title() ?></h2>
             <ul class="breadcrumbs-custom__path">
@@ -47,13 +47,19 @@
                             </li>-->
                         </ul>
                         <div class="post-single__main">
-                            <?php echo the_field('news_desc') ?>
+                            <?php
+							// Start the loop.
+							while ( have_posts() ) : the_post();
+								the_content();
+							endwhile;
+							?>
+
                         </div>
                         <div class="post-single__footer">
                             <p class="heading-5">Поделиться:</p>
                             <div class="group-sm">
                                 <a class="button button-xs button-facebook button-icon button-icon-left" href="#">
-                                    <span class="icon fa fa-facebook"></span>Нравиться</a>
+                                    <span class="icon fa fa-facebook"></span>Нравится</a>
                                 <a class="button button-xs button-twitter button-icon button-icon-left" href="#">
                                     <span class="icon fa fa-twitter"></span>Твитнуть</a>
                                 <a class="button button-xs button-google button-icon button-icon-left" href="#">
@@ -65,11 +71,10 @@
                 </div>
                 <div class="cell-md-4 cell-lg-3 blog__aside">
                     <div class="blog-aside__column">
-                        <div class="blog__aside-item">
-                            <!-- RD Search-->
+                        <!-- <div class="blog__aside-item">
                             <?php get_search_form(); ?>
-
                         </div>
+						-->
                         <!--<div class="blog__aside-item">
                             <p class="heading-8 blog-title"></p>
                             <ul class="list-marked-bordered">

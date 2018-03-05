@@ -27,8 +27,7 @@
                                     <div class="price-2__main">
                                         <img src="<?php echo the_field('solutions_icon') ?>" width="100"/>
                                         <div class="divider-1"></div>
-                                        <div class="price"><?php echo the_field('solutions_price') ?> тг.</div>
-                                        <div class="divider-1"></div>
+
                                         <p class="price-2__caption"><?php echo the_field('solutions_desc') ?></p>
                                         <a class="button button-dark-outline" href="<?php the_permalink(); ?>">подробнее о товаре</a>
                                     </div>
