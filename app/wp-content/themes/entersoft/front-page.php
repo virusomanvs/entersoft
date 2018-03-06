@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="section-layout-aside">
-            <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-1-538x200.png" alt="" width="538" height="200"/>
+            <div class="section-layout-aside__item"><a class="thumb-modern" href="/updates"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-1-538x200.png" alt="" width="538" height="200"/>
                     <div class="thumb-modern__caption">
                         <p class="thumb-modern__title" style="color:#fff">Обновления 1С</p>
                     </div></a></div>
@@ -34,7 +34,7 @@
                     <div class="thumb-modern__caption">
                         <p class="thumb-modern__title" style="color:#fff; text-align: left">Отраслевые решения</p>
                     </div></a></div>
-            <div class="section-layout-aside__item"><a class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-3-460x195.png" alt="" width="460" height="195"/>
+            <div class="section-layout-aside__item"><a class="thumb-modern" href="/products/1c/"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-3-460x195.png" alt="" width="460" height="195"/>
                     <div class="thumb-modern__caption">
                         <p class="thumb-modern__title" style="color:#fff">Программы 1С</p>
                     </div></a></div>
@@ -192,59 +192,6 @@
     </section>
 
 
-    <!-- Our Projects
-    <section class="section section-md bg-white">
-        <div class="shell shell-wide">
-            <div class="range range-md-center">
-                <div class="cell-lg-11">
-                    <!-- Section Header--
-                    <div class="section__header">
-                        <h2>Наши проекты</h2>
-                        <div class="section__header-element"><a class="link link-arrow" href="our-work.html"><span>See All Projects</span></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="shell-fluid">
-            <div class="isotope" data-isotope-layout="masonry" data-isotope-group="projects">
-                <div class="row row-no-gutter">
-                    <div class="col-xs-6 col-md-4 isotope-item">
-                        <!-- Thumb Zoe <?php bloginfo('template_url'); ?>/images/project-1-639x524.jpg--<a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="http://via.placeholder.com/639x524" alt="" width="639" height="524"/>
-                            <div class="thumb-zoe__caption">
-                                <p class="thumb-zoe__title">New Office Co.</p>
-                            </div></a>
-                    </div>
-                    <div class="col-xs-6 col-md-2 isotope-item">
-                        <!-- Thumb Zoe--<a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-2-320x262.jpg" alt="" width="320" height="262"/>
-                            <div class="thumb-zoe__caption">
-                                <p class="thumb-zoe__title">2K Stationery</p>
-                            </div></a>
-                    </div>
-                    <div class="col-xs-6 col-md-2 isotope-item">
-                        <!-- Thumb Zoe--<a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-4-320x524.jpg" alt="" width="320" height="524"/>
-                            <div class="thumb-zoe__caption">
-                                <p class="thumb-zoe__title">iStep</p>
-                            </div></a>
-                    </div>
-                    <div class="col-xs-6 col-md-4 isotope-item">
-                        <!-- Thumb Zoe--<a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-3-640x524.jpg" alt="" width="640" height="524"/>
-                            <div class="thumb-zoe__caption">
-                                <p class="thumb-zoe__title">PaperWorks Ltd.</p>
-                            </div></a>
-                    </div>
-                    <div class="col-xs-6 col-md-2 isotope-item">
-                        <!-- Thumb Zoe--<a class="thumb-zoe" href="#"><img class="thumb-zoe__image" src="<?php bloginfo('template_url'); ?>/images/project-5-320x262.jpg" alt="" width="320" height="262"/>
-                            <div class="thumb-zoe__caption">
-                                <p class="thumb-zoe__title">BTS Corp.</p>
-                            </div></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
-    
-
     <!-- Clients-->
     <section class="section section-md bg-white text-center">
         <div class="shell shell-wide">
@@ -273,7 +220,7 @@
                                         <p class="q">Median was a great strategic partner and provided valuable insights to support our turnaround. Their understanding of our business and the marketplace resulted in recommendations to help fuel our success.</p>
                                         <ul class="quote-light__meta">
                                             <li><span class="cite">Samuel Johnson</span></li>
-                                            <li><span class="small">«ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ»</span></li>
+                                            <li><span class="small">Перинатальный центр г. Семей»</span></li>
                                         </ul>
                                     </div>
                                 </article>

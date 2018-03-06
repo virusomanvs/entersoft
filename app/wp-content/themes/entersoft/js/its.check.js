@@ -47,7 +47,7 @@ function doCheck() {
 		btn.innerHTML = 'Пожалуйста, подождите';
 	}
 
-	$.getScript("http://1c.ru/rus/support/its/js-check-subscribe.jsp?rn=" + escape(rn), function() {startResult();});
+	$.getScript("https://1c.ru/rus/support/its/js-check-subscribe.jsp?rn=" + escape(rn), function() {startResult();});
 }
 
 function ajaxCheck(rn, result, result2) {

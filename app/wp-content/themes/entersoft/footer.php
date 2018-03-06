@@ -8,6 +8,7 @@
         </svg>
     </div>
     <div class="cd-modal-content">
+	<h4>Заполните форму</h4>
         <?php echo do_shortcode( '[contact-form-7 id="173" title="Звонок"]' ); ?>
     </div> <!-- cd-modal-content -->
     <a href="#0" class="modal-close">Close</a>

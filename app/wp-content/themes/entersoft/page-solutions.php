@@ -27,11 +27,12 @@
                                     <div class="price-2__main">
                                         <img src="<?php echo the_field('solutions_icon') ?>" width="100"/>
                                         <div class="divider-1"></div>
-
-                                        <p class="price-2__caption"><?php echo the_field('solutions_desc') ?></p>
-                                        <a class="button button-dark-outline" href="<?php the_permalink(); ?>">подробнее о товаре</a>
+                                        <p class="price-2__caption" style="text-align: left;"><?php echo the_field('solutions_desc') ?></p>
+										<a class="button button-dark-outline" href="<?php the_permalink(); ?>">подробнее</a>
                                     </div>
+									
                                 </div>
+                                    
                             </div>
                         <?php endwhile; ?>
                         <?php wp_reset_postdata(); ?>

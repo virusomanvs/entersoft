@@ -1,21 +1,21 @@
 <?php get_header(); ?>
     <!-- Breadcrumbs-->
-    <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-13.jpg);">
+    <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-16.jpg);">
         <div class="shell">
-            <h2 class="breadcrumbs-custom__title"><? echo the_title() ?></h2>
+            <h2 class="breadcrumbs-custom__title" id="item-title"><? echo the_title() ?></h2>
             <ul class="breadcrumbs-custom__path">
                 <li><a href="/">Главная</a></li>
-                <li class="active"><a href="/solutions">Отраслевые решения</a></li>
+                <li class="active"><? echo the_title() ?></li>
             </ul>
         </div>
     </section>
     <!-- Single post-->
     <section class="section section-md bg-white" id="section-buy">
         <div class="shell blog">
-            <div class="range range-90">
+            <div class="range range-50">
                 <div class="cell-md-6 cell-lg-6 cell-sm-4 blog__main">
                     <article class="post-single">
-                        <img class="post-single__image" src="<?php echo the_field('solutions_image') ?>" width="500" alt=""/>
+                        <img class="post-single__image" width="500" src="<?php bloginfo('template_url'); ?>/images/update-1c.png" alt=""/>
                     </article>
                 </div>
                 <div class="cell-md-6 cell-lg-6 cell-sm-8 blog__aside">
@@ -24,7 +24,7 @@
                             <!-- RD Search-->
                             <div class="cell-xs-12">
                                 <div class="form-wrap">
-                                    <h4>Хотите купить?</h4>
+                                    <h4>Хотите обновиться?</h4>
                                 </div>
                             </div>
 							<div class="wpcf7" dir="ltr" id="wpcf7-f174-o1" lang="ru-RU" role="form">
@@ -64,7 +64,7 @@
 										</div>
 									</div>
 									<div class="fw-mt-15">
-										<button class="button button-block button-primary" type="submit">Купить</button>
+										<button class="button button-block button-primary" type="submit">Заказать обновление</button>
 									</div>
 									<div class="page-loader-body ajax-loader">
 										<div id="loadingProgressG">
@@ -75,83 +75,25 @@
 								</form>
 							</div>
                         </div>
-
-                        </div>
                     </div>
                 </div>
                 <div class="cell-md-8 cell-lg-12 blog__main">
                     <article class="post-single">
-                        <h4 class="post-single__title">Описание товара</h4>
+                        <h4 class="post-single__title">Описание услуги</h4>
                         <div class="post-single__main">
-                            <?php echo the_field('solutions_full_desc') ?>
+                            <?php
+							// Start the loop.
+							while ( have_posts() ) : the_post();
+								the_content();
+							endwhile;
+							?>
                         </div>
                         <div class="post-single__footer">
-							<a class="button button-xs button-primary" href="/price">Узнать цену</a>
-                            <a class="button button-xs button-primary" href="#section-buy">Заказать данный товар</a>
+                            <a class="button button-xs button-primary" href="#section-buy">Заказать обновление</a>
                         </div>
                     </article>
                 </div>
             </div>
-    </section>
-	<!-- Clients-->
-    <section class="section section-md bg-white text-center">
-        <div class="shell shell-wide">
-            <div class="range range-md-center">
-                <div class="cell-lg-11">
-                    <!-- Section Header-->
-                    <div class="section__header">
-                        <h3>Наши партнеры</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="shell-fluid">
-            <!-- Owl Carousel-->
-                        <div class="owl-carousel owl-carousel_style-3" data-autoplay="true" data-items="5" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
-                            <div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light">
-										<img src="<?php bloginfo('template_url'); ?>/images/partners/1c.png"/>
-                                    </div>
-                                </article>
-                            </div>
-							<div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light">
-										<img src="<?php bloginfo('template_url'); ?>/images/partners/web.png"/>
-                                    </div>
-                                </article>
-                            </div>
-							<div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light">
-										<img src="<?php bloginfo('template_url'); ?>/images/partners/1crating.jpg"/>
-                                    </div>
-                                </article>
-                            </div>
-							<div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light">
-										<img src="<?php bloginfo('template_url'); ?>/images/partners/eset.png"/>
-                                    </div>
-                                </article>
-                            </div>
-                            
-                            <div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light">
-										<img src="<?php bloginfo('template_url'); ?>/images/partners/kasp.png"/>
-                                    </div>
-                                </article>
-                            </div>
-
-                        </div>
         </div>
     </section>
-
 <?php get_footer(); ?>
