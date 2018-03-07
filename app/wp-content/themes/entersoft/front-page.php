@@ -137,7 +137,37 @@
         </div>
     </section>
 
+	<!-- Experience since 1999
+      <section class="section section-md bg-white">
+        <div class="bg-gray-4">
+          <div class="shell-fluid shell-condensed">
+            <div class="range range-30 range-md-reverse">
+              <div class="cell-sm-12 cell-md-6">
+                <div class="section-md shell-fluid-cell">
+                  <div class="box-centered box-width-1 box-custom">
+                    <h2><span>EnterSoft</span><span class="object-decorated object-decorated_inline" style="max-width: 125px;"><span class="heading-5">2007</span></span></h2>
+                    <p>Ntrcndasdsadasdsad.</p>
+                    <div class="group-md group-middle button-group"><a class="button button-darker" href="contacts.html">Кнопка 1</a>
+                      <p>or</p><a class="button button-primary" href="#">Кнопка 2</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cell-sm-12 cell-md-6 reveal-flex">
 
+                <div class="thumb-video"><img class="thumb-video__image" src="images/video-preview-962x465.jpg" alt=""/>
+                  <div class="thumb-video__caption">
+				  <iframe src="https://www.youtube.com/embed/CwlDXK1DIpk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <h4 class="thumb-video__title">Video Presentation</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+-->
     <!-- Counters-->
     <section class="section parallax-container bg-gray-dark">
         <div class="material-parallax"><img src="<?php bloginfo('template_url'); ?>/images/parallax-3.jpg" alt=""/></div>
