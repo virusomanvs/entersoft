@@ -90,7 +90,7 @@
         </div>
         <div class="shell-fluid">
             <!-- Owl Carousel-->
-                        <div class="owl-carousel owl-carousel_style-3" data-autoplay="true" data-items="4" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
+                        <div class="owl-carousel owl-carousel_style-3" data-autoplay="true" data-items="5" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
                             <div class="item">
                                 <!-- Quote light-->
                                 <article class="quote-light">
@@ -247,9 +247,9 @@
                                     <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
                                     </div>
                                     <div class="quote-light__main">
-                                        <p class="q">Median was a great strategic partner and provided valuable insights to support our turnaround. Their understanding of our business and the marketplace resulted in recommendations to help fuel our success.</p>
+                                        <p class="q">Текст!</p>
                                         <ul class="quote-light__meta">
-                                            <li><span class="cite">Samuel Johnson</span></li>
+                                            <li><span class="cite">Имя Фамилия</span></li>
                                             <li><span class="small">Перинатальный центр г. Семей»</span></li>
                                         </ul>
                                     </div>
@@ -258,27 +258,27 @@
                             <div class="item">
                                 <!-- Quote light-->
                                 <article class="quote-light">
-                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/testimonials-2-88x88.jpg" alt="" width="88" height="88"/>
+                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
                                     </div>
                                     <div class="quote-light__main">
-                                        <p class="q">Your company is very knowledgeable. I love the approach you bring to problems. I have always felt that the people here were part of our team. To this day, that is a huge differentiator.</p>
+                                        <p class="q">Текст!</p>
                                         <ul class="quote-light__meta">
-                                            <li><span class="cite">John Williams</span></li>
-                                            <li><span class="small">CEO “InterInverse”</span></li>
+                                            <li><span class="cite">Имя Фамилия</span></li>
+                                            <li><span class="small">Перинатальный центр г. Семей»</span></li>
                                         </ul>
                                     </div>
                                 </article>
                             </div>
-                            <div class="item">
+							<div class="item">
                                 <!-- Quote light-->
                                 <article class="quote-light">
-                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/testimonials-3-88x88.jpg" alt="" width="88" height="88"/>
+                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
                                     </div>
                                     <div class="quote-light__main">
-                                        <p class="q">This advertising agency has been critical in the growth of our marketing capabilities, especially in a part of our business where we were trying to go from one brand to another very quickly.</p>
+                                        <p class="q">Текст!</p>
                                         <ul class="quote-light__meta">
-                                            <li><span class="cite">Will Peters</span></li>
-                                            <li><span class="small">CEO “Betaworks”</span></li>
+                                            <li><span class="cite">Имя Фамилия</span></li>
+                                            <li><span class="small">Перинатальный центр г. Семей»</span></li>
                                         </ul>
                                     </div>
                                 </article>

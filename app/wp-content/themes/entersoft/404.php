@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-1.jpg);">
+<section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-97.jpg);">
     <div class="shell">
         <p class="heading-1 breadcrumbs-custom__title">404</p>
     </div>

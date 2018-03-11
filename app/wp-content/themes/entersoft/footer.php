@@ -92,7 +92,8 @@
                             <li>
                                 <article class="post-light">
                                     <p class="post-light__title"><a href="<?php the_permalink(); ?>"><?php echo the_title(); ?></a></p>
-                                    <div><?php the_time('j F Y'); ?></div>
+                                    <div></div>
+									<time datetime="<?php the_time('Y'); ?>"><?php the_time('j F Y'); ?></time>
                                 </article>
                             </li>
                         <?php endwhile; ?>
@@ -107,6 +108,7 @@
                         <li><a href="/products">Продукты</a></li>
                         <li><a href="/news">Новости</a></li>
                         <li><a href="/contacts">Контакты</a></li>
+                        <li><a href="/price">Цены</a></li>
                     </ul>
                 </div>
             </div>
@@ -117,7 +119,7 @@
             <div class="range range-20 range_xl-ten footer-corporate__range">
                 <div class="cell-sm-8 cell-xl-6 footer-corporate__aside-column text-sm-left">
                     <!-- Rights-->
-                    <p class="rights"><span>EnterSoft</span><span>&nbsp;&copy;&nbsp;</span><span id="copyright-year"></span>.&nbsp;<br class="veil-xs"><a class="link-underline" href="/sitemap">SiteMap</a>
+                    <p class="rights"><span>EnterSoft</span><span>&nbsp;&copy;&nbsp;</span><span id="copyright-year"></span>.&nbsp;<br class="veil-xs"><a class="link-underline" href="/sitemap.xml">SiteMap</a>
                     </p>
                 </div>
 

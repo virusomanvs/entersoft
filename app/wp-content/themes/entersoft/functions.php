@@ -162,7 +162,7 @@ function kriesi_pagination($pages = '', $range = 2)
         echo "</ul>\n";
     }
 }
-
+add_theme_support( 'html5', array( 'search-form' ) );
 add_filter( 'get_search_form', 'my_search_form' );
 function my_search_form( $form ) {
 

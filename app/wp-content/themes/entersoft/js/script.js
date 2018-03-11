@@ -383,7 +383,7 @@ $document.ready(function () {
   /**
    * Live Search
    * @description  create live search results
-   */
+   
   function liveSearch(options) {
     $('#' + options.live).removeClass('cleared').html();
     options.current++;
@@ -408,7 +408,7 @@ $document.ready(function () {
       options.spin.parents('.rd-search').find('.input-group-addon').removeClass('loading');
     })
   }
-
+*/
 
   /**
    * attachFormValidator
@@ -902,7 +902,7 @@ $document.ready(function () {
   /**
    * RD Search
    * @description Enables search
-   */
+   
   if (plugins.search.length || plugins.searchResults) {
     var handler = "bat/rd-search.php";
     var defaultTemplate = '<h5 class="search_title"><a target="_top" href="#{href}" class="search_link">#{title}</a></h5>' +
@@ -987,7 +987,7 @@ $document.ready(function () {
       }
     }
   }
-
+*/
   /**
    * Material Parallax
    * @description Enables Material Parallax plugin

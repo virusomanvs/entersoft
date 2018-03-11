@@ -10,8 +10,8 @@
     <meta name="keywords" content="1С, бухгалтерия, автоматизация, внедрение, бухгалтерский учет, оперативный учет, курсы 1С, обновление 1С, управленческий учет, Франчайзи, купить 1С, скачать 1С, 1С бухгалтерия, 1С предприятие, 1С зарплата и кадры, 1С кадры, 1С предприятие, 1С расчет, 1С торговля" />
     <meta name="description" content="Продажа, установка, настройка программ 1C, обучение пользователей. Разработка и внедрение систем полной автоматизации предприятий." />
     <link rel="icon" href="<?php bloginfo('template_url'); ?>/favicon.png" type="image/x-icon">
-    <!-- Stylesheets-->
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <!-- Stylesheets
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">-->
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css">
 	<link rel='stylesheet' href='<?php bloginfo('template_url'); ?>/css/sweetalert.css' type='text/css' media='all' />

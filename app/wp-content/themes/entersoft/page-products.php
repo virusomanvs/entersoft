@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <!-- Breadcrumbs-->
     <section class="breadcrumbs-custom bg-image"
-             style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-9.jpg);">
+             style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-98.jpg);">
         <div class="shell">
             <h2 class="breadcrumbs-custom__title"><? echo the_title() ?></h2>
             <ul class="breadcrumbs-custom__path">
@@ -56,28 +56,7 @@
                     </article>
 
                 </div>
-                <div class="cell-md-4 cell-lg-3 blog__aside">
-                    <div class="blog-aside__column">
-                        <div class="blog__aside-item">
-                            <p class="heading-8 blog-title">Последние новости</p>
-                            <div class="post-inline-wrap">
-                                <!-- Post inline-->
-                                <?php query_posts('orderby=rand&showposts=2&cat=3'); ?>
-                                <?php if (have_posts()) : ?>
-                                    <?php while (have_posts()) : the_post(); ?>
-                                        <article class="post-inline">
-                                            <div class="post-inline__main">
-                                                <p class="post-inline__title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-                                            </div>
-                                            <div class="post-inline__footer">
-                                                <p class="post-inline__time"><?php the_time('j F Y'); ?></p>
-                                            </div>
-                                        </article>
-                                    <?php endwhile; endif; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<?php include "right_block.php" ?>
             </div>
         </div>
     </section>
