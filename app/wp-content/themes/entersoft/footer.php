@@ -42,7 +42,7 @@
                                 </li>
                                 <li>
                                     <dl class="list-terms-inline">
-                                        <dt>Обед</dt>
+                                        <dt>Перерыв</dt>
                                         <dd>13:00-14:00</dd>
                                     </dl>
                                 </li>
@@ -60,9 +60,7 @@
                         </li>
                         <li>
                             <dl class="list-terms-inline">
-                                <dt>Телефон #1</dt>
-                                <dd><a href="callto:+7(7222)56-33-70">+7 (7222) 56-33-70</a></dd><br>
-								<dt>Телефон #2</dt>
+								<dt>Телефон</dt>
                                 <dd><a href="callto:+7(7222)52-31-16">+7 (7222) 52-31-16</a></dd>
                             </dl>
                         </li>
@@ -122,7 +120,13 @@
                     <p class="rights"><span>EnterSoft</span><span>&nbsp;&copy;&nbsp;</span><span id="copyright-year"></span>.&nbsp;<br class="veil-xs"><a class="link-underline" href="/sitemap.xml">SiteMap</a>
                     </p>
                 </div>
-
+				<div class="cell-sm-4 cell-xl-4 footer-corporate__aside-column text-sm-right">
+                <ul class="list-inline-xxs">
+                  <li><a class="icon icon-xs icon-style-modern fa fa-twitter" href="#"></a></li>
+                  <li><a class="icon icon-xs icon-style-modern fa fa-facebook" href="#"></a></li>
+                  <li><a class="icon icon-xs icon-style-modern fa fa-instagram" href="#"></a></li>
+                </ul>
+              </div>
             </div>
         </div>
     </div>

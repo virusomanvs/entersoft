@@ -287,7 +287,14 @@
                     </div>
                 </div>
                 <div class="cell-md-6">
-                    <div class="link-block-group"><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/clients/infec.png" alt="" width="500" height="102"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="КГП НА ПХВ «ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ» УЗ ВКО" title="КГП НА ПХВ «ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ» УЗ ВКО"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-3-122x33.png" alt="" width="122" height="33"/></a><a class="link-block" href="#"><img src="<?php bloginfo('template_url'); ?>/images/brand-4-100x76.png" alt="" width="100" height="76"/></a></div>
+                    <div class="link-block-group">
+                        <a class="link-block" href="#">
+                            <img src="<?php bloginfo('template_url'); ?>/images/clients/infec.png" alt="" width="500" height="102"/>
+                        </a>
+                        <a class="link-block" href="#">
+                            <img src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="КГП НА ПХВ «ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ» УЗ ВКО" title="КГП НА ПХВ «ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ» УЗ ВКО"/>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

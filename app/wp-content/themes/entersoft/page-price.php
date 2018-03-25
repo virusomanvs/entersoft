@@ -11,32 +11,30 @@
             </ul>
         </div>
     </section>
-	
+
     <!-- Page title -->
       <section class="section section-md bg-white text-center">
         <div class="shell">
           <div class="range range-lg-center">
             <div class="cell-lg-12"> 
-			
               <!-- Bootstrap tabs -->
               <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
                 <!-- Nav tabs-->
                 <ul class="nav nav-tabs">
-                  <li class="active"><a href="#tab_1c_pred" data-toggle="tab">Программы «1C:Предприятие»</a></li>
-                  <li><a href="#tab_sol" data-toggle="tab">Отраслевые решения «1С-Рейтинг»</a></li>
+                  <li <?php if ($_GET['type'] == '1c' or $_GET['type'] == '') {?> class="active" <?php }?>><a href="#tab_1c_pred" data-toggle="tab">Программы «1C:Предприятие»</a></li>
+                  <li <?php if ($_GET['type'] == 'sol') {?> class="active" <?php }?>><a href="#tab_sol" data-toggle="tab">Отраслевые решения «1С-Рейтинг»</a></li>
                 </ul>
 						<div class="shell fw-mt-15">
 						  <!-- RD Search-->
 						  <div class="rd-search rd-search_md rd-search_classic">
 							<div class="form-wrap">
-							  <input class="form-input" id="search" type="text" name="search" autocomplete="off" placeholder="Поиск по названию">
+							  <input class="form-input" id="search" type="text" name="search" value="<?php echo $_GET['search'];?>" autocomplete="off" placeholder="Поиск по названию">
 							</div>
 						  </div>
 						</div>
                 <!-- Tab panes-->
                 <div class="tab-content">
-
-                  <div class="tab-pane fade in active" id="tab_1c_pred">
+                  <div class="tab-pane fade <?php if ($_GET['type'] == '1c' or $_GET['type'] == '') {?> in active <?php }?>" id="tab_1c_pred">
 				  <div class="table-custom-responsive">
 					<table class="table-custom table-custom-bordered" cellspacing="0" id="mytable">
 					<tbody>
@@ -676,7 +674,7 @@
 					</table>
                   </div>
                   </div>
-                  <div class="tab-pane fade" id="tab_sol">
+                  <div class="tab-pane fade <?php if ($_GET['type'] == 'sol') {?> in active <?php }?>" id="tab_sol">
 				  <div class="table-custom-responsive">
 					<table class="table-custom table-custom-bordered" id="mytable">
 					<tbody>
@@ -1842,8 +1840,15 @@
 
     <script>
         $(document).ready(function(){
+			_this =  $("#search");
+                $.each($("#mytable tbody tr"), function() {
+                    if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+                       $(this).hide();
+                    else
+                       $(this).show();                
+                });
             $("#search").keyup(function(){
-                _this = this;
+                _this =  $("#search");
                 $.each($("#mytable tbody tr"), function() {
                     if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
                        $(this).hide();

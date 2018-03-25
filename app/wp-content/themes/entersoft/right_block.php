@@ -2,11 +2,10 @@
               <div class="blog-aside__column">
 				<?php get_search_form(); ?>
                 <div class="blog__aside-item">
-                  <p class="heading-8 blog-title">Categories</p>
+                  <p class="heading-8 blog-title">Продукты</p>
                   <ul class="list-marked-bordered">
-                    <li><a href="#"><span>Digital/SMM</span><span class="count">(4)</span></a></li>
-                    <li><a href="#"><span>Brand Marketing</span><span class="count">(2)</span></a></li>
-                    <li><a href="#"><span>Media Buying</span><span class="count">(6)</span></a></li>
+                    <li><a href="#"><span>1С:Предприятие 8</span></a></li>
+                    <li><a href="#"><span>Отраслевые решения</span></a></li>
                   </ul>
                 </div>
                 <div class="blog__aside-item">

@@ -22,19 +22,20 @@
                                 Для автоматизации бухгалтерского и налогового учета
                             </p>
                             <div class="divider-1"></div>
-
                             <p class="price-1__caption" style="text-align: left">
-                                <img src="<?php bloginfo('template_url'); ?>/images/1c-buh.jpg" style="border: 2px Solid orange;" width="50" alt="">
+									<img src="<?php bloginfo('template_url'); ?>/images/1c-buh.jpg" style="border: 2px Solid orange;" width="50" alt="">
                                 1С:Бухгалтерия 8 для Казахстана (БК) - популярная программа для бухгалтерского и налогового учета используется в более 90% предприятий, включает в себя:
                                 <br>- учет любых коммерческих предприятий (торговля, производство, услуги)
                                 <br>- учет в соответствии с действующим законодательством РК
                                 <br>- учет организаций с различными системами налогообложения (Общеустановленный режим, Упрощенка)
                                 <br>Существует 2 версии продукта "Базовая" (с ограничениями) и "ПРОФ".
                             </p>
-                            <a class="button button-primary" href="buhgalteria">
-                                показать список товаров</a>
                         </div>
+						<a class="button button-primary button-1c" href="buhgalteria">
+                                показать список товаров
+						</a>
                     </div>
+					
                 </div>
                 <div class="cell-sm-12 cell-md-12 cell-flex">
                     <!-- Card creative-->
@@ -52,8 +53,9 @@
                                 <br>- 1С:Розница 8
                                 <br>- 1С:Управление торговым предприятием 8
                             </p>
-                            <a class="button button-primary" href="torg">показать список товаров</a>
+                            
                         </div>
+						<a class="button button-primary button-1c" href="torg">показать список товаров</a>
                     </div>
                 </div>
                 <div class="cell-sm-12 cell-md-12 cell-flex">
@@ -70,8 +72,8 @@
                                 имеющих сложную юридическую структуру,
                                 также позволяет автоматизировать функции управления персоналом (подбор, обучение, мотивация).
                             </p>
-                            <a class="button button-primary" href="zup">показать список товаров</a>
                         </div>
+						<a class="button button-primary button-1c" href="torg">показать список товаров</a>
                     </div>
                 </div>
 
