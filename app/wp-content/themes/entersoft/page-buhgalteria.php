@@ -35,21 +35,17 @@
                         while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 						<div class="cell-sm-6 cell-md-6 cell-flex">
 						  <!-- Card creative-->
-						  <div class="price-2" style="display:flex; align-content: space-between; flex-direction: column;">
-						  
+						  <div class="price-2 price-2__flex">
 							<p class="price-2__title"><?php the_title(); ?></p>
-							
 							<div class="price-2__main">
 							  <!--<div class="price"><?php echo the_field('1c_buh_price') ?> тг.</div>
 							  <div class="divider-1"></div>-->
 							  <div class="price-2__caption" style="text-align: left;">
 							  <?php echo the_field('1c_buh_desc') ?>
 							  </div>
-							  
 							</div>
 							<a class="button button-dark-outline" style="flex: 0 0 auto;display: flex; flex-direction: column;" href="<?php the_permalink(); ?>">подробнее о товаре</a>
 						  </div>
-						  
 						</div>
                         <?php endwhile; ?>
                         <?php wp_reset_postdata(); ?>
