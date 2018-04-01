@@ -44,7 +44,7 @@
 							  <?php echo the_field('1c_buh_desc') ?>
 							  </div>
 							</div>
-							<a class="button button-dark-outline" style="flex: 0 0 auto;display: flex; flex-direction: column;" href="<?php the_permalink(); ?>">подробнее о товаре</a>
+							<a class="button button-dark-outline" href="<?php the_permalink(); ?>">подробнее о товаре</a>
 						  </div>
 						</div>
                         <?php endwhile; ?>

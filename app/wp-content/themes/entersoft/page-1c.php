@@ -73,7 +73,7 @@
                                 также позволяет автоматизировать функции управления персоналом (подбор, обучение, мотивация).
                             </p>
                         </div>
-						<a class="button button-primary button-1c" href="torg">показать список товаров</a>
+						<a class="button button-primary button-1c" href="zup">показать список товаров</a>
                     </div>
                 </div>
 

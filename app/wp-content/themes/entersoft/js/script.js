@@ -2040,21 +2040,36 @@ $document.ready(function () {
    */
   if (plugins.lightGallery.length && !isNoviBuilder) {
     plugins.lightGallery.lightGallery({
-      thumbnail: true,
+      thumbnail: false,
       download: false,
+	  counter:false,
+	  share: false,
+	  autoplayControls: false,
       actualSize: false,
       selector: "[data-lightgallery='group-item']"
     });
   }
-
+	$('#html5-videos').lightGallery({
+	share: false,
+	  zoom: false,
+	  counter: false,
+	  autoplay: true,
+	  fullScreen: true,
+	}); 
   if (plugins.lightGalleryItem.length && !isNoviBuilder) {
     plugins.lightGalleryItem.lightGallery({
       selector: "this",
+	  share: false,
+	  zoom: false,
+	  counter: false,
       youtubePlayerParams: {
         modestbranding: 1,
         showinfo: 0,
         rel: 0,
-        controls: 0
+		loop: 1,
+		modestbranding: 1,
+        controls: 1,
+		youtubeThumbSize: 1,
       },
       vimeoPlayerParams: {
         byline : 0,

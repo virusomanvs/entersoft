@@ -1,6 +1,5 @@
 <?php get_header(); ?>
     <!-- Swiper-->
-	
     <section class="section section-layout-1">
         <div class="section-layout-main">
             <div class="swiper-container swiper-slider swiper-slider_style-2" data-loop="true" data-autoplay="8000" data-simulate-touch="false" data-slide-effect="fade">
@@ -8,19 +7,84 @@
                     <div class="swiper-slide" data-slide-bg="<?php bloginfo('template_url'); ?>/images/slider-slide-1-1464x660.jpg">
                         <div class="swiper-slide-caption">
                             <div class="shell">
+                                <a href="/products/1c/buhgalteria/">
                                 <div class="range">
                                     <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                                        <h1 style="color: #fff" data-caption-animate="fadeInUpSmall"><span class="custom-line">1С</span><span>:Бухгалтерия 8</span>
+                                        <h1 style="color: #fff;text-shadow: 0px 1px 3px Black;" data-caption-animate="fadeInUpSmall">
+                                            <span class="custom-line">1С</span><span>:Бухгалтерия 8</span>
                                         </h1>
                                         <div class="object-decorated">
-                                            <h4 style="color: #fff" data-caption-animate="fadeInRightSmall" data-caption-delay="550">Универсальное решение для автоматизации бухгалтерского и налогового учета.</h4>
+                                            <h4 style="color: #fff;text-shadow: 0px 1px 3px Black;" data-caption-animate="fadeInRightSmall" data-caption-delay="550">Универсальное решение для автоматизации бухгалтерского и налогового учета.</h4>
                                         </div>
                                     </div>
                                 </div>
+                                </a>
                             </div>
                         </div>
                     </div>
-					
+
+                    <div class="swiper-slide" data-slide-bg="<?php bloginfo('template_url'); ?>/images/slider-choose.jpg">
+                        <div class="swiper-slide-caption">
+                            <div class="shell">
+                                <a href="#">
+                                <div class="range">
+                                    <div class="cell-sm-11 cell-md-10 cell-lg-9">
+                                        <h1 style="color: #fff; line-height:1;text-shadow: 0px 1px 3px Black;" data-caption-animate="fadeInUpSmall">
+                                            <span class="custom-line">Доверьте</span><span> выбор профессионалам!</span>
+                                        </h1>
+                                        <div class="object-decorated">
+                                            <h4 style="color: #fff;text-shadow: 0px 1px 3px Black;" data-caption-animate="fadeInRightSmall" data-caption-delay="550">
+                                                Бесплатные консультации по выбору программного обеспечения удобным для Вас способом в удобное время.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" data-slide-bg="<?php bloginfo('template_url'); ?>/images/slider-create.jpg">
+                        <div class="swiper-slide-caption">
+                            <div class="shell">
+                                <a href="#">
+                                <div class="range">
+                                    <div class="cell-sm-11 cell-md-10 cell-lg-9">
+                                        <h1 style="color: #fff; line-height:1;text-shadow: 0px 1px 3px Black;" data-caption-animate="fadeInUpSmall">
+                                            <span class="custom-line">Профессиональное</span><span> обслуживание 1С</span>
+                                        </h1>
+                                        <div class="object-decorated">
+                                            <h4 style="color: #fff;text-shadow: 0px 1px 3px Black;" data-caption-animate="fadeInRightSmall" data-caption-delay="550">
+                                                Полный комплекс услуг:<br>
+                                                Разработка, внедрение, консультации, обновления, настройки ПО, абонентское обслуживание, разовые работы, ИТС
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide" data-slide-bg="<?php bloginfo('template_url'); ?>/images/slider-sol.jpg">
+                        <div class="swiper-slide-caption">
+                            <div class="shell">
+                                <a href="/solutions/">
+                                <div class="range">
+                                    <div class="cell-sm-11 cell-md-10 cell-lg-9">
+                                        <h1 style="color: #fff; line-height:1;text-shadow: 0px 1px 3px Black;" data-caption-animate="fadeInUpSmall"><span class="custom-line">Отраслевые</span><span> решения</span>
+                                        </h1>
+                                        <div class="object-decorated">
+                                            <h4 style="color: #fff;text-shadow: 0px 1px 3px Black;" data-caption-animate="fadeInRightSmall" data-caption-delay="550">
+                                                Отраслевое решение - это специализированная программа, которая значительно расширяет возможности 1С в плане учета конкретного типа предприятия. Осуществляется автоматизация самых трудоемких процессов учета предприятия.
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -75,69 +139,8 @@
             </div>
         </div>
     </section>
-   
-    <!-- Clients-->
-    <section class="section section-md bg-white text-center">
-        <div class="shell shell-wide">
-            <div class="range range-md-center">
-                <div class="cell-lg-11">
-                    <!-- Section Header-->
-                    <div class="section__header">
-                        <h2>Наши партнеры</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="shell-fluid">
-            <!-- Owl Carousel-->
-                        <div class="owl-carousel owl-carousel_style-3" data-autoplay="true" data-items="5" data-dots="true" data-nav="false" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
-                            <div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light">
-										<img src="<?php bloginfo('template_url'); ?>/images/partners/1c.png"/>
-                                    </div>
-                                </article>
-                            </div>
-							<div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light">
-										<img src="<?php bloginfo('template_url'); ?>/images/partners/web.png"/>
-                                    </div>
-                                </article>
-                            </div>
-							<div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light">
-										<img src="<?php bloginfo('template_url'); ?>/images/partners/1crating.jpg"/>
-                                    </div>
-                                </article>
-                            </div>
-							<div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light">
-										<img src="<?php bloginfo('template_url'); ?>/images/partners/eset.png"/>
-                                    </div>
-                                </article>
-                            </div>
-                            
-                            <div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light">
-										<img src="<?php bloginfo('template_url'); ?>/images/partners/kasp.png"/>
-                                    </div>
-                                </article>
-                            </div>
 
-                        </div>
-        </div>
-    </section>
-
-	<!-- Experience since 1999
+	  <!-- Experience since 1999-->
       <section class="section section-md bg-white">
         <div class="bg-gray-4">
           <div class="shell-fluid shell-condensed">
@@ -145,21 +148,29 @@
               <div class="cell-sm-12 cell-md-6">
                 <div class="section-md shell-fluid-cell">
                   <div class="box-centered box-width-1 box-custom">
-                    <h2><span>EnterSoft</span><span class="object-decorated object-decorated_inline" style="max-width: 125px;"><span class="heading-5">2007</span></span></h2>
-                    <p>Ntrcndasdsadasdsad.</p>
-                    <div class="group-md group-middle button-group"><a class="button button-darker" href="contacts.html">Кнопка 1</a>
-                      <p>or</p><a class="button button-primary" href="#">Кнопка 2</a>
+                    <h2><span>Experience</span><span class="object-decorated object-decorated_inline" style="max-width: 125px;"><span class="heading-5">since 2006</span></span></h2>
+                    <p>Our company has been the leading provider of advertising services to American companies since 2006. We pay attention to every aspect of our work.</p>
+                    <div class="group-md group-middle button-group"><a class="button button-darker" href="contacts.html">get a quote</a>
+                      <p>or</p><a class="button button-primary" href="#">get a brochure</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="cell-sm-12 cell-md-6 reveal-flex">
-
-                <div class="thumb-video"><img class="thumb-video__image" src="images/video-preview-962x465.jpg" alt=""/>
+                <div class="thumb-video"><img class="thumb-video__image" src="images/video-preview-962x465.jpg" alt="" width="962" height="465"/>
+				<div style="display:none;" id="video21">
+					<video class="lg-video-object lg-html5" controls preload="none">
+						<source src="<?php bloginfo('template_url'); ?>/video/1c.mp4" type="video/mp4" autoplay>
+						 Ваш браузер не поддерживает HTML5 видео.
+					</video>
+				</div>
                   <div class="thumb-video__caption">
-				  <iframe src="https://www.youtube.com/embed/CwlDXK1DIpk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <h4 class="thumb-video__title">Video Presentation</h4>
+					<div id="html5-videos">
+						<li class="thumb-video__button" data-poster="video-poster2.jpg" data-html="#video21" ></li>
+					</div>
+					<h4 class="thumb-video__title">Video Presentation</h4>
                   </div>
+				  
                 </div>
               </div>
             </div>
@@ -167,7 +178,6 @@
         </div>
       </section>
 
--->
     <!-- Counters-->
     <section class="section parallax-container bg-gray-dark">
         <div class="material-parallax"><img src="<?php bloginfo('template_url'); ?>/images/parallax-3.jpg" alt=""/></div>
@@ -208,10 +218,8 @@
                         <li class="list-blocks__item">
                             <div class="list-blocks__item-inner">
                                 <article class="box-counter-modern">
-                                    <div class="box-counter-modern__wrap">
-                                        <div class="counter" data-zero="true">265</div>
-                                    </div>
-                                    <p class="box-counter-modern__title">Успешных проектов</p>
+                                    <div class="box-counter-modern__wrap"><span class="big"><i class="fa fa-handshake-o" style="font-style: normal;"></i></span></div>
+                                    <p class="box-counter-modern__title">Знаем<br> своё дело!</p>
                                 </article>
                             </div>
                         </li>
@@ -299,6 +307,6 @@
             </div>
         </div>
     </section>
-	
+<?php get_template_part('partners') ?>
 
 <?php get_footer(); ?>

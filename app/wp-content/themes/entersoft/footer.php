@@ -83,9 +83,9 @@
                     <ul class="post-group post-light-group">
                         <?
                         $id_news = 3; // ID категории новостей
-                        $perpage = 2; // Кол-во записей на странице
+                        $perpage = 4; // Кол-во записей на странице
                         $temp = $wp_query; $wp_query= null;
-                        $wp_query = new WP_Query(); $wp_query->query('cat='.$id_news.'&showposts='.$perpage . '&paged='.$paged);
+                        $wp_query = new WP_Query(); $wp_query->query('cat='.$id_news.'&showposts='.$perpage);
                         while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                             <li>
                                 <article class="post-light">
@@ -117,7 +117,10 @@
             <div class="range range-20 range_xl-ten footer-corporate__range">
                 <div class="cell-sm-8 cell-xl-6 footer-corporate__aside-column text-sm-left">
                     <!-- Rights-->
-                    <p class="rights"><span>EnterSoft</span><span>&nbsp;&copy;&nbsp;</span><span id="copyright-year"></span>.&nbsp;<br class="veil-xs"><a class="link-underline" href="/sitemap.xml">SiteMap</a>
+                    <p class="rights">
+						<span>EnterSoft</span>
+							<span>&nbsp;&copy;&nbsp;</span>
+							<span id="copyright-year"></span>.&nbsp; <br class="veil-xs"><a class="link-underline" href="/sitemap.xml">SiteMap</a>
                     </p>
                 </div>
 				<div class="cell-sm-4 cell-xl-4 footer-corporate__aside-column text-sm-right">
@@ -146,7 +149,6 @@
 <script src='<?php bloginfo('template_url'); ?>/js/sweetalert.js'></script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
-
     (function (d, w, c) {
         (w[c] = w[c] || []).push(function() {
             try {
