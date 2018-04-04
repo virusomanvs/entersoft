@@ -26,8 +26,9 @@
                     <h4 class="heading-bordered">Адрес</h4>
                     <ul class="list-md">
                         <li>
-                            <p class="address">г. Семей, ул. Ч. Валиханова 124,<br> 2 Этаж, 201 каб.</p>
-                            <ul class="list-inline-0">
+                            <a target="_blank" href="https://www.google.ru/maps/place/EnterSoft/@50.4172729,80.2483319,17z/data=!3m1!4b1!4m5!3m4!1s0x42f26548099d3db5:0xd20953b99571a183!8m2!3d50.4169895!4d80.2504373"><p class="address">г. Семей, ул. Ч. Валиханова 124,<br> 2 Этаж, 201 каб.</p></a>
+                            <br>
+							<ul class="list-inline-0">
                                 <li>
                                     <dl class="list-terms-inline">
                                         <dt>Пн-Пт</dt>
@@ -69,6 +70,7 @@
                 <div class="cell-xs-10 cell-sm-6 cell-md-3 cell-lg-3 cell-xl-2 footer-corporate__column">
                     <h4 class="heading-bordered">Проверка ИТС</h4>
                     <p>Вы можете проверить наличие договора на ИТС</p>
+					<br>
                     <form class="rd-mailform rd-mailform_sm rd-mailform_centered box-width-2" id="check" name="check" onsubmit="return false;">
                         <div class="form-wrap">
                             <input class="form-input" id="its-code" maxlength="15" name="rn" size="15" type="text" data-constraints="@Required">

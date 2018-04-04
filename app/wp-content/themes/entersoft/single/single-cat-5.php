@@ -85,7 +85,7 @@
                             <?php echo the_field('1c_buh_fulldesc') ?>
                         </div>
                         <div class="post-single__footer">
-							<a class="button button-xs button-primary" href="/price/?type=1c&?search=<?php echo the_title() ?>">Узнать цену</a>
+							<a class="button button-xs button-primary" href="/price/?type=1c&search=<?php echo the_title() ?>">Узнать цену</a>
                             <a class="button button-xs button-primary" href="#section-buy">Заказать данный товар</a>
                         </div>
                     </article>

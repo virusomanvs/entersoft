@@ -56,8 +56,9 @@
                     </article>
 
                 </div>
-				<?php include "right_block.php" ?>
+				<?php get_template_part('right_block'); ?>
             </div>
         </div>
     </section>
+	<?php get_template_part('partners') ?>
 <?php get_footer(); ?>

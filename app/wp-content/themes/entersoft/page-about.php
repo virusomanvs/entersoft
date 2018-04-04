@@ -50,7 +50,7 @@
             </div>
         </div>
     </section>
-
+<!--
     <section class="section parallax-container bg-gray-dark">
         <div class="material-parallax"><img src="<?php bloginfo('template_url'); ?>/images/parallax-2.jpg" alt=""/></div>
         <div class="parallax-content">
@@ -59,7 +59,7 @@
                     <h2>История</h2>
                     <div class="timeline">
                         <div class="timeline__item-wrap">
-                            <!-- Timeline item-->
+                            <!-- Timeline item--
                             <article class="timeline__item">
                                 <div class="timeline__item-header">
                                     <h5>Открытие, 2007</h5>
@@ -70,7 +70,7 @@
                             </article>
                         </div>
                         <div class="timeline__item-wrap">
-                            <!-- Timeline item-->
+                            <!-- Timeline item--
                             <article class="timeline__item timeline__item-reverse">
                                 <div class="timeline__item-header">
                                     <h5>Инфа всякая, 2010</h5>
@@ -81,7 +81,7 @@
                             </article>
                         </div>
                         <div class="timeline__item-wrap">
-                            <!-- Timeline item-->
+                            <!-- Timeline item--
                             <article class="timeline__item">
                                 <div class="timeline__item-header">
                                     <h5>Мы топЧик, 2018</h5>
@@ -102,7 +102,7 @@
     <section class="section section-sm bg-white">
         <div class="shell">
             <div class="range range-50 range-sm-center range-md-left range-lg-justify">
-                <div class="cell-sm-10 cell-md-6">
+                 <!--<div class="cell-sm-10 cell-md-6">
                     <h4>Наши цели</h4>
                     <p>Здесь должно быть описание того что вы видите ниже...</p>
                     <div class="group-3-columns" data-lightgallery="group">
@@ -113,19 +113,46 @@
                         <div class="column-item"><a class="thumb-elegant" href="<?php bloginfo('template_url'); ?>/images/image-3-1200x800_original.jpg" data-lightgallery="group-item"><img src="<?php bloginfo('template_url'); ?>/images/image-3-166x139.jpg" alt="" width="166" height="139"/>
                                 <div class="thumb-elegant__overlay"></div></a></div>
                     </div>
-                </div>
-                <div class="cell-sm-10 cell-md-6 cell-lg-5">
+                </div>-->
+                <div class="cell-sm-12 cell-md-12 cell-lg-12">
                     <h4>Сертификаты</h4>
                     <p>Для того, чтобы наши клиенты были уверены в нас и качестве выполняемых нами работ, мы много работаем и постоянно совершенствуемся. На текущий момент, мы подтвердили следующие компетенции и статусы: </p>
-                    <div class="group-3-columns owl-carousel owl-sert" data-items="3" data-dots="false" data-nav="true" style="max-width: 430px;" data-lightgallery="group">
-                        <div class="column-item"><a class="thumb-light" href="<?php bloginfo('template_url'); ?>/images/certificate-1-847x1200.jpg" data-lightgallery="group-item"><img src="<?php bloginfo('template_url'); ?>/images/certificate-1-120x171.jpg" alt="" width="120" height="171"/>
-                                <div class="thumb-light__overlay"></div></a>
+                    <div class="group-3-columns owl-carousel owl-sert" data-items="6" data-dots="false" data-nav="true" data-lightgallery="group">
+                        <div class="column-item">
+							<a class="thumb-light" href="<?php bloginfo('template_url'); ?>/images/sert/1.jpg" data-lightgallery="group-item">
+								<img src="<?php bloginfo('template_url'); ?>/images/sert/1.jpg" alt="" width="120" height="171"/>
+                                <div class="thumb-light__overlay"></div>
+							</a>
 						</div>
-                        <div class="column-item"><a class="thumb-light" href="<?php bloginfo('template_url'); ?>/images/certificate-1-847x1200.jpg" data-lightgallery="group-item"><img src="<?php bloginfo('template_url'); ?>/images/certificate-1-120x171.jpg" alt="" width="120" height="171"/>
-                                <div class="thumb-light__overlay"></div></a>
+                        <div class="column-item">
+							<a class="thumb-light" href="<?php bloginfo('template_url'); ?>/images/sert/2.jpg" data-lightgallery="group-item">
+								<img src="<?php bloginfo('template_url'); ?>/images/sert/2.jpg" alt="" width="120" height="171"/>
+                                <div class="thumb-light__overlay"></div>
+							</a>
 						</div>
-                        <div class="column-item"><a class="thumb-light" href="<?php bloginfo('template_url'); ?>/images/certificate-1-847x1200.jpg" data-lightgallery="group-item"><img src="<?php bloginfo('template_url'); ?>/images/certificate-1-120x171.jpg" alt="" width="120" height="171"/>
-                                <div class="thumb-light__overlay"></div></a>
+                        <div class="column-item">
+							<a class="thumb-light" href="<?php bloginfo('template_url'); ?>/images/sert/3.jpg" data-lightgallery="group-item">
+								<img src="<?php bloginfo('template_url'); ?>/images/sert/3.jpg" alt="" width="120" height="171"/>
+                                <div class="thumb-light__overlay"></div>
+							</a>
+						</div>
+                        <div class="column-item">
+							<a class="thumb-light" href="<?php bloginfo('template_url'); ?>/images/sert/4.jpg" data-lightgallery="group-item">
+								<img src="<?php bloginfo('template_url'); ?>/images/sert/4.jpg" alt="" width="120" height="171"/>
+                                <div class="thumb-light__overlay"></div>
+							</a>
+						</div>
+                        <div class="column-item">
+							<a class="thumb-light" href="<?php bloginfo('template_url'); ?>/images/sert/5.jpg" data-lightgallery="group-item">
+								<img src="<?php bloginfo('template_url'); ?>/images/sert/5.jpg" alt="" width="120" height="171"/>
+                                <div class="thumb-light__overlay"></div>
+							</a>
+						</div>
+                        <div class="column-item">
+							<a class="thumb-light" href="<?php bloginfo('template_url'); ?>/images/sert/6.jpg" data-lightgallery="group-item">
+								<img src="<?php bloginfo('template_url'); ?>/images/sert/6.jpg" alt="" width="120" height="171"/>
+                                <div class="thumb-light__overlay"></div>
+							</a>
 						</div>
                     </div>
                 </div>

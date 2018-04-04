@@ -92,11 +92,11 @@
         <div class="section-layout-aside">
             <div class="section-layout-aside__item"><a class="thumb-modern" href="/updates"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-1-538x200.png" alt="" width="538" height="200"/>
                     <div class="thumb-modern__caption">
-                        <p class="thumb-modern__title" style="color:#fff">Обновления 1С</p>
+                        <p class="thumb-modern__title" style="color:#fff">Обновление 1С</p>
                     </div></a></div>
             <div class="section-layout-aside__item"><a class="thumb-modern" href="/solutions"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-2-498x195.png" alt="" width="498" height="195"/>
                     <div class="thumb-modern__caption">
-                        <p class="thumb-modern__title" style="color:#fff; text-align: left">Отраслевые решения</p>
+                        <p class="thumb-modern__title" style="color:#fff; text-align: left">Отраслевые &nbsp;&nbsp;решения</p>
                     </div></a></div>
             <div class="section-layout-aside__item"><a class="thumb-modern" href="/products/1c/"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-3-460x195.png" alt="" width="460" height="195"/>
                     <div class="thumb-modern__caption">
@@ -140,7 +140,7 @@
         </div>
     </section>
 
-	  <!-- Experience since 1999-->
+	  <!-- Experience since 1999
       <section class="section section-md bg-white">
         <div class="bg-gray-4">
           <div class="shell-fluid shell-condensed">
@@ -176,7 +176,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
 
     <!-- Counters-->
     <section class="section parallax-container bg-gray-dark">
@@ -230,12 +230,12 @@
     </section>
 
 
-    <!-- Clients-->
+    <!-- Clients--
     <section class="section section-md bg-white text-center">
         <div class="shell shell-wide">
             <div class="range range-md-center">
                 <div class="cell-lg-11">
-                    <!-- Section Header-->
+                    <!-- Section Header--
                     <div class="section__header">
                         <h2>Нам доверяют</h2>
                         <div class="section__header-element"><a class="link link-arrow" href="/contacts"><span>Оставить отзыв</span></a></div>
@@ -247,10 +247,10 @@
             <div class="range range-condensed range-md-reverse range-flex">
                 <div class="cell-md-6 bg-gray-dark bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/parallax-5.jpg);">
                     <div class="section-variant-1">
-                        <!-- Owl Carousel-->
+                        <!-- Owl Carousel--
                         <div class="owl-carousel owl-carousel_style-3" data-items="1" data-dots="true" data-nav="true" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
                             <div class="item">
-                                <!-- Quote light-->
+                                <!-- Quote light--
                                 <article class="quote-light">
                                     <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
                                     </div>
@@ -264,7 +264,7 @@
                                 </article>
                             </div>
                             <div class="item">
-                                <!-- Quote light-->
+                                <!-- Quote light--
                                 <article class="quote-light">
                                     <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
                                     </div>
@@ -278,7 +278,7 @@
                                 </article>
                             </div>
 							<div class="item">
-                                <!-- Quote light-->
+                                <!-- Quote light--
                                 <article class="quote-light">
                                     <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
                                     </div>
@@ -306,7 +306,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 <?php get_template_part('partners') ?>
 
 <?php get_footer(); ?>

@@ -86,7 +86,7 @@
                             <?php echo the_field('solutions_full_desc') ?>
                         </div>
                         <div class="post-single__footer">
-							<a class="button button-xs button-primary" href="/price/?type=sol&?search=<?php echo the_title() ?>">Узнать цену</a>
+							<a class="button button-xs button-primary" href="/price/?type=sol&search=<?php echo the_title() ?>">Узнать цену</a>
                             <a class="button button-xs button-primary" href="#section-buy">Заказать данный товар</a>
                         </div>
                     </article>

@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="layout-bordered__aside">
-                    <div class="layout-bordered__aside-item">
+                    <!--<div class="layout-bordered__aside-item">
                         <p class="heading-8">Социальные сети </p>
                         <ul class="list-inline-xs">
                             <li><a class="icon icon-sm icon-default fa fa-facebook" href="#"></a></li>
@@ -32,7 +32,7 @@
                             <li><a class="icon icon-sm icon-default fa fa-youtube" href="#"></a></li>
                             <li><a class="icon icon-sm icon-default fa fa-vk" href="#"></a></li>
                         </ul>
-                    </div>
+                    </div>-->
                     <div class="layout-bordered__aside-item">
                         <p class="heading-8">Телефон</p>
                         <div class="unit unit-horizontal unit-spacing-xxs">
@@ -43,6 +43,7 @@
                             <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-local_phone"></span></div>
                             <div class="unit__body"><a href="callto:+7 (7222) 56-33-70">+7 (7222) 56-33-70</a></div>
                         </div>
+						<!--
                         <div class="unit unit-horizontal unit-spacing-xxs">
                             <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-local_phone"></span></div>
                             <div class="unit__body"><a href="callto:+7 (7222) 67-10-38">+7 (7222) 67-10-38</a></div>
@@ -50,7 +51,7 @@
                         <div class="unit unit-horizontal unit-spacing-xxs">
                             <div class="unit__left"><span class="icon icon-sm icon-primary material-icons-smartphone"></span></div>
                             <div class="unit__body"><a href="callto:+7 (708) 467-10-38">+7 (708) 467-10-38</a></div>
-                        </div>
+                        </div>-->
                     </div>
                     <div class="layout-bordered__aside-item">
                         <p class="heading-8">E-mail</p>
