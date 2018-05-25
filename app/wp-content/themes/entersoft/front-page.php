@@ -56,7 +56,7 @@
                                         <div class="object-decorated">
                                             <h4 style="color: #fff;text-shadow: 0px 1px 3px Black;" data-caption-animate="fadeInRightSmall" data-caption-delay="550">
                                                 Полный комплекс услуг:<br>
-                                                Разработка, внедрение, консультации, обновления, настройки ПО, абонентское обслуживание, разовые работы, ИТС
+                                                Разработка, внедрение, консультации, обновления, настройки ПО, абонентское обслуживание, разовые работы, Информационно-технологическое сопровождение
                                             </h4>
                                         </div>
                                     </div>
@@ -230,12 +230,12 @@
     </section>
 
 
-    <!-- Clients--
+    <!-- Clients-->
     <section class="section section-md bg-white text-center">
         <div class="shell shell-wide">
             <div class="range range-md-center">
                 <div class="cell-lg-11">
-                    <!-- Section Header--
+                    <!-- Section Header-->
                     <div class="section__header">
                         <h2>Нам доверяют</h2>
                         <div class="section__header-element"><a class="link link-arrow" href="/contacts"><span>Оставить отзыв</span></a></div>
@@ -247,10 +247,10 @@
             <div class="range range-condensed range-md-reverse range-flex">
                 <div class="cell-md-6 bg-gray-dark bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/parallax-5.jpg);">
                     <div class="section-variant-1">
-                        <!-- Owl Carousel--
+                        <!-- Owl Carousel-->
                         <div class="owl-carousel owl-carousel_style-3" data-items="1" data-dots="true" data-nav="true" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
                             <div class="item">
-                                <!-- Quote light--
+                                <!-- Quote light-->
                                 <article class="quote-light">
                                     <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
                                     </div>
@@ -264,7 +264,7 @@
                                 </article>
                             </div>
                             <div class="item">
-                                <!-- Quote light--
+                                <!-- Quote light-->
                                 <article class="quote-light">
                                     <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
                                     </div>
@@ -278,7 +278,7 @@
                                 </article>
                             </div>
 							<div class="item">
-                                <!-- Quote light--
+                                <!-- Quote light-->
                                 <article class="quote-light">
                                     <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
                                     </div>
@@ -302,11 +302,17 @@
                         <a class="link-block" href="#">
                             <img src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="КГП НА ПХВ «ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ» УЗ ВКО" title="КГП НА ПХВ «ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ» УЗ ВКО"/>
                         </a>
+                        <a class="link-block" href="#">
+                            <img src="<?php bloginfo('template_url'); ?>/images/clients/infec.png" alt="" width="500" height="102"/>
+                        </a>
+                        <a class="link-block" href="#">
+                            <img src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="КГП НА ПХВ «ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ» УЗ ВКО" title="КГП НА ПХВ «ПЕРИНАТАЛЬНЫЙ ЦЕНТР ГОРОДА СЕМЕЙ» УЗ ВКО"/>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>-->
+    </section>
 <?php get_template_part('partners') ?>
 
 <?php get_footer(); ?>

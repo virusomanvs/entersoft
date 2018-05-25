@@ -76,7 +76,6 @@
 						<a class="button button-primary button-1c" href="zup">показать список товаров</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

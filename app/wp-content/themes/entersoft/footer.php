@@ -76,7 +76,7 @@
                             <input class="form-input" id="its-code" maxlength="15" name="rn" size="15" type="text" data-constraints="@Required">
                             <label class="form-label" for="its-code">Регистрационный номер</label>
                         </div>
-                        <button class="button button-sm button-block button-secondary" id="check-btn" onclick="doCheck()">Проверить</button>
+                        <button class="button button-sm button-block button-secondary " id="check-btn" onclick="doCheck()">Проверить</button>
 						<div id="check-mess" style="padding-top:10px;"></div>
                     </form>
                 </div>
@@ -125,12 +125,12 @@
 							<span id="copyright-year"></span>.&nbsp; <br class="veil-xs"><a class="link-underline" href="/sitemap.xml">SiteMap</a>
                     </p>
                 </div>
-				<div class="cell-sm-4 cell-xl-4 footer-corporate__aside-column text-sm-right">
+				<!--<div class="cell-sm-4 cell-xl-4 footer-corporate__aside-column text-sm-right">
                 <ul class="list-inline-xxs">
                   <li><a class="icon icon-xs icon-style-modern fa fa-twitter" href="#"></a></li>
                   <li><a class="icon icon-xs icon-style-modern fa fa-facebook" href="#"></a></li>
                   <li><a class="icon icon-xs icon-style-modern fa fa-instagram" href="#"></a></li>
-                </ul>
+                </ul>-->
               </div>
             </div>
         </div>

@@ -101,7 +101,7 @@
                             'menu' => 'header-menu',
                             'container_class' => 'rd-navbar-nav-wrap',
                             'walker' => $walker,
-                            'items_wrap'      => '<div class="rd-navbar-main-item"><a class="button button-xs button-primary" id="modal-trigger" data-type="cd-modal-trigger" href="#">Заказать звонок</a></div><ul class="rd-navbar-nav">%3$s</ul>'
+                            'items_wrap'      => '<div class="rd-navbar-main-item"><a class="button button-xs button-primary button-icon button-icon-right" id="modal-trigger" data-type="cd-modal-trigger" href="#"><span class="icon material-icons-phone"></span>Заказать звонок</a></div><ul class="rd-navbar-nav">%3$s</ul>'
                         )); ?>
                         <!--<div class="rd-navbar-nav-wrap">
                             <div class="rd-navbar-main-item"><a class="button button-xs button-primary" href="contacts.html">Get a quote</a></div>

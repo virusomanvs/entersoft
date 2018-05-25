@@ -50,7 +50,7 @@
             </div>
         </div>
     </section>
-<!--
+
     <section class="section parallax-container bg-gray-dark">
         <div class="material-parallax"><img src="<?php bloginfo('template_url'); ?>/images/parallax-2.jpg" alt=""/></div>
         <div class="parallax-content">
@@ -59,7 +59,7 @@
                     <h2>История</h2>
                     <div class="timeline">
                         <div class="timeline__item-wrap">
-                            <!-- Timeline item--
+                            <!-- Timeline item-->
                             <article class="timeline__item">
                                 <div class="timeline__item-header">
                                     <h5>Открытие, 2007</h5>
@@ -70,7 +70,7 @@
                             </article>
                         </div>
                         <div class="timeline__item-wrap">
-                            <!-- Timeline item--
+                            <!-- Timeline item-->
                             <article class="timeline__item timeline__item-reverse">
                                 <div class="timeline__item-header">
                                     <h5>Инфа всякая, 2010</h5>
@@ -81,7 +81,7 @@
                             </article>
                         </div>
                         <div class="timeline__item-wrap">
-                            <!-- Timeline item--
+                            <!-- Timeline item-->
                             <article class="timeline__item">
                                 <div class="timeline__item-header">
                                     <h5>Мы топЧик, 2018</h5>
@@ -160,7 +160,7 @@
         </div>
     </section>
 
-    <!-- Top Management
+    <!-- Top Management--
     <section class="section parallax-container bg-gray-dark">
         <div class="material-parallax"><img src="<?php bloginfo('template_url'); ?>/images/parallax-4.jpg" alt=""/></div>
         <div class="parallax-content">

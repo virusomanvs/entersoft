@@ -57,7 +57,19 @@
                         <p class="heading-8">E-mail</p>
                         <div class="unit unit-horizontal unit-spacing-xxs">
                             <div class="unit__left"><span class="icon icon-sm icon-primary mdi mdi-email-outline"></span></div>
-                            <div class="unit__body"><a href="mailto:info@entersoft.kz">info@entersoft.kz</a></div>
+                            <div class="unit__body">Директор <br><a href="mailto:ip-unit@bk.ru"> ip-unit@bk.ru</a></div><br>
+                        </div><br>
+                        <div class="unit unit-horizontal unit-spacing-xxs">
+                            <div class="unit__left"><span class="icon icon-sm icon-primary mdi mdi-email-outline"></span></div>
+                            <div class="unit__body">Бухгалтерия <br><a href="mailto:info@entersoft.kz"> inna_es@list.ru</a></div>
+                        </div><br>
+                        <div class="unit unit-horizontal unit-spacing-xxs">
+                            <div class="unit__left"><span class="icon icon-sm icon-primary mdi mdi-email-outline"></span></div>
+                            <div class="unit__body">IT-Отдел<br> <a href="mailto:ithelp@entersoft.kz"> ithelp@entersoft.kz</a></div>
+                        </div><br>
+                        <div class="unit unit-horizontal unit-spacing-xxs">
+                            <div class="unit__left"><span class="icon icon-sm icon-primary mdi mdi-email-outline"></span></div>
+                            <div class="unit__body">Отдел консультации <a href="mailto:nikolaev.es@mail.ru"> nikolaev.es@mail.ru</a><br><a href="mailto:k-11.95@bk.ru"> k-11.95@bk.ru</a></div>
                         </div>
                     </div>
                     <div class="layout-bordered__aside-item">
