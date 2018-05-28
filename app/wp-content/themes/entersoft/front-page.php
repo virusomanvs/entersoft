@@ -250,6 +250,7 @@
                         <!-- Owl Carousel-->
                         <div class="owl-carousel owl-carousel_style-3" data-items="1" data-dots="true" data-nav="true" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
                             <div class="item">
+                                <a href="/too-mega-kompani">
                                 <!-- Quote light-->
                                 <article class="quote-light">
                                     <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
@@ -262,8 +263,10 @@
                                         </ul>
                                     </div>
                                 </article>
+                                </a>
                             </div>
                             <div class="item">
+                                <a href="/too-mega-kompani">
                                 <!-- Quote light-->
                                 <article class="quote-light">
                                     <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
@@ -276,20 +279,7 @@
                                         </ul>
                                     </div>
                                 </article>
-                            </div>
-							<div class="item">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
-                                    </div>
-                                    <div class="quote-light__main">
-                                        <p class="q">Текст!</p>
-                                        <ul class="quote-light__meta">
-                                            <li><span class="cite">Имя Фамилия</span></li>
-                                            <li><span class="small">Перинатальный центр г. Семей»</span></li>
-                                        </ul>
-                                    </div>
-                                </article>
+                                </a>
                             </div>
                         </div>
                     </div>
