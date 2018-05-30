@@ -1,6 +1,6 @@
 <div class="cell-md-4 cell-lg-3 blog__aside">
               <div class="blog-aside__column">
-				<!--<?php get_search_form(); ?>-->
+				<?php get_search_form(); ?>
                 <div class="blog__aside-item">
                   <p class="heading-8 blog-title">Продукты</p>
                   <ul class="list-marked-bordered">

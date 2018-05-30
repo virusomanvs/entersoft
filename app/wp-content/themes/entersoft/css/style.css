@@ -8,6 +8,7 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
  */
+
 @charset "UTF-8";
 /* cyrillic-ext */
 @font-face {
@@ -37320,4 +37321,19 @@ div.wpcf7 .ajax-loader::after {
 .owl-sert .owl-next:hover {
 	color: #fff;
 	background: #ffe500;
+}
+.slider-search {
+	background: #e5e5e5 url(images/icon.png) no-repeat 9px center;
+	border: solid 6px #ccc;
+	padding: 9px 10px 9px 30px;
+	width: 120px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+.slider-search:focus {
+	width: 660px;
+	border: 6px solid #ffb500;
+	background-color: #ffffff;
+	outline: none;
 }

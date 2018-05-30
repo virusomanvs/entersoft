@@ -94,6 +94,11 @@
                                     <div class="brand__name"><img src="<?php bloginfo('template_url'); ?>/images/logo-135x47.png" alt="" width="135" height="47"/>
                                     </div></a></div>
                         </div>
+                        <!--
+                        <form>
+                            <input class="slider-search" placeholder="Поиск" type="search">
+                        </form>-->
+
                         <!-- RD Navbar Nav -->
                         <?
                         $walker = new mainMenuWalker ();
@@ -103,67 +108,7 @@
                             'walker' => $walker,
                             'items_wrap'      => '<div class="rd-navbar-main-item"><a class="button button-xs button-primary button-icon button-icon-right" id="modal-trigger" data-type="cd-modal-trigger" href="#"><span class="icon material-icons-phone"></span>Заказать звонок</a></div><ul class="rd-navbar-nav">%3$s</ul>'
                         )); ?>
-                        <!--<div class="rd-navbar-nav-wrap">
-                            <div class="rd-navbar-main-item"><a class="button button-xs button-primary" href="contacts.html">Get a quote</a></div>
-                             RD Navbar Nav--
-                            <ul class="rd-navbar-nav">
-                                <li class="active"><a href="index.html">Home</a>
-                                </li>
-                                <li><a href="about-us.html">About Us</a>
-                                </li>
-                                <li><a href="services.html">Services</a>
-                                </li>
-                                <li><a href="our-work.html">Our Work</a>
-                                </li>
-                                <li><a href="news.html">News</a>
-                                    <!-- RD Navbar Dropdown--
-                                    <ul class="rd-navbar-dropdown">
-                                        <li><a href="single-post.html">Single post</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a href="contacts.html">Contacts</a>
-                                </li>
-                                <li><a href="#">Pages</a>
-                                    <!-- RD Navbar Megamenu--
-                                    <ul class="rd-navbar-megamenu">
-                                        <li>
-                                            <h5 class="rd-megamenu-header">Pages 1</h5>
-                                            <ul class="rd-megamenu-list">
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="statistics.html">Statistics</a></li>
-                                                <li><a href="careers.html">Careers</a></li>
-                                                <li><a href="pricing.html">Pricing</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <h5 class="rd-megamenu-header">Pages 2</h5>
-                                            <ul class="rd-megamenu-list">
-                                                <li><a href="404-page.html">404 page</a></li>
-                                                <li><a href="coming-soon.html">Coming soon</a></li>
-                                                <li><a href="maintenance.html">Maintenance</a></li>
-                                                <li><a href="sitemap.html">Sitemap</a></li>
-                                                <li><a href="search-results.html">Search results</a></li>
-                                                <li><a href="privacy-policy.html">Privacy policy</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <h5 class="rd-megamenu-header">Elements</h5>
-                                            <ul class="rd-megamenu-list">
-                                                <li><a href="buttons.html">Buttons</a></li>
-                                                <li><a href="forms.html">Forms</a></li>
-                                                <li><a href="grid-system.html">Grid system</a></li>
-                                                <li><a href="progress-bars.html">Progress bars</a></li>
-                                                <li><a href="tables.html">Tables</a></li>
-                                                <li><a href="tabs-&-accordions.html">Tabs &amp; accordions</a></li>
-                                                <li><a href="typography.html">Typography</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>-->
+
                     </div>
                 </div>
             </nav>
