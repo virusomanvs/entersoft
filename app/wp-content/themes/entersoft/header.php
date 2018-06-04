@@ -36,6 +36,7 @@
         </div>
     </div>
 </div>
+
 <!-- Page-->
 <div class="page">
     <!-- Page Header-->
@@ -56,14 +57,14 @@
                                         </div>
                                     </div>
                                 </li>
-                                <!--<li>
+                                <li>
                                     <div class="unit unit-spacing-xxs unit-horizontal">
                                         <div class="unit__left"><span class="icon icon-sm icon-primary fl-bigmug-line-circular220"></span></div>
                                         <div class="unit__body">
-                                            <p>Какая-нибудь заслуга</p>
+                                            <p>Полезные ссылки</p>
                                         </div>
                                     </div>
-                                </li>-->
+                                </li>
                             </ul>
                         </div>
                         <div class="rd-navbar-aside__item">
@@ -106,9 +107,24 @@
                             'menu' => 'header-menu',
                             'container_class' => 'rd-navbar-nav-wrap',
                             'walker' => $walker,
-                            'items_wrap'      => '<div class="rd-navbar-main-item"><a class="button button-xs button-primary button-icon button-icon-right" id="modal-trigger" data-type="cd-modal-trigger" href="#"><span class="icon material-icons-phone"></span>Заказать звонок</a></div><ul class="rd-navbar-nav">%3$s</ul>'
+                            'items_wrap'      => '<div class="rd-navbar-main-item"><a class="button button-xs button-primary button-icon button-icon-right" id="modal-trigger" data-type="cd-modal-trigger" href="#"><span class="icon material-icons-phone"></span>Заказать звонок</a></div><ul class="rd-navbar-nav">%3$s
+							<li><a href="/?s"><span class="icon material-icons-search" style="font-size: 18px; position: relative; top: 4px;"></span></a>
+								  <!-- RD Navbar Megamenu-->
+								  <ul class="rd-navbar-dropdown" style="width: 350px;">
+									<li>  
+									<h5 class="">Поиск</h5>
+										<form class="fw-mt-15 rd-search rd-search_classic" action="/" method="GET">
+											<div class="form-wrap">
+												<input name="s" id="se" class="form-input" type="text" autocomplete="off">
+												<label class="form-label" for="se">Поиск по сайту...</label>
+											</div>
+											<button class="rd-search-submit" type="submit"></button>
+										</form>
+									</li>
+								  </ul>
+								</li>
+							</ul>'
                         )); ?>
-
                     </div>
                 </div>
             </nav>

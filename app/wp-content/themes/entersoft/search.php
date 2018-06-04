@@ -1,9 +1,10 @@
-<?php get_header(); 
+<?php get_header(); ?>
+<?php
 $args = array_merge( $wp_query->query, array( 'post_type' => "post") );
 query_posts($args); 
 ?>
     <!-- Breadcrumbs-->
-    <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-image-5.jpg);">
+    <section class="breadcrumbs-custom bg-image" style="background-image: url(<?php bloginfo('template_url'); ?>/images/bg-images-search.png);">
         <div class="shell">
             <h2 class="breadcrumbs-custom__title">Результаты поиска</h2>
             <ul class="breadcrumbs-custom__path">
@@ -19,22 +20,25 @@ query_posts($args);
           <?php get_search_form(); ?>
           <div class="rd-search-results">
 			<div id="search-results">
+				<?php if ($_GET["s"] != '') : ?>
 				<ol class="search_list">
-				<?php if (have_posts()) : the_post(); ?>
-				<li><div class="search_error">Поиск по "<span class="search"><?php echo $_GET['s'];?></span>"<div></div></div></li>
-				<?php endif;?>
-					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+					<?php
+					if (have_posts()) :  		
+					echo '<li><div class="search_error">Поиск по "<span class="search">'.$_GET["s"].'</span>"<div></div></div></li>';
+					while (have_posts()) : the_post();
+					?>
 					<?php $title = get_the_title(); $keys= explode(" ",$s); $title = preg_replace('/('.implode('|', $keys) .')/iu', '<b class="search_select">\0</b>', $title); ?>
-
-							<li class="result-item">
-								<h5 class="search_title">
-									<a target="_top" href="<?php the_permalink();?>" class="search_link"><?php echo $title; ?></a>
-								</h5>
-							</li>
+					<li class="result-item">
+						<h5 class="search_title">
+							<a target="_top" href="<?php the_permalink();?>" class="search_link"><?php echo $title; ?></a>
+						</h5>
+					</li>
 					<?php endwhile; else: ?>
 					<li><div class="search_error">Поиск по "<span class="search"><?php echo $_GET['s'];?></span>" не дал результатов.<div></div></div></li>
 					<?php endif;?>
                 </ol>
+				<?php kriesi_pagination(); ?>
+				<?php endif;?>
 			</div>
 			
 		  </div>

@@ -90,18 +90,21 @@
             </div>
         </div>
         <div class="section-layout-aside">
-            <div class="section-layout-aside__item"><a class="thumb-modern" href="/updates"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-1-538x200.png" alt="" width="538" height="200"/>
-                    <div class="thumb-modern__caption">
-                        <p class="thumb-modern__title" style="color:#fff">Обновление 1С</p>
-                    </div></a></div>
-            <div class="section-layout-aside__item"><a class="thumb-modern" href="/solutions"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-2-498x195.png" alt="" width="498" height="195"/>
-                    <div class="thumb-modern__caption">
-                        <p class="thumb-modern__title" style="color:#fff; text-align: left">Отраслевые &nbsp;&nbsp;решения</p>
-                    </div></a></div>
             <div class="section-layout-aside__item"><a class="thumb-modern" href="/products/1c/"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-3-460x195.png" alt="" width="460" height="195"/>
                     <div class="thumb-modern__caption">
                         <p class="thumb-modern__title" style="color:#fff">Программы 1С</p>
-                    </div></a></div>
+                    </div></a>
+			</div>
+            <div class="section-layout-aside__item"><a class="thumb-modern" href="/solutions"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-2-498x195.png" alt="" width="498" height="195"/>
+                    <div class="thumb-modern__caption">
+                        <p class="thumb-modern__title" style="color:#fff; text-align: left">Отраслевые &nbsp;&nbsp;решения</p>
+                    </div></a>
+			</div>
+            <div class="section-layout-aside__item"><a id="modal-useful" data-type="cd-modal-trigger" class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-1-538x200.png" alt="" width="538" height="200"/>
+                    <div class="thumb-modern__caption">
+                        <p class="thumb-modern__title" style="color:#fff">Полезные ссылки</p>
+                    </div></a>
+			</div>
         </div>
     </section>
     <!-- News-->
@@ -249,38 +252,30 @@
                     <div class="section-variant-1">
                         <!-- Owl Carousel-->
                         <div class="owl-carousel owl-carousel_style-3" data-items="1" data-dots="true" data-nav="true" data-stage-padding="0" data-loop="true" data-margin="30" data-mouse-drag="false">
-                            <div class="item">
-                                <a href="/too-mega-kompani">
+							<?
+							$id_news = 15; // ID категории новостей
+							$perpage = 4; // Кол-во записей на странице
+							$temp = $wp_query; $wp_query= null;
+							$wp_query = new WP_Query(); $wp_query->query('cat='.$id_news.'&showposts='.$perpage . '&paged='.$paged);
+							while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+							<div class="item">
+                                <a href="<?php the_permalink(); ?>">
                                 <!-- Quote light-->
                                 <article class="quote-light">
-                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
+                                    <div><img src="<?php echo the_field('review_logo') ?>" alt="" width="150"/>
                                     </div>
                                     <div class="quote-light__main">
-                                        <p class="q">Текст!</p>
+                                        <p class="q"><?php echo the_field('review_short') ?></p>
                                         <ul class="quote-light__meta">
-                                            <li><span class="cite">Имя Фамилия</span></li>
-                                            <li><span class="small">Перинатальный центр г. Семей»</span></li>
+                                            <li><span class="cite"><?php echo the_field('review_who') ?></span></li>
+                                            <li><span class="small"><?php the_title(); ?></span></li>
                                         </ul>
                                     </div>
                                 </article>
                                 </a>
                             </div>
-                            <div class="item">
-                                <a href="/too-mega-kompani">
-                                <!-- Quote light-->
-                                <article class="quote-light">
-                                    <div class="quote-light__image-wrap"><img class="quote-light__image" src="<?php bloginfo('template_url'); ?>/images/clients/perinat.png" alt="" width="88" height="88"/>
-                                    </div>
-                                    <div class="quote-light__main">
-                                        <p class="q">Текст!</p>
-                                        <ul class="quote-light__meta">
-                                            <li><span class="cite">Имя Фамилия</span></li>
-                                            <li><span class="small">Перинатальный центр г. Семей»</span></li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                </a>
-                            </div>
+							<?php endwhile; ?>
+							<?php wp_reset_postdata(); ?>
                         </div>
                     </div>
                 </div>

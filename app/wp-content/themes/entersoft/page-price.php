@@ -9,6 +9,8 @@
                 <li><a href="/">Главная</a></li>
                 <li class="active"><? echo the_title() ?></li>
             </ul>
+			<p>Цены на сайте не являются публичной офертой и могут отличаться от действующих цен.<br>
+                            Просьба уточнять цены по телефону или электронной почте.</p>
         </div>
     </section>
 
@@ -20,10 +22,10 @@
               <!-- Bootstrap tabs -->
               <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
                 <!-- Nav tabs-->
-                <ul class="nav nav-tabs">
-                  <li <?php if ($_GET['type'] == '1c' or $_GET['type'] == '') {?> class="active" <?php }?>><a href="#tab_1c_pred" data-toggle="tab">Программы «1C:Предприятие»</a></li>
-                  <li <?php if ($_GET['type'] == 'sol') {?> class="active" <?php }?>><a href="#tab_sol" data-toggle="tab">Отраслевые решения «1С-Рейтинг»</a></li>
-                </ul>
+						<ul class="nav nav-tabs">
+						  <li <?php if ($_GET['type'] == '1c' or $_GET['type'] == '') {?> class="active" <?php }?>><a href="#tab_1c_pred" data-toggle="tab">Программы «1C:Предприятие»</a></li>
+						  <li <?php if ($_GET['type'] == 'sol') {?> class="active" <?php }?>><a href="#tab_sol" data-toggle="tab">Отраслевые решения «1С-Рейтинг»</a></li>
+						</ul>
 						<div class="shell fw-mt-15">
 						  <!-- RD Search-->
 						  <div class="rd-search rd-search_md rd-search_classic">

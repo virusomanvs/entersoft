@@ -4960,6 +4960,9 @@ Modal Window
 .cd-modal svg > path {
   fill: #ffe500;
 }
+.cd-modal-useful svg > path {
+  fill: #fff;
+}
 .cd-modal .modal-close {
   /* 'X' icon */
   position: absolute;
@@ -37336,4 +37339,8 @@ div.wpcf7 .ajax-loader::after {
 	border: 6px solid #ffb500;
 	background-color: #ffffff;
 	outline: none;
+}
+
+.post-categories li {
+	display: inline-block;
 }
