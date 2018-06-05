@@ -37344,3 +37344,12 @@ div.wpcf7 .ajax-loader::after {
 .post-categories li {
 	display: inline-block;
 }
+
+.use_link{
+	text-align: center;
+}
+.use_link_block{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

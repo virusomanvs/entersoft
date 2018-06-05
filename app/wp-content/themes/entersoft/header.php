@@ -57,14 +57,6 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    <div class="unit unit-spacing-xxs unit-horizontal">
-                                        <div class="unit__left"><span class="icon icon-sm icon-primary fl-bigmug-line-circular220"></span></div>
-                                        <div class="unit__body">
-                                            <p>Полезные ссылки</p>
-                                        </div>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                         <div class="rd-navbar-aside__item">

@@ -100,7 +100,7 @@
                         <p class="thumb-modern__title" style="color:#fff; text-align: left">Отраслевые &nbsp;&nbsp;решения</p>
                     </div></a>
 			</div>
-            <div class="section-layout-aside__item"><a id="modal-useful" data-type="cd-modal-trigger" class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-1-538x200.png" alt="" width="538" height="200"/>
+            <div class="section-layout-aside__item"><a id="modal-useful" class="thumb-modern" href="#"><img class="thumb-modern__image" src="<?php bloginfo('template_url'); ?>/images/home-1-538x200.png" alt="" width="538" height="200"/>
                     <div class="thumb-modern__caption">
                         <p class="thumb-modern__title" style="color:#fff">Полезные ссылки</p>
                     </div></a>

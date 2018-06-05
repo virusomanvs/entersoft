@@ -14,7 +14,7 @@ query_posts($args);
         </div>
     </section>
     <!-- Search results -->
-      <section class="section section-md bg-white"> 
+      <section class="section section-md bg-white">
         <div class="shell">
           <!-- RD Search-->
           <?php get_search_form(); ?>
@@ -40,9 +40,7 @@ query_posts($args);
 				<?php kriesi_pagination(); ?>
 				<?php endif;?>
 			</div>
-			
 		  </div>
-		  
         </div>
       </section>
 

@@ -22,8 +22,18 @@
             <path id="cd-changing-path-6" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
         </svg>
     </div>
-    <div class="cd-modal-content">
-	<h4>Полезные ссылки</h4>
+    <div class="cd-modal-content use_link_block">
+	    <h4>Полезные ссылки</h4>
+            <div class="use_link" style="width: 100%">
+                <a href="/">
+                    <img src="<?php bloginfo('template_url'); ?>/images/goszakup.jpg" alt="">
+                </a>
+            </div>
+            <div class="use_link" style="width: 100%">
+                <a href="/">
+                    <img src="<?php bloginfo('template_url'); ?>/images/gov.jpg" alt="">
+                </a>
+            </div>
     </div> <!-- cd-modal-content -->
     <a href="#0" class="modal-close">Close</a>
 </div> 
